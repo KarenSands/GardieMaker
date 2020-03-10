@@ -4,7 +4,6 @@
 	{"groupId":20141, "name":"Capucha Sky Priestess", "category":"Sombreros", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20153, "name":"Minivestido Nymph Princess", "category":"Vestidos", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20165, "name":"Victoire", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
-	{"groupId":20166, "name":"Vestido transparente Nymph Princess", "rarity":"Evento", "note":"San Valentín"}
+	{"groupId":20166, "name":"Vestido transparente Nymph Princess", "category":"Vestidos", "rarity":"Evento", "note":"San Valentín"}
 
 ]
-
