@@ -12,8 +12,8 @@ const URL_PORTRAIT = "web_portrait/";
 var imgurl;
 
 var groupInfo, groupList;
-var selectedPage = 0;
-var selectedIndex = 0;
+var selectedPage = 1;
+//var selectedIndex = 0;
 var paginas, resto;
 
 var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNombre, getCategoria, getRareza, getGuardia, getNota;
@@ -63,10 +63,11 @@ function crearPagination(){
 		// --------------------------------------------------
 
 		// Debe ejecutarse cada vez que se cambie de página.
+		limpiaElementos();
 
 		if (paginas <= 12) {
 			var indice = 0;
-			limpiaElementos();
+			
 
 			for (i = 1; i <= paginas; i++) {
 				// Crear elementos
@@ -80,98 +81,43 @@ function crearPagination(){
 			};
 
 			// Cargar items
-			cargaItems(selectedIndex);
+			cargaItems(selectedPage - 1);
 			
 		} else if (paginas > 12) {
 
-			// Verificar truncation
-
-			if (selectedPage < 8) {
-				// Inicio  ->  x 2 3 4 5 6 7 8 9 ... last-1 last
-				var indice = 0;
-				for (i = 1; i <= paginas; i++) {
-					if (i < 10) {
-						var page = document.createElement("div");
-						page.innerHTML = i;
-						page.setAttribute("class", "page");
-						page.setAttribute("onclick", "selectPage(" + indice + ")");
-						document.getElementsByClassName("pagination")[0].appendChild(page);
-
-						indice++;
-					} else if (i == 10) {
-						var truncation = document.createElement("span");
-						truncation.innerHTML = "...";
-						truncation.setAttribute("class", "truncation");
-						document.getElementsByClassName("pagination")[0].appendChild(truncation);
-						i = (paginas - 2);
-					} else {
-						var page = document.createElement("div");
-						page.innerHTML = i;
-						page.setAttribute("class", "page");
-						page.setAttribute("onclick", "selectPage(" + indice + ")");
-						document.getElementsByClassName("pagination")[0].appendChild(page);
-
-						indice++;
-					};
-					
-					
-				};
-
-			} else if (selectedPage > (paginas - 7)) {
-				// Final  ->  1 2 ... last-8 last-7 last-6 last-5 last-4 last-3 last-2 last-1 last
-				var indice = 0;
-				for (i = 1; i <= paginas; i++) {
-					if ((i <= 2) || (i > (paginas - 10))) {
-						var page = document.createElement("div");
-						page.innerHTML = i;
-						page.setAttribute("class", "page");
-						page.setAttribute("onclick", "selectedPage(" + indice + ")");
-						document.getElementsByClassName("pagination")[0].appendChild(page);
-
-						indice++;
-
-					} else {
-						var truncation = document.createElement("span");
-						truncation.innerHTML = "...";
-						truncation.setAttribute("class", "truncation");
-						document.getElementsByClassName("pagination")[0].appendChild(truncation);
-						i = (paginas - 9);
-					};
-				};
-
-			} else {
-				// Medio  ->  1 2 ... x1 x2 3 x4 x5 .. last-1 last-2
-				var indice = 0;
-				for (i = 1; i <= paginas; i++) {
-					if (i <= 2 || i >= (paginas- 2) || (i-3 <= selectedPage && i+3 >= selectedPage)) {
-						var page = document.createElement("div");
-						page.innerHTML = i;
-						page.setAttribute("class", "page");
-						page.setAttribute("onclick", "selectedPage(" + indice + ")");
-						document.getElementsByClassName("pagination")[0].appendChild(page);
-
-						indice++;
-
-					} else if (i == 3 || i < paginas -2) {
-
-						var truncation = document.createElement("span");
-						truncation.innerHTML = "...";
-						truncation.setAttribute("class", "truncation");
-						document.getElementsByClassName("pagination")[0].appendChild(truncation);
-
-						i == 3 ? (i = selectedPage - 4):(i = paginas - 2);
-
-					};
-				};
-
-			};
-
+			hacerTruncation();
+			cargaItems(selectedPage - 1);
 
 		};
 
 	};
 
-	document.getElementsByClassName("page")[selectedIndex].setAttribute("class", "page selected");
+	var pregunta;
+	var divPages = document.getElementsByClassName("page").length;
+	for (i = 0; i <= divPages; i++) {
+		if (i == divPages) {
+			document.getElementsByClassName("page")[i - 1].setAttribute("class", "page selected");
+			break;
+
+		} else {
+			pregunta = document.getElementsByClassName("page")[i].innerHTML;
+
+			if ((Number(pregunta) - 1) == Number(selectedPage)) {
+				if (i == 0) {
+					document.getElementsByClassName("page")[i].setAttribute("class", "page selected");
+					break;
+
+				} else {
+
+					document.getElementsByClassName("page")[i - 1].setAttribute("class", "page selected");
+					break;
+
+				};
+			};
+
+		};
+		
+	};
 
 };
 
@@ -181,18 +127,92 @@ function limpiaElementos() {
 	var itemsVisibles = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
 	for (i = 0; i < 7; i++) {
 		itemsVisibles[i].innerHTML = "";
-	}
-}
+	};
+};
 
 // PENDIENTE
 function selectPage(n) {
 
-	selectedIndex = n;
-	n>8?(selectedIndex = n-2):"";
-
+	//selectedIndex = n;
+	//n>8?(selectedIndex = n-2):"";
 
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
 	crearPagination();
+
+};
+
+function hacerTruncation() {
+	// Verificar truncation
+
+	if (selectedPage < 8) {
+		// Inicio  ->  x 2 3 4 5 6 7 8 9 ... last-1 last
+		var indice = 0;
+		for (i = 1; i <= paginas; i++) {
+			if (i < 10 || i > (paginas - 2)) {
+				var page = document.createElement("div");
+				page.innerHTML = i;
+				page.setAttribute("class", "page");
+				page.setAttribute("onclick", "selectPage(" + indice + ")");
+				document.getElementsByClassName("pagination")[0].appendChild(page);
+
+				indice++;
+			} else if (i == 10) {
+				var truncation = document.createElement("span");
+				truncation.innerHTML = "...";
+				truncation.setAttribute("class", "truncation");
+				document.getElementsByClassName("pagination")[0].appendChild(truncation);
+				i = (paginas - 2);
+			};
+		};
+
+	} else if (selectedPage > (paginas - 7)) {
+		// Final  ->  1 2 ... last-8 last-7 last-6 last-5 last-4 last-3 last-2 last-1 last
+		var indice = 0;
+		for (i = 1; i <= paginas; i++) {
+			if ((i <= 2) || (i > (paginas - 10))) {
+				var page = document.createElement("div");
+				page.innerHTML = i;
+				page.setAttribute("class", "page");
+				page.setAttribute("onclick", "selectPage(" + indice + ")");
+				document.getElementsByClassName("pagination")[0].appendChild(page);
+
+				indice++;
+
+			} else {
+				var truncation = document.createElement("span");
+				truncation.innerHTML = "...";
+				truncation.setAttribute("class", "truncation");
+				document.getElementsByClassName("pagination")[0].appendChild(truncation);
+				i = (paginas - 9);
+			};
+		};
+
+	} else {
+		// Medio  ->  1 2 ... x1 x2 3 x4 x5 .. last-1 last-2
+		var indice = 0;
+		for (i = 1; i <= paginas; i++) {
+			if (i <= 2 || i >= (paginas- 2) || (i-3 <= selectedPage && i+3 >= selectedPage)) {
+				var page = document.createElement("div");
+				page.innerHTML = i;
+				page.setAttribute("class", "page");
+				page.setAttribute("onclick", "selectPage(" + indice + ")");
+				document.getElementsByClassName("pagination")[0].appendChild(page);
+
+				indice++;
+
+			} else if (i == 3 || i < paginas -2) {
+
+				var truncation = document.createElement("span");
+				truncation.innerHTML = "...";
+				truncation.setAttribute("class", "truncation");
+				document.getElementsByClassName("pagination")[0].appendChild(truncation);
+
+				i == 3 ? (i = selectedPage - 4):(i = paginas - 2);
+
+			};
+		};
+
+	};
 
 
 };
