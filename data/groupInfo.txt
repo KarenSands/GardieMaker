@@ -1,4 +1,5 @@
 [
+	{"groupId":691, "name":"Eldarya", "category":"Pieles", "rarity":"Común", "note":"Tienda"},
 	{"groupId":20117, "name":"Mangas Sky Priestess", "category":"Abrigos", "rarity": "Evento", "note":"San Valentín"},
 	{"groupId":20129, "name":"Vestido Sky Priestess", "category":"Vestidos", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20141, "name":"Capucha Sky Priestess", "category":"Sombreros", "rarity":"Evento", "note":"San Valentín"},
@@ -9,7 +10,6 @@
 	{"groupId":20221, "name":"Corona florida Nymph Princess", "category":"Sombreros", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20233, "name":"Sandalias Nymph Princess", "category":"Zapatos", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20281, "name":"Viviane", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
-	{"groupId":20323, "name":"Valeria", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
-	{"groupId":691, "name":"Eldarya", "category":"Pieles", "rarity":"Común", "note":"Tienda"}
-	
+	{"groupId":20323, "name":"Valeria", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"}
+
 ]
