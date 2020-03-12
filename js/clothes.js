@@ -13,6 +13,7 @@ var imgurl;
 
 var groupInfo, groupList;
 var filterGroup = [];
+var filterInfoZ = [];
 var selectedPage = 1;
 var paginas, resto;
 
@@ -66,8 +67,7 @@ function crearPagination() {
 	$("div").remove(".page");
 	$("span").remove(".truncation");
 
-	// Cada página tiene 7 elementos
-
+	// Cada página tiene 7 elementos)
 	if (filterGroup.length <= 7) {
 
 		paginas = 0;
@@ -115,6 +115,16 @@ function crearPagination() {
 
 	};
 
+	var att = document.getElementsByClassName("marketplace-abstract marketplace-search-item")[0].getAttribute("style");
+
+	if (att != null) {
+		if (att == "display: none;") {
+			var e = document.createElement("span");
+			e.setAttribute("id", "empty");
+			e.innerHTML = "No hay ningún objeto disponible en esta categoría.";
+			document.getElementById("marketplace-search-items").appendChild(e);
+		};
+	};
 
 	var pregunta;
 	var divPages = document.getElementsByClassName("page").length;
@@ -145,7 +155,6 @@ function crearPagination() {
 			};
 		};
 	};
-
 };
 
 	/////////////////////////////////////////////////////////////////////////////////////
@@ -167,6 +176,8 @@ function selectPage(n) {
 
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
 	crearPagination();
+
+	
 
 };
 
@@ -436,6 +447,8 @@ function getInfo() {
 };
 
 function updateFilters() {
+	$("span").remove("#empty");
+
 	fGrupos = $("#filter-codeOptions").val();				// item / grupo
 	fCategorias = $("#filter-bodyLocationOptions").val();	// categorias
 	fEspecial = $("#filter-guardOptions").val();			// Guardias / Premio del mes
@@ -507,6 +520,18 @@ function updateFilters() {
 	// Guardias -----------------------------------------
 	// Pendiente
 	if (fEspecial != "") {
+		filtro = groupInfo.filter(function(v){return v.especial == fEspecial});
+
+		for (b = 0; b < filtro.length;b++) {
+			getGrupo = filtro[b].groupId;
+
+			for (i = 0; i < filterB.length; i++) {
+				if (filterB[i].groupId == getGrupo) {
+					filterA.push(filterB[i]);
+				};
+			};
+
+		};
 
 	} else {
 		for (i = 0; i < filterB.length; i++) {
@@ -525,8 +550,6 @@ function updateFilters() {
 		fRareza=="event"?fRareza="Evento":"";
 
 	filtro = groupInfo.filter(function(v){return v.rarity == fRareza});
-
-
 
 	for (b = 0; b < filtro.length;b++) {
 			getGrupo = filtro[b].groupId;
@@ -547,10 +570,6 @@ function updateFilters() {
 			};
 		};
 
-
-
-
-
 	} else {
 		for (i = 0; i < filterA.length; i++) {
 			filterB.push(filterA[i]);
@@ -558,6 +577,15 @@ function updateFilters() {
 	};
 
 	filterA.length = 0;
+
+	// Orden --------------------------------------------
+
+	if (fOrden == "newest") {
+		filterB.reverse();
+
+	} else {
+
+	}
 
 	// Last ---------------------------------------------
 	// Pasar todo a filterGroup

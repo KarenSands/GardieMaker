@@ -10,6 +10,16 @@
 	{"groupId":20221, "name":"Corona florida Nymph Princess", "category":"Sombreros", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20233, "name":"Sandalias Nymph Princess", "category":"Zapatos", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20281, "name":"Viviane", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
-	{"groupId":20323, "name":"Valeria", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"}
-
+	{"groupId":20323, "name":"Valeria", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20324, "name":"Guantes Crystal Lover", "category":"Guantes", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20325, "name":"Botas Crystal Lover", "category":"Zapatos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20326, "name":"Hombreras Crystal Lover", "category":"Abrigos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20327, "name":"Body Crystal Lover", "category":"Vestidos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20328, "name":"Valentina", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20329, "name":"Vestido Goth Valentine", "category":"Vestidos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20330, "name":"Contaminación Mágica Goth Valentine", "category":"Accesorios manos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20331, "name":"Corona afilada Goth Valentine", "category":"Sombreros", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20332, "name":"Zapatos desparejados Goth Valentine", "category":"Zapatos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20333, "name":"Claro romántico", "category":"Fondos", "rarity":"Evento", "note":"San Valentín"}
 ]
+
