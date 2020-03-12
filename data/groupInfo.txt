@@ -5,6 +5,10 @@
 	{"groupId":20153, "name":"Minivestido Nymph Princess", "category":"Vestidos", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20165, "name":"Victoire", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20166, "name":"Vestido transparente Nymph Princess", "category":"Vestidos", "rarity":"Evento", "note":"San Valentín"},
-	{"groupId":20220, "name":"Ojos Sky Priestess", "category":"Ojos", "rarity":"Evento", "note":"San Valentín"}
-
+	{"groupId":20220, "name":"Ojos Sky Priestess", "category":"Ojos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20221, "name":"Corona florida Nymph Princess", "category":"Sombreros", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20233, "name":"Sandalias Nymph Princess", "category":"Zapatos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20281, "name":"Viviane", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":20323, "name":"Valeria", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":691, "name":"Eldarya", "category":"Pieles", "rarity":"Común", "note":"Tienda"},
 ]

@@ -504,9 +504,62 @@ function updateFilters() {
 	
 	filterA.length = 0;
 
-	
+	// Guardias -----------------------------------------
+	// Pendiente
+	if (fEspecial != "") {
 
-	// Last --------------------------------------------
+	} else {
+		for (i = 0; i < filterB.length; i++) {
+			filterA.push(filterB[i]);
+		};
+	};
+
+	filterB.length = 0;
+
+	// Rareza -------------------------------------------
+	if (fRareza != "") {
+		fRareza=="common"?fRareza="Común":"";
+		fRareza=="rare"?fRareza="Raro":"";
+		fRareza=="epic"?fRareza="Ëpico":"";
+		fRareza=="legendary"?fRareza="Legendario":"";
+		fRareza=="event"?fRareza="Evento":"";
+
+	filtro = groupInfo.filter(function(v){return v.rarity == fRareza});
+
+
+
+	for (b = 0; b < filtro.length;b++) {
+			getGrupo = filtro[b].groupId;
+
+			for (i = 0; i < filterA.length; i++) {
+				if (filterA[i].groupId == getGrupo) {
+					filterB.push(filterA[i]);
+				};
+			};
+
+		};
+		
+		for (i = 0; i < filterA.length; i++) {
+			getGrupo = filterA[i].groupId;
+			
+			if (fCategorias == filterA[i].category) {
+				filterB.push(filterA[i]);
+			};
+		};
+
+
+
+
+
+	} else {
+		for (i = 0; i < filterA.length; i++) {
+			filterB.push(filterA[i]);
+		};
+	};
+
+	filterA.length = 0;
+
+	// Last ---------------------------------------------
 	// Pasar todo a filterGroup
 	for (i = 0; i < filterB.length; i++) {
 		filterGroup.push(filterB[i]);
