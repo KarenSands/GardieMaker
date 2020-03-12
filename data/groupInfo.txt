@@ -10,5 +10,7 @@
 	{"groupId":20233, "name":"Sandalias Nymph Princess", "category":"Zapatos", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20281, "name":"Viviane", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
 	{"groupId":20323, "name":"Valeria", "category":"Cabello", "rarity":"Evento", "note":"San Valentín"},
-	{"groupId":691, "name":"Eldarya", "category":"Pieles", "rarity":"Común", "note":"Tienda"},
+	{"groupId":691, "name":"Eldarya", "category":"Pieles", "rarity":"Común", "note":"Tienda"}
+
+	//{"groupId":, "name":"", "category":"", "rarity":"", "note":""}
 ]
