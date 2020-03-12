@@ -62,12 +62,12 @@
 			<div class ="marketplace-container">
 				<div id="marketplace-filters">
 					<form>
-						<select id="filter-codeOptions" onchange="filtroGrupos();">
+						<select id="filter-codeOptions" onchange="updateFilters();">
 							<option value="item">Todos los artículos</option>
 							<option value="grupo">Primero de grupo</option>
 						</select>
 
-						<select id="filter-bodyLocationOptions" onchange="filtroCategorias();">
+						<select id="filter-bodyLocationOptions" onchange="updateFilters();">
 							<option value="">Todas las categorías</option>
 							<option value="Ropa interior">Ropa interior</option>
 							<option value="Pieles">Pieles</option>
@@ -91,15 +91,15 @@
 							<option value="Ambientes">Ambientes</option>
 						</select>
 
-						<select id="filter-guardOptions" onchange="filtroEspecial();"><!--especial-->
-							<option value="">Especial</option>
+						<select id="filter-guardOptions" onchange="updateFilters();">
+							<option value="">Guardias y Premios</option>
 							<option value="Sombra">Guardia Sombra</option>
 							<option value="Absenta">Guardia Absenta</option>
 							<option value="Obsidiana">Guardia Obsidiana</option>
 							<option value="Mes">Premio del mes</option>
 						</select>
 
-						<select id="filter-rarityOptions" onchange="filtroRareza();">
+						<select id="filter-rarityOptions" onchange="updateFilters();">
 							<option value="">Todas las rarezas</option>
 							<option value="common">Común</option>
 							<option value="rare">Raro</option>
@@ -108,7 +108,7 @@
 							<option value="event">Evento</option>
 						</select>
 
-						<select id="filter-orderOptions" onchange="filtroOrden();">
+						<select id="filter-orderOptions" onchange="updateFilters();">
 							<option value="newest">Más recientes</option>
 							<option value="oldest">Más antiguos</option>
 						</select>
@@ -129,13 +129,13 @@
 						</div>
 						<ul id="marketplace-search-items">
 							<!-- Lista con todos los artículos -->
-							<li class="marketplace-abstract marketplace-search-item" data-itemid="####"></li>
-							<li class="marketplace-abstract marketplace-search-item" data-itemid="####"></li>
-							<li class="marketplace-abstract marketplace-search-item" data-itemid="####"></li>
-							<li class="marketplace-abstract marketplace-search-item" data-itemid="####"></li>
-							<li class="marketplace-abstract marketplace-search-item" data-itemid="####"></li>
-							<li class="marketplace-abstract marketplace-search-item" data-itemid="####"></li>
-							<li class="marketplace-abstract marketplace-search-item" data-itemid="####"></li>
+							<li class="marketplace-abstract marketplace-search-item" onclick="selectItem(0)" data-itemid="####"></li>
+							<li class="marketplace-abstract marketplace-search-item" onclick="selectItem(1)" data-itemid="####"></li>
+							<li class="marketplace-abstract marketplace-search-item" onclick="selectItem(2)" data-itemid="####"></li>
+							<li class="marketplace-abstract marketplace-search-item" onclick="selectItem(3)" data-itemid="####"></li>
+							<li class="marketplace-abstract marketplace-search-item" onclick="selectItem(4)" data-itemid="####"></li>
+							<li class="marketplace-abstract marketplace-search-item" onclick="selectItem(5)" data-itemid="####"></li>
+							<li class="marketplace-abstract marketplace-search-item" onclick="selectItem(6)" data-itemid="####"></li>
 
 						</ul>
 					</div>

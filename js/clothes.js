@@ -12,13 +12,13 @@ const URL_PORTRAIT = "web_portrait/";
 var imgurl;
 
 var groupInfo, groupList;
+var filterGroup = [];
 var selectedPage = 1;
-//var selectedIndex = 0;
 var paginas, resto;
 
 var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNombre, getCategoria, getRareza, getGuardia, getNota;
 
-var fGrupos, fCategorias, fEspecial, fRareza, fOrden;
+var fGrupos, fCategorias, fEspecial, fRareza, fOrden, fName;
 //----------------------------------------------
 
 $(document).ready(function iniciaTodo() {
@@ -28,12 +28,39 @@ $(document).ready(function iniciaTodo() {
 
 	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupList.txt", function(dataList, success, xhr) {
 		groupList = JSON.parse(dataList);
-		crearPagination();
+		updateFilters();
 	});
 
 });
 
-function crearPagination(){
+function limpiarCanvas(){
+
+	$("canvas")[0].remove();
+
+	var canvas = document.createElement("canvas");
+	canvas.setAttribute("width", "420");
+	canvas.setAttribute("height", "594");
+	document.getElementById("marketplace-avatar-preview").appendChild(canvas);
+
+};
+
+function selectItem(n) {
+	limpiarCanvas();
+
+	var img = document.getElementsByClassName("abstract-icon")[n].getAttribute("src");
+	var newimg = img.replace("icon/", URL_FULL);
+	var canvas = document.getElementsByTagName("canvas");
+	var ctx = canvas[0].getContext("2d");
+
+	img = new Image();
+	img.onload = function() {
+		ctx.drawImage(img, 0, 0);
+	}
+
+	img.src = newimg;
+}
+
+function crearPagination() {
 
 	// Borra pagination
 	$("div").remove(".page");
@@ -41,82 +68,82 @@ function crearPagination(){
 
 	// Cada página tiene 7 elementos
 
-	if (groupList.length <= 7) {
+	if (filterGroup.length <= 7) {
 
-		// Borrar items extras
-		for (i= 7; i >= groupList.length; i--){
-			$(".marketplace-abstract.marketplace-search-item").eq(i).remove();
-		};
+		paginas = 0;
+		resto = filterGroup.length;
 
-	// Calcular cantidad de páginas
-	} else if (groupList.length > 7) {
-		paginas = groupList.length / 7
-		resto = groupList.length % 7;
+	} else if (filterGroup.length > 7) {
+
+		paginas = filterGroup.length / 7
+		resto = filterGroup.length % 7;
 
 		// Comprobar si hay páginas incompletas
 		if (resto != 0) {
 			paginas = Math.ceil(paginas);
 		};
 
+	};
+
 		// --------------------------------------------------
 		// ---------------- Crea pagination -----------------
 		// --------------------------------------------------
 
 		// Debe ejecutarse cada vez que se cambie de página.
-		limpiaElementos();
+	limpiaElementos();
 
-		if (paginas <= 12) {
-			var indice = 0;
+	if (paginas <= 12) {
+		var indice = 0;
 			
-
-			for (i = 1; i <= paginas; i++) {
-				// Crear elementos
-				var page = document.createElement("div");
-				page.innerHTML = i;
-				page.setAttribute("class", "page");
-				page.setAttribute("onclick", "selectPage(" + indice + ")");
-				document.getElementsByClassName("pagination")[0].appendChild(page);
-				indice++;
-
-			};
-
-			// Cargar items
-			cargaItems(selectedPage - 1);
-			
-		} else if (paginas > 12) {
-
-			hacerTruncation();
-			cargaItems(selectedPage - 1);
-
+		for (i = 1; i <= paginas; i++) {
+			// Crear elementos
+			var page = document.createElement("div");
+			page.innerHTML = i;
+			page.setAttribute("class", "page");
+			page.setAttribute("onclick", "selectPage(" + indice + ")");
+			document.getElementsByClassName("pagination")[0].appendChild(page);
+			indice++;
 		};
+
+		// Cargar items
+		cargaItems(selectedPage - 1);
+
+	} else if (paginas > 12) {
+
+		hacerTruncation();
+		cargaItems(selectedPage - 1);
 
 	};
 
+
 	var pregunta;
 	var divPages = document.getElementsByClassName("page").length;
-	for (i = 0; i <= divPages; i++) {
-		if (i == divPages) {
-			document.getElementsByClassName("page")[i - 1].setAttribute("class", "page selected");
-			break;
+	if (divPages != 0) {
+		for (i = 0; i <= divPages; i++) {
+			if (i == divPages) {
+				document.getElementsByClassName("page")[i - 1].setAttribute("class", "page selected");
+				break;
 
-		} else {
-			pregunta = document.getElementsByClassName("page")[i].innerHTML;
+			} else {
 
-			if ((Number(pregunta) - 1) == Number(selectedPage)) {
-				if (i == 0) {
-					document.getElementsByClassName("page")[i].setAttribute("class", "page selected");
-					break;
+				pregunta = document.getElementsByClassName("page")[i].innerHTML;
 
-				} else {
+				if ((Number(pregunta) - 1) == Number(selectedPage)) {
 
-					document.getElementsByClassName("page")[i - 1].setAttribute("class", "page selected");
-					break;
+					if (i == 0) {
 
+						document.getElementsByClassName("page")[i].setAttribute("class", "page selected");
+						break;
+
+					} else {
+
+						document.getElementsByClassName("page")[i - 1].setAttribute("class", "page selected");
+						break;
+
+					};
 				};
 			};
-
 		};
-		
 	};
 
 };
@@ -127,14 +154,16 @@ function limpiaElementos() {
 	var itemsVisibles = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
 	for (i = 0; i < 7; i++) {
 		itemsVisibles[i].innerHTML = "";
+		itemsVisibles[i].removeAttribute("style");
+
+		if (itemsVisibles[i].style.display == "none") {
+				itemsVisibles[i].removeAttribute("style");
+			};
 	};
 };
 
 // PENDIENTE
 function selectPage(n) {
-
-	//selectedIndex = n;
-	//n>8?(selectedIndex = n-2):"";
 
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
 	crearPagination();
@@ -214,14 +243,13 @@ function hacerTruncation() {
 
 	};
 
-
 };
 
 function cargaItems(pagsel) {
 
 	if (pagsel + 1 == paginas) {
 		primerItem = pagsel * 7;
-		ultimoItem = groupList.length;
+		ultimoItem = filterGroup.length;
 		itemLooper = 0;
 		for (item = primerItem; item < ultimoItem; item++) {
 			
@@ -229,6 +257,20 @@ function cargaItems(pagsel) {
 			getItems();
 			itemLooper++;
 
+		};
+
+		for (item = itemLooper; item < 7; item++) {
+			document.getElementsByClassName("marketplace-abstract marketplace-search-item")[item].innerHTML = "";
+			document.getElementsByClassName("marketplace-abstract marketplace-search-item")[item].style.display = "none";
+		};
+	} else if (paginas == 0) {
+		primerItem = 0;
+		ultimoItem = resto;
+		itemLooper = 0;
+		for (item = primerItem; item < ultimoItem; item++) {
+			getInfo();
+			getItems();
+			itemLooper++;
 		};
 
 		for (item = itemLooper; item < 7; item++) {
@@ -338,7 +380,7 @@ function getItems() {
 	itemCodeCont.setAttribute("class", "abstract-code");
 	document.getElementsByClassName("abstract-content")[itemLooper].appendChild(itemCodeCont);
 
-	getCodigo = groupList[item].itemId;
+	getCodigo = filterGroup[item].itemId;
 	var itemEX = document.getElementsByClassName("marketplace-abstract marketplace-search-item")[itemLooper];
 	itemEX.setAttribute("data-itemid", getCodigo);
 
@@ -358,7 +400,7 @@ function getItems() {
 
 function getInfo() {
 
-	getGrupo = groupList[item].groupId;
+	getGrupo = filterGroup[item].groupId;
 
 	if (groupInfo != undefined) {
 		filtro = groupInfo.filter(function(v){return v.groupId == getGrupo});
@@ -371,19 +413,19 @@ function getInfo() {
 
 		switch (getCategoria) {
 			case "Pieles":
-				imgurl = URL_SRC + URL_SKIN + URL_ICON + groupList[item].itemURL;
+				imgurl = URL_SRC + URL_SKIN + URL_ICON + filterGroup[item].itemURL;
 				break;
 			case "Bocas":
-				imgurl = URL_SRC + URL_MOUTH + URL_ICON + groupList[item].itemURL;
+				imgurl = URL_SRC + URL_MOUTH + URL_ICON + filterGroup[item].itemURL;
 				break;
 			case "Ojos":
-				imgurl = URL_SRC + URL_EYES + URL_ICON + groupList[item].itemURL;
+				imgurl = URL_SRC + URL_EYES + URL_ICON + filterGroup[item].itemURL;
 				break;
 			case "Cabello":
-				imgurl = URL_SRC + URL_HAIR + URL_ICON + groupList[item].itemURL;
+				imgurl = URL_SRC + URL_HAIR + URL_ICON + filterGroup[item].itemURL;
 				break;
 			default:
-				imgurl = URL_SRC + URL_CLOTHES + URL_ICON + groupList[item].itemURL;
+				imgurl = URL_SRC + URL_CLOTHES + URL_ICON + filterGroup[item].itemURL;
 		
 		};
 
@@ -393,43 +435,84 @@ function getInfo() {
 
 };
 
-function filtroGrupos() {
-	fGrupos = document.getElementById("filter-codeOptions").value;
-	if (fGrupos == "item") {
+function updateFilters() {
+	fGrupos = $("#filter-codeOptions").val();				// item / grupo
+	fCategorias = $("#filter-bodyLocationOptions").val();	// categorias
+	fEspecial = $("#filter-guardOptions").val();			// Guardias / Premio del mes
+	fRareza = $("#filter-rarityOptions").val();				// rareza
+	fOrden = $("#filter-orderOptions").val();				// newest / oldest
+	fName = $("#filter-itemName").val();
+
+	// ----------------------------------------------
+
+	var filterA = [];
+	var filterB = [];
+	filterGroup.length = 0;
+
+	// Grupo --------------------------------------------
+	if (fGrupos == "grupo") {
+		var grupo = 0
+		for (i = 0; i < groupList.length; i++) {
+			if (grupo < groupInfo.length) {
+				if (groupList[i].itemId == groupInfo[grupo].groupId) {
+					filterA.push(groupList[i]);
+					grupo++;
+				};
+			} else {
+				break;
+			};
+			
+		};
+
+	} else if (fGrupos == "item") {
+		for (i = 0; i < groupList.length; i++) {
+			filterA.push(groupList[i]);
+		};
+
+	};
+
+	// Categorías ---------------------------------------
+	
+	if (fCategorias != "") {
+
+		filtro = groupInfo.filter(function(v){return v.category == fCategorias});
+
+		for (b = 0; b < filtro.length;b++) {
+			getGrupo = filtro[b].groupId;
+
+			for (i = 0; i < filterA.length; i++) {
+				if (filterA[i].groupId == getGrupo) {
+					filterB.push(filterA[i]);
+				};
+			};
+
+		};
 		
-	}
+		for (i = 0; i < filterA.length; i++) {
+			getGrupo = filterA[i].groupId;
+			
+			if (fCategorias == filterA[i].category) {
+				filterB.push(filterA[i]);
+			};
+		};
+
+	} else {
+		for (i = 0; i < filterA.length; i++) {
+			filterB.push(filterA[i]);
+		};
+	};
+	
+	filterA.length = 0;
+
+	
+
+	// Last --------------------------------------------
+	// Pasar todo a filterGroup
+	for (i = 0; i < filterB.length; i++) {
+		filterGroup.push(filterB[i]);
+	};
+
+	selectedPage = 1;
+	crearPagination();
+
 };
-function filtroCategorias() {
-	fCategorias = document.getElementById("filter-bodyLocationOptions").value;
-};
-
-function filtroEspecial() {
-	fEspecial = document.getElementById("filter-guardOptions").value;
-
-};
-
-function filtroRareza() {
-	fRareza = document.getElementById("filter-rarityOptions").value;
-};
-
-function filtroOrden() {
-	fOrden = document.getElementById("filter-orderOptions").value;
-};
-
-/*
-
-						<div class="pagination">
-							<a class="page selected" rel="1">1</a>
-							<a class="page" rel="2">2</a>
-							<a class="page" rel="3">3</a>
-							<a class="page" rel="4">4</a>
-							<a class="page" rel="5">5</a>
-							<a class="page" rel="6">6</a>
-							<a class="page" rel="8">7</a>
-							<a class="page" rel="9">8</a>
-							<a class="page" rel="9">9</a>
-							<span class="truncation">...</span>
-							<a class="page" rel="9">19</a>
-							<a class="page" rel="9">20</a>
-						</div>
-*/
