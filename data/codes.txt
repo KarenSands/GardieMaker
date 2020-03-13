@@ -4,4 +4,5 @@ nota: Exploración
 nota: Costales
 nota: Tienda
 nota: Premio del mes
+nota: Alquimia
 =============================
