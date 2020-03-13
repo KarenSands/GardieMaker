@@ -35,13 +35,14 @@ $(document).ready(function iniciaTodo() {
 });
 
 function limpiarCanvas(){
+	
+		document.getElementById("marketplace-avatar-background-preview").removeAttribute("style");
 
-	$("canvas")[0].remove();
-
-	var canvas = document.createElement("canvas");
-	canvas.setAttribute("width", "420");
-	canvas.setAttribute("height", "594");
-	document.getElementById("marketplace-avatar-preview").appendChild(canvas);
+		$("canvas")[0].remove();
+		var canvas = document.createElement("canvas");
+		canvas.setAttribute("width", "420");
+		canvas.setAttribute("height", "594");
+		document.getElementById("marketplace-avatar-preview").appendChild(canvas);
 
 };
 
@@ -50,16 +51,24 @@ function selectItem(n) {
 
 	var img = document.getElementsByClassName("abstract-icon")[n].getAttribute("src");
 	var newimg = img.replace("icon/", URL_FULL);
-	var canvas = document.getElementsByTagName("canvas");
-	var ctx = canvas[0].getContext("2d");
+	var tipo = document.getElementsByClassName("abstract-type")[n].innerHTML;
 
-	img = new Image();
-	img.onload = function() {
-		ctx.drawImage(img, 0, 0);
-	}
+	if (tipo == "Fondos") {
+		document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + newimg + "')";
 
-	img.src = newimg;
-}
+	} else {
+
+		var canvas = document.getElementsByTagName("canvas");
+		var ctx = canvas[0].getContext("2d");
+
+		img = new Image();
+		img.onload = function() {
+			ctx.drawImage(img, 0, 0);
+		};
+
+		img.src = newimg;
+	};
+};
 
 function crearPagination() {
 
