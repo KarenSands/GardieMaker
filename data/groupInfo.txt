@@ -28,7 +28,7 @@
 	{"groupId":23296, "name":"Top Tempting Heralist", "category":"Partes de arriba", "rarity":"Evento", "note":"San Valentín 2020"},
 	{"groupId":23297, "name":"Falda Tempting Herbalist", "category":"Pantalones", "rarity":"Evento", "note":"San Valentín 2020"},
 	{"groupId":23298, "name":"Cinturón Tempting Herbalist", "category":"Cinturones", "rarity":"Evento", "note":"San Valentín 2020"},
-	{"groupId":23299, "name":"Mangas Tempting Herbalist", "category":"Accesorios manos", "rarity":"Evento", "note":"San Valentín"},
+	{"groupId":23299, "name":"Mangas Tempting Herbalist", "category":"Accesorios manos", "rarity":"Evento", "note":"San Valentín 2020"},
 	{"groupId":23300, "name":"Corona Tempting Herbalist", "category":"Sombreros", "rarity":"Evento", "note":"San Valentín 2020"},
 	{"groupId":23301, "name":"Pócima del amor Tempting Herbalist", "category":"Accesorios manos", "rarity":"Evento", "note":"San Valentín 2020"},
 	{"groupId":23302, "name":"Jardín floreado Tempting Herbalist", "category":"Ambientes", "rarity":"Evento", "note":"San Valentín 2020"},
