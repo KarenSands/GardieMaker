@@ -472,23 +472,60 @@ function updateFilters() {
 	filterGroup.length = 0;
 
 	// Grupo --------------------------------------------
-	if (fGrupos == "grupo") {
+	if (fGrupos == "first") {
 		var grupo = 0
 		for (i = 0; i < groupList.length; i++) {
 			if (grupo < groupInfo.length) {
-				if (groupList[i].itemId == groupInfo[grupo].groupId) {
-					filterA.push(groupList[i]);
-					grupo++;
+
+				if (typeof(groupInfo[grupo].groupId) != "string") {
+					if (groupList[i].itemId == groupInfo[grupo].groupId) {
+						filterA.push(groupList[i]);
+						grupo++;
+					};
+
+				} else {
+					if (typeof(groupList[i].itemId) === typeof(groupInfo[grupo].groupId)) {
+
+						if (fEspecial == "Arcoíris") {
+							filterA.push(groupList[i]);
+							var s = filterA[filterA.length - 1].itemId;
+
+							if ( s.charAt(s.length - 1) == "s") {
+								s = s.slice(0,-1);
+							};
+
+							filterA[filterA.length - 1].itemId = s;
+						};
+
+						grupo++;
+					};
+
 				};
+
+
+				
 			} else {
 				break;
 			};
 			
 		};
 
-	} else if (fGrupos == "item") {
+	} else if (fGrupos == "all") {
 		for (i = 0; i < groupList.length; i++) {
 			filterA.push(groupList[i]);
+
+			var s = filterA[i].itemId;
+			if (typeof(s) === "string") {
+
+				if ( s.charAt(s.length - 1) == "s") {
+					s = s.slice(0,-1);
+					filterA[filterA.length - 1].itemId = s;
+				};
+
+			};
+				
+				
+
 		};
 
 	};
@@ -558,9 +595,9 @@ function updateFilters() {
 		fRareza=="legendary"?fRareza="Legendario":"";
 		fRareza=="event"?fRareza="Evento":"";
 
-	filtro = groupInfo.filter(function(v){return v.rarity == fRareza});
+		filtro = groupInfo.filter(function(v){return v.rarity == fRareza});
 
-	for (b = 0; b < filtro.length;b++) {
+		for (b = 0; b < filtro.length;b++) {
 			getGrupo = filtro[b].groupId;
 
 			for (i = 0; i < filterA.length; i++) {
@@ -587,10 +624,75 @@ function updateFilters() {
 
 	filterA.length = 0;
 
+	// txt ----------------------------------------------
+	if (fName != "") {
+		if (isNaN(fName) ) {
+			// Buscar por Nombre
+
+			var nombre = normalize(fName).toLowerCase();
+
+			for (grupo = 0; grupo < groupInfo.length; grupo++) {
+				var nLista = normalize(groupInfo[grupo].name).toLowerCase();
+				getGrupo = groupInfo[grupo].groupId;
+
+				for (i = 0; i < filterB.length; i++) {
+					if (filterB[i].groupId == getGrupo) {
+						if (nLista.includes(nombre)) {
+							filterA.push(filterB[i]);
+						} else {
+							break;
+						}
+
+					}
+
+				};
+
+			};
+
+		// -----------------------------------------------------------
+
+		} else {
+			// Reiniciar todos los filtros
+
+			fGrupos = $("#filter-codeOptions").val("all");				// item / grupo
+			fCategorias = $("#filter-bodyLocationOptions").val("");	// categorias
+			fEspecial = $("#filter-guardOptions").val("");			// Guardias / Premio del mes
+			fRareza = $("#filter-rarityOptions").val("");				// rareza
+
+			// Buscar por código
+
+			for (grupo = 0; grupo < groupInfo.length; grupo++) {
+				getGrupo = groupInfo[grupo].groupId;
+
+				for (i = 0; i < filterB.length; i++) {
+					if (filterB[i].itemId == fName) {
+						filterA.push(filterB[i]);
+						grupo = groupInfo.length;
+						break;
+					};
+				};
+
+			};
+
+
+		// -----------------------------------------------------------
+		};
+		
+	} else {
+
+		for (i = 0; i < filterB.length; i++) {
+			filterA.push(filterB[i]);
+		};
+
+	}
+
+	filterB.length = 0;
+
+
 	// Orden --------------------------------------------
 
 	if (fOrden == "newest") {
-		filterB.reverse();
+		filterA.reverse();
 
 	} else {
 
@@ -598,11 +700,50 @@ function updateFilters() {
 
 	// Last ---------------------------------------------
 	// Pasar todo a filterGroup
-	for (i = 0; i < filterB.length; i++) {
-		filterGroup.push(filterB[i]);
+	for (i = 0; i < filterA.length; i++) {
+		filterGroup.push(filterA[i]);
 	};
 
 	selectedPage = 1;
 	crearPagination();
 
 };
+
+
+// Normalize ----------------------------------------------
+
+var normalize = (function() {
+  var from = "ÃÀÁÄÂÈÉËÊÌÍÏÎÒÓÖÔÙÚÜÛãàáäâèéëêìíïîòóöôùúüûÑñÇç", 
+      to   = "AAAAAEEEEIIIIOOOOUUUUaaaaaeeeeiiiioooouuuunncc",
+      mapping = {};
+ 
+  for(var i = 0, j = from.length; i < j; i++ )
+      mapping[ from.charAt( i ) ] = to.charAt( i );
+ 
+  return function( str ) {
+      var ret = [];
+      for( var i = 0, j = str.length; i < j; i++ ) {
+          var c = str.charAt( i );
+          if( mapping.hasOwnProperty( str.charAt( i ) ) )
+              ret.push( mapping[ c ] );
+          else
+              ret.push( c );
+      }      
+      return ret.join( '' );
+  }
+ 
+})();
+
+// ------------------------------------------------------
+function key() {
+
+	var input = document.getElementById("filter-itemName");
+
+	input.addEventListener("keypress", function(event) {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+			document.getElementById("filter").click();
+		};
+	});
+
+}
