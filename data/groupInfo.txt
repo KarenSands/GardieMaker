@@ -108,6 +108,9 @@
 	{"groupId":12622, "name":"Mangas Spring Faery", "category":"Accesorios manos", "rarity":"Evento", "note":"Pascua 2017"},
 	{"groupId":12623, "name":"Alas Spring Faery", "category":"Abrigos", "rarity":"Evento", "note":"Pascua 2017"},
 	{"groupId":12624, "name":"Flores Spring Faery", "category":"Ambientes", "rarity":"Evento", "note":"Pascua 2017"},
+	{"groupId":13819, "name":"Selena", "category":"Cabello", "rarity":"Evento", "note":"Verano 2017"},
+	{"groupId":"13819s", "name":"Selena", "category":"Cabello", "rarity":"Evento", "note":"Alquimia", "especial":"Arcoíris"},
+	{"groupId":14184, "name":"Bikini bicolor", "category":"Ropa interior", "rarity":"Común", "note":"Exploración"},
 
 	{"groupId":20117, "name":"Mangas Sky Priestess", "category":"Abrigos", "rarity": "Evento", "note":"San Valentín 2019"},
 	{"groupId":20129, "name":"Vestido Sky Priestess", "category":"Vestidos", "rarity":"Evento", "note":"San Valentín 2019"},
