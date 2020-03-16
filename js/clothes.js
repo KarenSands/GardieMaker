@@ -421,7 +421,7 @@ function getItems() {
 function getInfo() {
 
 	getGrupo = filterGroup[item].groupId;
-
+	
 	if (groupInfo != undefined) {
 		filtro = groupInfo.filter(function(v){return v.groupId == getGrupo});
 
@@ -475,38 +475,44 @@ function updateFilters() {
 	if (fGrupos == "first") {
 		var grupo = 0
 		for (i = 0; i < groupList.length; i++) {
-			if (grupo < groupInfo.length) {
+			try {
 
-				if (typeof(groupInfo[grupo].groupId) != "string") {
-					if (groupList[i].itemId == groupInfo[grupo].groupId) {
-						filterA.push(groupList[i]);
-						grupo++;
-					};
+				if (grupo < groupInfo.length) {
 
-				} else {
-					if (typeof(groupList[i].itemId) === typeof(groupInfo[grupo].groupId)) {
-
-						if (fEspecial == "Arcoíris") {
+					if (typeof(groupInfo[grupo].groupId) != "string") {
+						if (groupList[i].itemId == groupInfo[grupo].groupId) {
 							filterA.push(groupList[i]);
-							var s = filterA[filterA.length - 1].itemId;
-
-							if ( s.charAt(s.length - 1) == "s") {
-								s = s.slice(0,-1);
-							};
-
-							filterA[filterA.length - 1].itemId = s;
+							grupo++;
 						};
 
-						grupo++;
-					};
+					} else {
+						if (typeof(groupList[i].itemId) === typeof(groupInfo[grupo].groupId)) {
 
+							if (fEspecial == "Arcoíris") {
+								filterA.push(groupList[i]);
+								var s = filterA[filterA.length - 1].itemId;
+
+								if ( s.charAt(s.length - 1) == "s") {
+									s = s.slice(0,-1);
+								};
+
+								filterA[filterA.length - 1].itemId = s;
+							};
+
+							grupo++;
+						};
+
+					};
+						
+				} else {
+					break;
 				};
 
-
-				
-			} else {
-				break;
+			}
+			catch {
+				location.reload();
 			};
+
 			
 		};
 
@@ -591,7 +597,7 @@ function updateFilters() {
 	if (fRareza != "") {
 		fRareza=="common"?fRareza="Común":"";
 		fRareza=="rare"?fRareza="Raro":"";
-		fRareza=="epic"?fRareza="Ëpico":"";
+		fRareza=="epic"?fRareza="Épico":"";
 		fRareza=="legendary"?fRareza="Legendario":"";
 		fRareza=="event"?fRareza="Evento":"";
 
