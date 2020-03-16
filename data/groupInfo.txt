@@ -20,7 +20,7 @@
 	{"groupId":3319, "name":"Cinturón de cuerdas", "category":"Cinturones", "rarity":"Común", "note":"Costales"},
 	{"groupId":3320, "name":"Hombrera dragona", "category":"Abrigos", "rarity":"Épico", "note":"Costales"},
 	{"groupId":3354, "name":"Juliette", "category":"Cabello", "rarity":"Épico", "note":"Costales"},
-	{"groupId":4536, "name":"Ropa interior de pinchos;", "category":"Ropa interior", "rarity":"Común", "note":"Exploración"},
+	{"groupId":4536, "name":"Ropa interior de pinchos", "category":"Ropa interior", "rarity":"Común", "note":"Exploración"},
 	{"groupId":6770, "name":"Chibiusa", "category":"Cabello", "rarity":"Evento", "note":"San Valentín 2016 (FR)"},
 	{"groupId":6772, "name":"Top Sweetheart", "category":"Partes de arriba", "rarity":"Evento", "note":"San Valentín 2016 (FR)"},
 	{"groupId":6773, "name":"Pantalón Sweetheart", "category":"Pantalones", "rarity":"Evento", "note":"San Valentín 2016 (FR)"},
