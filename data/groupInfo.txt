@@ -62,7 +62,7 @@
 	{"groupId":8026, "name":"Short nublado", "category":"Pantalones", "rarity":"Legendario", "note":"Costales"},
 	{"groupId":8036, "name":"Guantes nublados", "category":"Guantes", "rarity":"Legendario", "note":"Costales"},
 	{"groupId":8086, "name":"Tehani", "category":"Cabello", "rarity":"Evento", "note":"Verano 2016"},
-	{"groupId":"8286s", "name":"Tehani", "category":"Cabello", "rarity":"Evento", "note":"Alquimia", "especial":"Arcoíris"},
+	{"groupId":"8086s", "name":"Tehani", "category":"Cabello", "rarity":"Evento", "note":"Alquimia", "especial":"Arcoíris"},
 	{"groupId":8128, "name":"Bronceado Salty Surfer", "category":"Pieles", "rarity":"Evento", "note":"Verano 2016"},
 	{"groupId":8129, "name":"Quemaduras Salty Surfer", "category":"Pieles", "rarity":"Evento", "note":"Verano 2016"},
 	{"groupId":8130, "name":"Traje de baño Salty Surfer", "category":"Ropa interior", "rarity":"Evento", "note":"Verano 2016"},
