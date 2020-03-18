@@ -330,7 +330,7 @@ function getItems() {
 	// Rareza
 	var itemRarity = document.createElement("div");
 
-	if (getNota == "Premio del mes") {
+	if (getNota.includes("Premio del mes")) {
 		itemRarity.setAttribute("class", "anim-marker");
 	} else {
 		switch (getRareza) {
