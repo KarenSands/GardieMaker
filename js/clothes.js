@@ -13,11 +13,10 @@ var imgurl;
 
 var groupInfo, groupList;
 var filterGroup = [];
-var filterInfoZ = [];
 var selectedPage = 1;
 var paginas, resto;
 
-var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNombre, getCategoria, getRareza, getGuardia, getNota;
+var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNombre, getCategoria, getRareza, getEspecial, getNota;
 
 var fGrupos, fCategorias, fEspecial, fRareza, fOrden, fName;
 //----------------------------------------------
@@ -355,24 +354,26 @@ function getItems() {
 	document.getElementsByClassName("img-container")[itemLooper].appendChild(itemRarity);
 
 	// Guardia
-	if (getGuardia != undefined) {
+	if (getEspecial != undefined) {
 
-		var itemGuardia = document.createElement("div");
-		switch (getGuardia) {
+		var itemEspecial = document.createElement("div");
+		switch (getEspecial) {
 			case "Brillante":
-				itemGuardia.setAttribute("class", "tooltip guard-gem guard-1");
+				itemEspecial.setAttribute("class", "tooltip guard-gem guard-1");
 				break;
 			case "Obsidiana":
-				itemGuardia.setAttribute("class", "tooltip guard-gem guard-2");
+				itemEspecial.setAttribute("class", "tooltip guard-gem guard-2");
 				break;
 			case "Absenta":
-				itemGuardia.setAttribute("class", "tooltip guard-gem guard-3");
+				itemEspecial.setAttribute("class", "tooltip guard-gem guard-3");
 				break;
 			case "Sombra":
-				itemGuardia.setAttribute("class", "tooltip guard-gem guard-4");
+				itemEspecial.setAttribute("class", "tooltip guard-gem guard-4");
 				break;
+			default:
+			break;
 		};
-		document.getElementsByClassName("img-container")[itemLooper].appendChild(itemGuardia);
+		document.getElementsByClassName("img-container")[itemLooper].appendChild(itemEspecial);
 	};
 
 	// Contenedor
@@ -428,7 +429,7 @@ function getInfo() {
 		getNombre = filtro[0].name;
 		getCategoria = filtro[0].category;
 		getRareza = filtro[0].rarity;
-		getGuardia = filtro[0].guard;
+		getEspecial = filtro[0].especial;
 		getNota = filtro[0].note;
 
 		switch (getCategoria) {
