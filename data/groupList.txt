@@ -1359,6 +1359,8 @@
 	{"itemId":8359, "groupId":8351, "itemURL":"e7edca7cb625b1ec3304ec953941f3e3.png"},
 	{"itemId":8360, "groupId":8351, "itemURL":"2b65aef3761a8e9769ed0f6dd0e5abca.png"},
 
+	{"itemId":8526, "groupId":8526, "itemURL":"c7a42f345f037cba49fbb383bbf752c3.png"},
+
 	{"itemId":8528, "groupId":8528, "itemURL":"71d56a117382d1a4f8347250640104f7.png"},
 	{"itemId":9307, "groupId":8528, "itemURL":"5196f2a8461f306d8ca1e29b6a5a7fe7.png"},
 	{"itemId":9308, "groupId":8528, "itemURL":"cf7e0ca9b830420c8a2372a14ba010e0.png"},

@@ -185,8 +185,6 @@ function selectPage(n) {
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
 	crearPagination();
 
-	
-
 };
 
 function hacerTruncation() {
@@ -511,6 +509,7 @@ function updateFilters() {
 
 			}
 			catch {
+				alert("Se produjo un error, la página se actualizará");
 				location.reload();
 			};
 
@@ -518,6 +517,7 @@ function updateFilters() {
 		};
 
 	} else if (fGrupos == "all") {
+
 		for (i = 0; i < groupList.length; i++) {
 			filterA.push(groupList[i]);
 
@@ -531,8 +531,6 @@ function updateFilters() {
 
 			};
 				
-				
-
 		};
 
 	};
@@ -543,23 +541,16 @@ function updateFilters() {
 
 		filtro = groupInfo.filter(function(v){return v.category == fCategorias});
 
-		for (b = 0; b < filtro.length;b++) {
-			getGrupo = filtro[b].groupId;
+		for (i = 0; i < filterA.length; i++) {
+			var currentGroup = filtro.filter(function(v){return v.groupId == filterA[i].groupId});
 
-			for (i = 0; i < filterA.length; i++) {
-				if (filterA[i].groupId == getGrupo) {
+			if (currentGroup.length != 0) {
+				if (filterA[i].groupId == currentGroup[0].groupId) {
 					filterB.push(filterA[i]);
 				};
+
 			};
 
-		};
-		
-		for (i = 0; i < filterA.length; i++) {
-			getGrupo = filterA[i].groupId;
-			
-			if (fCategorias == filterA[i].category) {
-				filterB.push(filterA[i]);
-			};
 		};
 
 	} else {
@@ -573,15 +564,17 @@ function updateFilters() {
 	// Guardias -----------------------------------------
 	// Pendiente
 	if (fEspecial != "") {
+
 		filtro = groupInfo.filter(function(v){return v.especial == fEspecial});
 
-		for (b = 0; b < filtro.length;b++) {
-			getGrupo = filtro[b].groupId;
+		for (i = 0; i < filterB.length; i++) {
+			var currentGroup = filtro.filter(function(v){return v.groupId == filterB[i].groupId});
 
-			for (i = 0; i < filterB.length; i++) {
-				if (filterB[i].groupId == getGrupo) {
+			if (currentGroup.length != 0) {
+				if (filterB[i].groupId == currentGroup[0].groupId) {
 					filterA.push(filterB[i]);
 				};
+
 			};
 
 		};
@@ -604,23 +597,16 @@ function updateFilters() {
 
 		filtro = groupInfo.filter(function(v){return v.rarity == fRareza});
 
-		for (b = 0; b < filtro.length;b++) {
-			getGrupo = filtro[b].groupId;
+		for (i = 0; i < filterA.length; i++) {
+			var currentGroup = filtro.filter(function(v){return v.groupId == filterA[i].groupId});
 
-			for (i = 0; i < filterA.length; i++) {
-				if (filterA[i].groupId == getGrupo) {
+			if (currentGroup.length != 0) {
+				if (filterA[i].groupId == currentGroup[0].groupId) {
 					filterB.push(filterA[i]);
 				};
+
 			};
 
-		};
-		
-		for (i = 0; i < filterA.length; i++) {
-			getGrupo = filterA[i].groupId;
-			
-			if (fCategorias == filterA[i].category) {
-				filterB.push(filterA[i]);
-			};
 		};
 
 	} else {
@@ -638,19 +624,15 @@ function updateFilters() {
 
 			var nombre = normalize(fName).toLowerCase();
 
-			for (grupo = 0; grupo < groupInfo.length; grupo++) {
-				var nLista = normalize(groupInfo[grupo].name).toLowerCase();
-				getGrupo = groupInfo[grupo].groupId;
+			filtro = groupInfo.filter(function(v){return (normalize(v.name).toLowerCase()).includes(nombre)});
 
-				for (i = 0; i < filterB.length; i++) {
-					if (filterB[i].groupId == getGrupo) {
-						if (nLista.includes(nombre)) {
-							filterA.push(filterB[i]);
-						} else {
-							break;
-						}
+			for (i = 0; i < filterB.length; i++) {
+				var currentGroup = filtro.filter(function(v){return v.groupId == filterB[i].groupId});
 
-					}
+				if (currentGroup.length != 0) {
+					if (filterB[i].groupId == currentGroup[0].groupId) {
+						filterA.push(filterB[i]);
+					};
 
 				};
 

@@ -42,7 +42,6 @@
 	{"groupId":6985, "name":"Explanada del Árbol torcido", "category":"Fondos", "rarity":"Raro", "note":"Exploración"},
 	{"groupId":6987, "name":"Camino rocoso", "category":"Fondos", "rarity":"Común", "note":"Exploración"},
 	{"groupId":6993, "name":"Guarida de los brezos", "category":"Fondos", "rarity":"Común", "note":"Exploración"},
-
 	{"groupId":7483, "name":"Judy", "category":"Cabello", "rarity":"Evento", "note":"Pascua 2016"},
 	{"groupId":"7483s", "name":"Judy", "category":"Cabello", "rarity":"Evento", "note":"Alquimia", "especial":"Arcoíris"},
 	{"groupId":7526, "name":"Body Chocolate Bunny", "category":"Ropa interior", "rarity":"Evento", "note":"Pascua 2016"},
@@ -85,6 +84,7 @@
 	{"groupId":8200, "name":"Flores cabeza Salty Surfer", "category":"Sombreros", "rarity":"Evento", "note":"Verano 2016"},
 	{"groupId":8210, "name":"Arena Salty Surfer", "category":"Ambientes", "rarity":"Evento", "note":"Verano 2016"},
 	{"groupId":8351, "name":"Brazalete pie Salty Surfer", "category":"Calcetines", "rarity":"Evento", "note":"Verano 2016"},
+	{"groupId":8526, "name":"Jaula de mariposas", "category":"Accesorios manos", "rarity":"Legendario", "note":"Premio del mes", "especial":"Premio"},
 	{"groupId":8528, "name":"Top Queen Spider", "category":"Ropa interior", "rarity":"Evento", "note":"Halloween 2016"},
 	{"groupId":8541, "name":"Body Blood-Cloaked Soldier", "category":"Ropa interior", "rarity":"Evento", "note":"Halloween 2016"},
 	{"groupId":8590, "name":"Alabarda Elven Armor", "category":"Accesorios manos", "rarity":"Legendario", "note":"Costales"},
