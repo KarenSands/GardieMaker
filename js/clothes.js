@@ -471,40 +471,67 @@ function updateFilters() {
 	filterGroup.length = 0;
 
 	// Grupo --------------------------------------------
-	
-	if (fGrupos == "first") {
 
-		filtro = groupInfo.filter(function(v){return typeof(v.groupId) !== "string"});
+	try {
+		if (fGrupos == "first") {
 
-		for (i = 0; i < filtro.length; i++) {
+			if (fEspecial == "Arcoíris") {
+				filtro = groupInfo.filter(function(v){return typeof(v.groupId) === "string"});
+			} else {
+				filtro = groupInfo.filter(function(v){return typeof(v.groupId) !== "string"});
+			};
 
-			for (b = 0; b < groupList.length; b++) {
-				if (filtro[i].groupId == groupList[b].groupId) {
-					filterA.push(groupList[b]);
+			for (i = 0; i < filtro.length; i++) {
+
+				for (b = 0; b < groupList.length; b++) {
+					if (filtro[i].groupId == groupList[b].groupId) {
+						filterA.push(groupList[b]);
+
+						var s = filterA[i].itemId;
+						if (typeof(s) === "string") {
+
+							if ( s.charAt(s.length - 1) == "s") {
+							s = s.slice(0,-1);
+							filterA[filterA.length - 1].itemId = s;
+							};
+
+						};
+
 					break;
-				};
-			};
 
-		};
-
-	} else if (fGrupos == "all") {
-
-		for (i = 0; i < groupList.length; i++) {
-			filterA.push(groupList[i]);
-
-			var s = filterA[i].itemId;
-			if (typeof(s) === "string") {
-
-				if ( s.charAt(s.length - 1) == "s") {
-					s = s.slice(0,-1);
-					filterA[filterA.length - 1].itemId = s;
+					};
 				};
 
 			};
+
+		} else if (fGrupos == "all") {
+
+			for (i = 0; i < groupList.length; i++) {
+				filterA.push(groupList[i]);
+
+				var s = filterA[i].itemId;
+				if (typeof(s) === "string") {
+
+					if ( s.charAt(s.length - 1) == "s") {
+						s = s.slice(0,-1);
+						filterA[filterA.length - 1].itemId = s;
+					};
+
+				};
 				
+			};
+
 		};
+
+
+	} catch {
+
+		alert("Se ha producido un error, la página se actualizará");
+		location.reload();
 
 	};
+
+	
 
 	// Categorías ---------------------------------------
 	
