@@ -471,49 +471,20 @@ function updateFilters() {
 	filterGroup.length = 0;
 
 	// Grupo --------------------------------------------
+	
 	if (fGrupos == "first") {
-		var grupo = 0
-		for (i = 0; i < groupList.length; i++) {
-			try {
 
-				if (grupo < groupInfo.length) {
+		filtro = groupInfo.filter(function(v){return typeof(v.groupId) !== "string"});
 
-					if (typeof(groupInfo[grupo].groupId) != "string") {
-						if (groupList[i].itemId == groupInfo[grupo].groupId) {
-							filterA.push(groupList[i]);
-							grupo++;
-						};
+		for (i = 0; i < filtro.length; i++) {
 
-					} else {
-						if (typeof(groupList[i].itemId) === typeof(groupInfo[grupo].groupId)) {
-
-							if (fEspecial == "Arcoíris") {
-								filterA.push(groupList[i]);
-								var s = filterA[filterA.length - 1].itemId;
-
-								if ( s.charAt(s.length - 1) == "s") {
-									s = s.slice(0,-1);
-								};
-
-								filterA[filterA.length - 1].itemId = s;
-							};
-
-							grupo++;
-						};
-
-					};
-						
-				} else {
+			for (b = 0; b < groupList.length; b++) {
+				if (filtro[i].groupId == groupList[b].groupId) {
+					filterA.push(groupList[b]);
 					break;
 				};
-
-			}
-			catch {
-				alert("Se produjo un error, la página se actualizará");
-				location.reload();
 			};
 
-			
 		};
 
 	} else if (fGrupos == "all") {
@@ -562,7 +533,7 @@ function updateFilters() {
 	filterA.length = 0;
 
 	// Guardias -----------------------------------------
-	// Pendiente
+
 	if (fEspecial != "") {
 
 		filtro = groupInfo.filter(function(v){return v.especial == fEspecial});
@@ -588,6 +559,7 @@ function updateFilters() {
 	filterB.length = 0;
 
 	// Rareza -------------------------------------------
+
 	if (fRareza != "") {
 		fRareza=="common"?fRareza="Común":"";
 		fRareza=="rare"?fRareza="Raro":"";
@@ -618,6 +590,7 @@ function updateFilters() {
 	filterA.length = 0;
 
 	// txt ----------------------------------------------
+
 	if (fName != "") {
 		if (isNaN(fName) ) {
 			// Buscar por Nombre
@@ -663,8 +636,8 @@ function updateFilters() {
 
 			};
 
-
 		// -----------------------------------------------------------
+
 		};
 		
 	} else {
@@ -673,10 +646,9 @@ function updateFilters() {
 			filterA.push(filterB[i]);
 		};
 
-	}
+	};
 
 	filterB.length = 0;
-
 
 	// Orden --------------------------------------------
 
@@ -685,10 +657,10 @@ function updateFilters() {
 
 	} else {
 
-	}
+	};
 
-	// Last ---------------------------------------------
-	// Pasar todo a filterGroup
+	// Pasar todo a filterGroup ---------------------------
+
 	for (i = 0; i < filterA.length; i++) {
 		filterGroup.push(filterA[i]);
 	};
@@ -724,6 +696,7 @@ var normalize = (function() {
 })();
 
 // ------------------------------------------------------
+
 function key() {
 
 	var input = document.getElementById("filter-itemName");
@@ -735,4 +708,4 @@ function key() {
 		};
 	});
 
-}
+};
