@@ -28,6 +28,7 @@ $(document).ready(function iniciaTodo() {
 
 	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupList.txt", function(dataList, success, xhr) {
 		groupList = JSON.parse(dataList);
+		$("#footer-links").html(groupList.length + " artículos disponibles.");
 		updateFilters();
 	});
 
