@@ -849,7 +849,7 @@
 	{"itemId":7074, "groupId":1062, "itemURL":"ac37d06b5f393bfc7bb54ef467a02d66.png"},
 	{"itemId":7075, "groupId":1062, "itemURL":"cf97d470d4181cbacc3fabf36b42174e.png"},
 
-	{"itemId":"7208s", "groupId":"1032s", "itemURL":"d1f921b85a24e63be38ccc59dbc3611e.png"},
+	{"itemId":7208, "groupId":1032, "itemURL":"d1f921b85a24e63be38ccc59dbc3611e.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":7253, "groupId":1637, "itemURL":"7d0a29b1f98c3e58df74c050e02a8816.png"},
 	{"itemId":7254, "groupId":1637, "itemURL":"d37f93d89985da8c1ab47effac32260d.png"},

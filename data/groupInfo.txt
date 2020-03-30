@@ -6,7 +6,6 @@
 	{"groupId":726, "name":"Eldarya, corto", "category":"Cabello", "rarity":"Común", "note":"Tienda"},
 	{"groupId":940, "name":"Lucia", "category":"Cabello", "rarity":"Raro", "note":"Exploración"},
 	{"groupId":1032, "name":"Effie", "category":"Cabello", "rarity":"Épico", "note":"Exploración"},
-	{"groupId":"1032s", "name":"Effie", "category":"Cabello", "rarity":"Épico", "note":"Alquimia", "especial":"Arcoíris"},
 	{"groupId":1062, "name":"Mimi", "category":"Cabello", "rarity":"Raro", "note":"Costales"},
 	{"groupId":1269, "name":"Pecas", "category":"Pieles", "rarity":"Común", "note":"Exploración"},
 	{"groupId":1279, "name":"Nan'vi", "category":"Pieles", "rarity":"Legendario", "note":"Exploración"},
