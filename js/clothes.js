@@ -28,7 +28,6 @@ $(document).ready(function iniciaTodo() {
 
 	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupList.txt", function(dataList, success, xhr) {
 		groupList = JSON.parse(dataList);
-		$("#footer-links").html(groupList.length + " artículos disponibles.");
 		updateFilters();
 	});
 
@@ -402,13 +401,26 @@ function getItems() {
 
 	getCodigo = filterGroup[item].itemId;
 	var itemEX = document.getElementsByClassName("marketplace-abstract marketplace-search-item")[itemLooper];
-	itemEX.setAttribute("data-itemid", getCodigo);
+	itemEX.setAttribute("data-groupid", getGrupo);
 
-	// Codigo
-	var itemCode = document.createElement("div");
-	itemCode.setAttribute("class", "code-info");
-	document.getElementsByClassName("abstract-code")[itemLooper].appendChild(itemCode);
-	document.getElementsByClassName("code-info")[itemLooper].innerHTML = 'COD. <span class="universalCode">' + getCodigo + '</span>';
+	if (typeof(getCodigo) === "string") {
+
+		// No mostrar código
+		var itemCode = document.createElement("div");
+		itemCode.setAttribute("class", "code-info");
+		document.getElementsByClassName("abstract-code")[itemLooper].appendChild(itemCode);
+
+	} else {
+		
+		itemEX.setAttribute("data-itemid", getCodigo);
+
+		// Codigo
+		var itemCode = document.createElement("div");
+		itemCode.setAttribute("class", "code-info");
+		document.getElementsByClassName("abstract-code")[itemLooper].appendChild(itemCode);
+		document.getElementsByClassName("code-info")[itemLooper].innerHTML = 'COD. <span class="universalCode">' + getCodigo + '</span>';
+		
+	};
 
 	// Nota
 	var itemNote = document.createElement("div");
@@ -427,9 +439,11 @@ function getInfo() {
 
 		getNombre = filtro[0].name;
 		getCategoria = filtro[0].category;
-		getRareza = filtro[0].rarity;
-		getEspecial = filtro[0].especial;
-		getNota = filtro[0].note;
+
+		(filterGroup[item].rarity == undefined)?(getRareza = filtro[0].rarity):(getRareza = filterGroup[item].rarity);
+		(filterGroup[item].note == undefined)?(getNota = filtro[0].note):(getNota = filterGroup[item].note);
+		(filterGroup[item].especial == undefined)?(getEspecial = filtro[0].especial):(getEspecial = filterGroup[item].especial);
+		
 
 		switch (getCategoria) {
 			case "Pieles":
@@ -474,36 +488,22 @@ function updateFilters() {
 	// Grupo --------------------------------------------
 
 	try {
+		if (fEspecial == "Arcoíris") {
+			fGrupos = "all";
+		}
+
 		if (fGrupos == "first") {
 
-			if (fEspecial == "Arcoíris") {
-				filtro = groupInfo.filter(function(v){return typeof(v.groupId) === "string"});
-			} else {
-				filtro = groupInfo.filter(function(v){return typeof(v.groupId) !== "string"});
-			};
+			//filtro = groupInfo;
 
-			for (i = 0; i < filtro.length; i++) {
-
+			for (i = 0; i < groupInfo.length; i++) {
 				for (b = 0; b < groupList.length; b++) {
-					if (filtro[i].groupId == groupList[b].groupId) {
+					if (groupInfo[i].groupId == groupList[b].groupId) {
 						filterA.push(groupList[b]);
-
-						var s = filterA[i].itemId;
-						if (typeof(s) === "string") {
-
-							if ( s.charAt(s.length - 1) == "s") {
-							s = s.slice(0,-1);
-							filterA[filterA.length - 1].itemId = s;
-							};
-
-						};
-
 					break;
-
 					};
 				};
-
-			};
+			};			
 
 		} else if (fGrupos == "all") {
 
@@ -560,23 +560,11 @@ function updateFilters() {
 	
 	filterA.length = 0;
 
-	// Guardias -----------------------------------------
+	// Especial -----------------------------------------
 
 	if (fEspecial != "") {
-
-		filtro = groupInfo.filter(function(v){return v.especial == fEspecial});
-
-		for (i = 0; i < filterB.length; i++) {
-			var currentGroup = filtro.filter(function(v){return v.groupId == filterB[i].groupId});
-
-			if (currentGroup.length != 0) {
-				if (filterB[i].groupId == currentGroup[0].groupId) {
-					filterA.push(filterB[i]);
-				};
-
-			};
-
-		};
+		
+		filterA = filterB.filter(function(v){return v.especial == fEspecial});
 
 	} else {
 		for (i = 0; i < filterB.length; i++) {
@@ -693,9 +681,10 @@ function updateFilters() {
 		filterGroup.push(filterA[i]);
 	};
 
+	$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
+
 	selectedPage = 1;
 	crearPagination();
-
 };
 
 
