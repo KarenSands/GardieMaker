@@ -255,9 +255,9 @@
 	{"itemId":2255, "groupId":2255, "itemURL":"bc5c62087b895bfd4feaa913d317d9e6.jpg"},
 
 	{"itemId":2619, "groupId":2619, "itemURL":"369f2f5d32ab9b5059b682b74d6fe185.png"},
-	{"itemId":2620, "groupId":2620, "itemURL":"76b54f8e87b8b4be2f8f3853c31da215.png"},
-	{"itemId":2621, "groupId":2621, "itemURL":"9f37cb4af53e9d2b9011873717e5ef45.png"},
-	{"itemId":2622, "groupId":2622, "itemURL":"52796309ce98c1dbe36f524ad5f85404.png"},
+	{"itemId":2620, "groupId":2620, "itemURL":"76b54f8e87b8b4be2f8f3853c31da215.png", "especial":"Obsidiana"},
+	{"itemId":2621, "groupId":2621, "itemURL":"9f37cb4af53e9d2b9011873717e5ef45.png", "especial":"Absenta"},
+	{"itemId":2622, "groupId":2622, "itemURL":"52796309ce98c1dbe36f524ad5f85404.png", "especial":"Sombra"},
 
 	{"itemId":2633, "groupId":2633, "itemURL":"7b2f58b6b56ed275299b9aeb144e2f78.png"},
 
@@ -889,7 +889,7 @@
 	{"itemId":7289, "groupId":1637, "itemURL":"e8e6d02bee60bcdff528b97502668107.png"},
 	{"itemId":7290, "groupId":1637, "itemURL":"e3da3a9d3835ef36f1f19d0eb8942319.png"},
 	{"itemId":7291, "groupId":1637, "itemURL":"a456936a813ef76b51ca2dc923082392.png"},
-	{"itemId":"7292s", "groupId":"1637s", "itemURL":"cd3c1f2857b46125035388df14c6e3cc.png"},
+	{"itemId":7292, "groupId":1637, "itemURL":"cd3c1f2857b46125035388df14c6e3cc.png", "note":"Alquimia", "especial":"Arcoíris"},
 	
 	{"itemId":7295, "groupId":323, "itemURL":"275a79aa57e331561f8d80f7e91c6f0f.png"},
 	{"itemId":7296, "groupId":323, "itemURL":"9a5e58279479c2d599cb469e7bdbe885.png"},
@@ -940,7 +940,7 @@
 	{"itemId":7522, "groupId":7483, "itemURL":"110159eb7afebc42113ca093adfb51e8.png"},
 	{"itemId":7523, "groupId":7483, "itemURL":"5f5901090f0a89b7f142e21c8b23d5b8.png"},
 	{"itemId":7524, "groupId":7483, "itemURL":"9524218e3b4fd728005f1ed974e86b37.png"},
-	{"itemId":"- - - -", "groupId":"7483s", "itemURL":"b7181cfd595bdc37990da97888ff5f2f.png"},
+	{"itemId":"--", "groupId":7483, "itemURL":"b7181cfd595bdc37990da97888ff5f2f.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":7526, "groupId":7526, "itemURL":"ad7972953494e557a9bc74919e72a561.png"},
 	{"itemId":7527, "groupId":7526, "itemURL":"c7628751e7e34346e53060cfa83fb43e.png"},
@@ -1085,7 +1085,7 @@
 	{"itemId":7674, "groupId":7635, "itemURL":"34d1e73cbad604f90fc90f1d73fef270.png"},
 	{"itemId":7675, "groupId":7635, "itemURL":"a5fa2c0482d7704a0b5c7a86c4235036.png"},
 	{"itemId":7676, "groupId":7635, "itemURL":"6d1cef3eadfbf0f067554901093168d8.png"},
-	{"itemId":"- - - -", "groupId":"7635s", "itemURL":"77c44131c242f28ee18a498323fd7d9a.png"},
+	{"itemId":"--", "groupId":7635, "itemURL":"77c44131c242f28ee18a498323fd7d9a.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":7678, "groupId":7678, "itemURL":"7370b1b98efc6f88baf234eb6dfff374.png"},
 	{"itemId":7679, "groupId":7678, "itemURL":"ef193fa7e1ec37d348de5a88b573d590.png"},
@@ -1481,7 +1481,7 @@
 	{"itemId":8517, "groupId":1637, "itemURL":"262a9699469664be1327b6232e8e7c8f.png"},
 	{"itemId":8518, "groupId":1637, "itemURL":"75796bcd84171137b147c040d8551f30.png"},
 
-	{"itemId":8526, "groupId":8526, "itemURL":"c7a42f345f037cba49fbb383bbf752c3.png"},
+	{"itemId":8526, "groupId":8526, "itemURL":"c7a42f345f037cba49fbb383bbf752c3.png", "especial":"Premio"},
 	{"itemId":8527, "groupId":8527, "itemURL":"ac125edd40f5da2ef277bc0cad688237.png"},
 	{"itemId":8528, "groupId":8528, "itemURL":"71d56a117382d1a4f8347250640104f7.png"},
 
@@ -1866,11 +1866,11 @@
 	{"itemId":9346, "groupId":8530, "itemURL":"79627afe2d1caae3982951fcfdac9cce.png"},
 	{"itemId":9347, "groupId":8530, "itemURL":"3e7e5f900d532b6c9e81d526539a6897.png"},
 
-	{"itemId":10462, "groupId":10462, "itemURL":"106aba75f05074e86fb0d655bdf470f0.png"},
+	{"itemId":10462, "groupId":10462, "itemURL":"106aba75f05074e86fb0d655bdf470f0.png", "especial":"Premio"},
 
-	{"itemId":11845, "groupId":11845, "itemURL":"dd3c6a7db0f4cd03222cde38016f9afc.png"},
+	{"itemId":11845, "groupId":11845, "itemURL":"dd3c6a7db0f4cd03222cde38016f9afc.png", "especial":"Premio"},
 
-	{"itemId":12290, "groupId":12290, "itemURL":"e8c863b3994b29fc27baf1706178eb36.png"},
+	{"itemId":12290, "groupId":12290, "itemURL":"e8c863b3994b29fc27baf1706178eb36.png", "especial":"Premio"},
 
 	{"itemId":12483, "groupId":12483, "itemURL":"84512df27f9eaf0a5722d52b6f765750.png"},
 	{"itemId":12484, "groupId":12483, "itemURL":"3a55f8cfb5fb03b0d42ea51a35f04de4.png"},
@@ -1942,7 +1942,7 @@
 	{"itemId":12623, "groupId":12623, "itemURL":"be194cab65d3f7cf082e6e960973865a.png"},
 	{"itemId":12624, "groupId":12624, "itemURL":"dcdd81248a286a662a0ee6d96eefd27f.png"},
 
-	{"itemId":12629, "groupId":12629, "itemURL":"7dedf0f47e052c069a89cfef41bab563.png"},
+	{"itemId":12629, "groupId":12629, "itemURL":"7dedf0f47e052c069a89cfef41bab563.png", "especial":"Premio"},
 
 	{"itemId":12765, "groupId":12596, "itemURL":"afc6b2cf83280b702d1613350a65589e.png"},
 	{"itemId":12766, "groupId":12596, "itemURL":"26038d35e5199d681dc61cffe1043a3a.png"},
@@ -2034,10 +2034,10 @@
 	{"itemId":12862, "groupId":12607, "itemURL":"b36c8da3a454fe22cc0637465996c27e.png"},
 	{"itemId":12863, "groupId":12607, "itemURL":"294784ec06ec66af232dd87eda1ab072.png"},
 
-	{"itemId":13161, "groupId":13161, "itemURL":"f5049dd8f089a4b6c697625f570a440f.png"},
-	{"itemId":13162, "groupId":13162, "itemURL":"17ae304f7f4e96f373ee82c0086220a4.png"},
+	{"itemId":13161, "groupId":13161, "itemURL":"f5049dd8f089a4b6c697625f570a440f.png", "especial":"Premio"},
+	{"itemId":13162, "groupId":13162, "itemURL":"17ae304f7f4e96f373ee82c0086220a4.png", "especial":"Premio"},
 
-	{"itemId":13818, "groupId":13818, "itemURL":"652e690992535a59f38ba431ebaab3bb.png"},
+	{"itemId":13818, "groupId":13818, "itemURL":"652e690992535a59f38ba431ebaab3bb.png", "especial":"Premio"},
 	{"itemId":13819, "groupId":13819, "itemURL":"c73c5f56cb033b36737d3259f95b5b46.png"},
 
 	{"itemId":13821, "groupId":13821, "itemURL":"cae3168aeda8c95befdbb376933a3290.png"},
@@ -2151,13 +2151,13 @@
 	{"itemId":14036, "groupId":13819, "itemURL":"c2af4b5d500fdb04d17dc7f10620642c.png"},
 	{"itemId":14037, "groupId":13825, "itemURL":"7a9d6fee7af72fc67c3cd9f534df32a6.png"},
 	{"itemId":14038, "groupId":13825, "itemURL":"ece2a34b63773360dce29cb9b11b67c9.png"},
-	{"itemId":"- - - -", "groupId":"13819s", "itemURL":"1a3f5714a9894235839320c2e8cc49d3.png"},
+	{"itemId":"---", "groupId":13819, "itemURL":"1a3f5714a9894235839320c2e8cc49d3.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":14043, "groupId":13821, "itemURL":"8eaa96ff9c60b8ddd18799d861866c10.png"},
 	{"itemId":14044, "groupId":13821, "itemURL":"eb5107cd93991e2c98b3c7b48ecfa716.png"},
 
-	{"itemId":14049, "groupId":14049, "itemURL":"d33c902bc3eb6e8afc0afc1174480ed4.png"},
-	{"itemId":"14050s", "groupId":"8086s", "itemURL":"1a6a16fd3f00eba5f6147315ffcf495e.png"},
+	{"itemId":14049, "groupId":14049, "itemURL":"d33c902bc3eb6e8afc0afc1174480ed4.png", "especial":"Premio"},
+	{"itemId":14050, "groupId":8086, "itemURL":"1a6a16fd3f00eba5f6147315ffcf495e.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":14184, "groupId":14184, "itemURL":"ba020b53ff8f63de3a4ba7ce7df4d1d3.png"},
 	{"itemId":14185, "groupId":14184, "itemURL":"6ec4fe6c385346fc2a09e4eb416f8cff.png"},
@@ -2184,8 +2184,8 @@
 	{"itemId":14206, "groupId":14196, "itemURL":"372eba00b64901ad21afebd4b879e21e.png"},
 	{"itemId":14207, "groupId":14196, "itemURL":"ee812fcd02494b493f3c3ccb1da06ce5.png"},
 
-	{"itemId":14214, "groupId":14214, "itemURL":"ff7e710a7092d1f0bf815ef8b067357d.png"},
-	{"itemId":14215, "groupId":14215, "itemURL":"de78a6863dec2ce69c084fa6258ad778.png"},
+	{"itemId":14214, "groupId":14214, "itemURL":"ff7e710a7092d1f0bf815ef8b067357d.png", "especial":"Premio"},
+	{"itemId":14215, "groupId":14215, "itemURL":"de78a6863dec2ce69c084fa6258ad778.png", "especial":"Premio"},
 
 	{"itemId":14237, "groupId":14237, "itemURL":"e0c02bb8259f0ed725270fafbc0f59c5.png"},
 
@@ -2223,24 +2223,24 @@
 	{"itemId":15212, "groupId":14284, "itemURL":"287e495f0a2b667f276feee85bd3372f.png"},
 	{"itemId":15213, "groupId":14284, "itemURL":"ae054e7769e57a5f8167951414f0a45a.png"},
 
-	{"itemId":15307, "groupId":15307, "itemURL":"21e93d6b61059e77b1bcc0b0545138cb.png"},
+	{"itemId":15307, "groupId":15307, "itemURL":"21e93d6b61059e77b1bcc0b0545138cb.png", "especial":"Premio"},
 
 	{"itemId":15311, "groupId":15311, "itemURL":"fe6e7fa5d3c5153ea51c24fb15771735.jpg"},
 
-	{"itemId":16195, "groupId":16195, "itemURL":"56d6e29af137aec91c6b67a6f41aea52.png"},
+	{"itemId":16195, "groupId":16195, "itemURL":"56d6e29af137aec91c6b67a6f41aea52.png", "especial":"Premio"},
 	
-	{"itemId":16232, "groupId":16232, "itemURL":"3454ebd8de424c513ad6d87ed181c17d.png"},
+	{"itemId":16232, "groupId":16232, "itemURL":"3454ebd8de424c513ad6d87ed181c17d.png", "especial":"Premio"},
 
-	{"itemId":16724, "groupId":16724, "itemURL":"a0f372c4083a495e7bef6ad2cdb90b2e.png"},
+	{"itemId":16724, "groupId":16724, "itemURL":"a0f372c4083a495e7bef6ad2cdb90b2e.png", "especial":"Premio"},
 	
-	{"itemId":17424, "groupId":17424, "itemURL":"aefca343c792ceb25219f98abc59ca77.png"},
+	{"itemId":17424, "groupId":17424, "itemURL":"aefca343c792ceb25219f98abc59ca77.png", "especial":"Premio"},
 
-	{"itemId":17804, "groupId":17804, "itemURL":"2ab2869275b153d554b120866b1d3f03.png"},
+	{"itemId":17804, "groupId":17804, "itemURL":"2ab2869275b153d554b120866b1d3f03.png", "especial":"Premio"},
 
-	{"itemId":17806, "groupId":17806, "itemURL":"d742d969b318b5bde43d40a31628e239.png"},
-	{"itemId":17807, "groupId":17807, "itemURL":"51bc5b9bd2a09e7c065de78b9690061f.png"},
+	{"itemId":17806, "groupId":17806, "itemURL":"d742d969b318b5bde43d40a31628e239.png", "especial":"Premio"},
+	{"itemId":17807, "groupId":17807, "itemURL":"51bc5b9bd2a09e7c065de78b9690061f.png", "especial":"Premio"},
 
-	{"itemId":18550, "groupId":18550, "itemURL":"4978f50f2a03808381830e5a7edb8635.png"},
+	{"itemId":18550, "groupId":18550, "itemURL":"4978f50f2a03808381830e5a7edb8635.png", "especial":"Premio"},
 
 	{"itemId":18740, "groupId":18740, "itemURL":"a11a80969eae42d913fb8d94ee446656.jpg"},
 
@@ -2300,7 +2300,7 @@
 	{"itemId":19225, "groupId":19214, "itemURL":"79d4a065e1378d813e26ef44626b5dc0.png"},
 
 	{"itemId":19342, "groupId":19342, "itemURL":"356651aa615bf0e17324a50e5244caf5.jpg"},
-	{"itemId":19343, "groupId":19343, "itemURL":"e45a271f986f7b9c0bf4eb5b0876260a.png"},
+	{"itemId":19343, "groupId":19343, "itemURL":"e45a271f986f7b9c0bf4eb5b0876260a.png", "especial":"Premio"},
 
 	{"itemId":19353, "groupId":19353, "itemURL":"f09cc9b21a0cf86b553ede2973ba1e8e.jpg"},
 
@@ -2446,7 +2446,7 @@
 	{"itemId":20109, "groupId":19915, "itemURL":"79ea456a8045143f3938a6d1c6ec6a29.png"},
 	{"itemId":20110, "groupId":19915, "itemURL":"a3d75a1bc773a942098b155dfe9aeb1c.png"},
 	{"itemId":20111, "groupId":19915, "itemURL":"46967dc4469cdd6abfee7cb95f44ceaf.png"},
-	{"itemId":20112, "groupId":20112, "itemURL":"18103d91e6431064c91ed11ceb06772d.png"},
+	{"itemId":20112, "groupId":20112, "itemURL":"18103d91e6431064c91ed11ceb06772d.png", "especial":"Premio"},
 
 	{"itemId":20117, "groupId":20117, "itemURL":"7fad015d9ef8645490d735a61bd42a41.png"},
 	{"itemId":20118, "groupId":20117, "itemURL":"eedf9174aa6b8459479d6f869caa3f8d.png"},
@@ -2791,7 +2791,7 @@
 	{"itemId":20607, "groupId":20332, "itemURL":"9f7ee90370c666563564b59dc8a25d00.png"},
 	{"itemId":20608, "groupId":20332, "itemURL":"cd815aea65a47188b1286e93d5196297.png"},
 	{"itemId":20609, "groupId":20332, "itemURL":"5b881298b5dd4f0c4b4a666e7ae49c9a.png"},
-	{"itemId":20610, "groupId":20610, "itemURL":"510f37dd35a17cb9659ce91b0b566eb1.png"},
+	{"itemId":20610, "groupId":20610, "itemURL":"510f37dd35a17cb9659ce91b0b566eb1.png", "especial":"Premio"},
 	{"itemId":20611, "groupId":20332, "itemURL":"dcc0ab46b7131efe5be8140e4c73c6e5.png"},
 	{"itemId":20612, "groupId":20330, "itemURL":"deca9dba0ce985db3f139695e3e2b353.png"},
 	{"itemId":20613, "groupId":20329, "itemURL":"7d060a93cfb3d3ceb97e9873f9743fdd.png"},
@@ -2839,21 +2839,21 @@
 	{"itemId":20655, "groupId":20328, "itemURL":"44b8e455e0797a8428f1ad45de019358.png"},
 	{"itemId":20656, "groupId":20328, "itemURL":"77b0ec571fb563799d66f8a2a85523ca.png"},
 	
-	{"itemId":20699, "groupId":20699, "itemURL":"c798961969aaa64b1428f01bc4236f96.png"},
+	{"itemId":20699, "groupId":20699, "itemURL":"c798961969aaa64b1428f01bc4236f96.png", "especial":"Premio"},
 		
-	{"itemId":20702, "groupId":20702, "itemURL":"3210375447c5b68ef5df2a9ff78e2498.png"},
+	{"itemId":20702, "groupId":20702, "itemURL":"3210375447c5b68ef5df2a9ff78e2498.png", "especial":"Premio"},
 
 
-	{"itemId":21529, "groupId":21529, "itemURL":"64d6466f2c79d76a43aa7b2257d27ac7.png"},
+	{"itemId":21529, "groupId":21529, "itemURL":"64d6466f2c79d76a43aa7b2257d27ac7.png", "especial":"Premio"},
 
-	{"itemId":21771, "groupId":21771, "itemURL":"dd8c327c623e5127ea67bb556e807b37.png"},
-	{"itemId":21772, "groupId":21772, "itemURL":"542104e7964191dab0fc775d2d92f118.png"},
+	{"itemId":21771, "groupId":21771, "itemURL":"dd8c327c623e5127ea67bb556e807b37.png", "especial":"Premio"},
+	{"itemId":21772, "groupId":21772, "itemURL":"542104e7964191dab0fc775d2d92f118.png", "especial":"Premio"},
 	
-	{"itemId":22030, "groupId":22030, "itemURL":"2fd8e45ad3451203143b0ef677b362cc.png"},
+	{"itemId":22030, "groupId":22030, "itemURL":"2fd8e45ad3451203143b0ef677b362cc.png", "especial":"Premio"},
 	
-	{"itemId":22399, "groupId":22399, "itemURL":"8e01c244d131608932203f110c34ba73.png"},
+	{"itemId":22399, "groupId":22399, "itemURL":"8e01c244d131608932203f110c34ba73.png", "especial":"Premio"},
 
-	{"itemId":22779, "groupId":22779, "itemURL":"6565298688b72573e336ed32cdc123d0.png"},
+	{"itemId":22779, "groupId":22779, "itemURL":"6565298688b72573e336ed32cdc123d0.png", "especial":"Premio"},
 
 	{"itemId":22883, "groupId":22883, "itemURL":"32e95b0d472bff9173b090ba1c232660.png"},
 	{"itemId":22884, "groupId":22883, "itemURL":"104449b12b86be86a02d90bd37a0c6fd.png"},
