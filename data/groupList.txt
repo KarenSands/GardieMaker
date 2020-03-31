@@ -2820,8 +2820,8 @@
 
 	{"itemId":14214, "groupId":14214, "itemURL":"ff7e710a7092d1f0bf815ef8b067357d.png", "especial":"Premio"},
 	{"itemId":14215, "groupId":14215, "itemURL":"de78a6863dec2ce69c084fa6258ad778.png", "especial":"Premio"},
-	{"itemId":14216, "groupId":14216, "itemURL""e6c9d725437b3f68aa7ee746aac199ac.jpg"},
-	{"itemId":14217, "groupId":14217, "itemURL""df5f3b3f8fcf85fb7b4355fa63ae299f.jpg"},
+	{"itemId":14216, "groupId":14216, "itemURL":"e6c9d725437b3f68aa7ee746aac199ac.jpg"},
+	{"itemId":14217, "groupId":14217, "itemURL":"df5f3b3f8fcf85fb7b4355fa63ae299f.jpg"},
 
 	{"itemId":14237, "groupId":14237, "itemURL":"e0c02bb8259f0ed725270fafbc0f59c5.png"},
 
