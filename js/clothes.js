@@ -112,22 +112,10 @@ function cargarCanvas(n) {
 	};
 }
 
-function limpiarCanvas(){
-
-	document.getElementById("marketplace-avatar-background-preview").removeAttribute("style");
-	var cleaner = document.getElementsByTagName("canvas");
-
-	for (i = 0; i < cleaner.length; i++) {
-		$("canvas")[i].remove();
-		
-	};
-
-
-	// Si hay algo fijado en array, cargarlo
-	if (customArray.length != 0) {
+function cargarArray(i) {
 		var img, img2;
 
-		for (i = 0; i < customArray.length; i++) {
+		
 			//Es necesario saber si hay un fondo 
 			var buscaMain = groupList.filter(function(v){return v.itemId == customArray[i]});
 			var filtro = groupInfo.filter(function(v){return v.groupId == buscaMain[0].groupId});
@@ -161,7 +149,30 @@ function limpiarCanvas(){
 				img2.src = img;
 
 			};
-		};
+
+	if (i < customArray.length - 1) {
+		i++
+		cargarArray(i);
+	}
+
+}
+
+
+function limpiarCanvas(){
+
+	document.getElementById("marketplace-avatar-background-preview").removeAttribute("style");
+	var cleaner = document.getElementsByTagName("canvas");
+
+	for (i = 0; i < cleaner.length; i++) {
+		$("canvas")[i].remove();
+		
+	};
+
+
+	// Si hay algo fijado en array, cargarlo
+	if (customArray.length != 0) {
+			cargarArray(0);
+
 	} else {
 		var canvas = document.createElement("canvas");
 		canvas.setAttribute("width", "420");
