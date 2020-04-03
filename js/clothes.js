@@ -16,9 +16,12 @@ var filterGroup = [];
 var selectedPage = 1;
 var paginas, resto;
 
+// Variables para cargar items
 var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNombre, getCategoria, getRareza, getEspecial, getNota;
-
+//Variables para filtros
 var fGrupos, fCategorias, fEspecial, fRareza, fOrden, fName;
+// Variables para fijar items
+var customArray = [], selectedCode;
 //----------------------------------------------
 
 $(document).ready(function iniciaTodo() {
@@ -29,24 +32,63 @@ $(document).ready(function iniciaTodo() {
 	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupList.txt", function(dataList, success, xhr) {
 		groupList = JSON.parse(dataList);
 		updateFilters();
+		getCustom();
 	});
 
 });
 
-function limpiarCanvas(){
-	
-		document.getElementById("marketplace-avatar-background-preview").removeAttribute("style");
+function getCustom() {
+	var str = window.location.search;
+	if (str != "") {
+		str = str.slice(3);
+		customArray = str.split("&");
+		selectLoad ();
+	};
+};
 
-		$("canvas")[0].remove();
-		var canvas = document.createElement("canvas");
-		canvas.setAttribute("width", "420");
-		canvas.setAttribute("height", "594");
-		document.getElementById("marketplace-avatar-preview").appendChild(canvas);
+function selectLoad() {
+	// Selecciona los items cuyos id coincidan con los de customArray
+
+	// Carga los items de customArray en canvas
+	for (i = 0; i < customArray.length; i++) {
+		searchtoSelect(customArray[i]);
+	};
+
+	limpiarCanvas();
+};
+
+
+function searchtoSelect(code) {
+	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
+	
+	for (i = 0; i < lista.length; i++) {
+		var busca = lista[i].getAttribute("data-itemid");
+
+		if (busca == code) {
+			busca = lista[i].getAttribute("class");
+			
+			if (busca.includes("selected")) {
+				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
+				document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
+				selectedCode = "";
+				//limpiarCanvas();
+
+			} else {
+				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item selected");
+				document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
+				cargarCanvas(i);
+
+			};
+
+		} else {
+			lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
+		};
+
+	};
 
 };
 
-function selectItem(n) {
-	limpiarCanvas();
+function cargarCanvas(n) {
 
 	var img = document.getElementsByClassName("abstract-icon")[n].getAttribute("src");
 	var newimg = img.replace("icon/", URL_FULL);
@@ -54,19 +96,90 @@ function selectItem(n) {
 
 	if (tipo == "Fondos") {
 		document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + newimg + "')";
-
+		//
 	} else {
 
 		var canvas = document.getElementsByTagName("canvas");
-		var ctx = canvas[0].getContext("2d");
+		var ctx = canvas[canvas.length-1].getContext("2d");
 
 		img = new Image();
+
 		img.onload = function() {
 			ctx.drawImage(img, 0, 0);
 		};
 
 		img.src = newimg;
 	};
+}
+
+function limpiarCanvas(){
+
+	document.getElementById("marketplace-avatar-background-preview").removeAttribute("style");
+	var cleaner = document.getElementsByTagName("canvas");
+
+	for (i = 0; i < cleaner.length; i++) {
+		$("canvas")[i].remove();
+		
+	};
+
+
+	// Si hay algo fijado en array, cargarlo
+	if (customArray.length != 0) {
+		var img, img2;
+
+		for (i = 0; i < customArray.length; i++) {
+			//Es necesario saber si hay un fondo 
+			var buscaMain = groupList.filter(function(v){return v.itemId == customArray[i]});
+			var filtro = groupInfo.filter(function(v){return v.groupId == buscaMain[0].groupId});
+
+			switch (filtro[0].category) {
+				case "Fondos": img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL; break;
+				case "Pieles": img = URL_SRC + URL_SKIN + URL_FULL + buscaMain[0].itemURL; break;
+				case "Bocas": img = URL_SRC + URL_MOUTH + URL_FULL + buscaMain[0].itemURL; break;
+				case "Ojos": img = URL_SRC + URL_EYES + URL_FULL + buscaMain[0].itemURL; break;
+				case "Cabello": img = URL_SRC + URL_HAIR + URL_FULL + buscaMain[0].itemURL; break;
+				default: img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL;
+			};
+
+			if (filtro[0].category == "Fondos") {
+				document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + img + "')";
+			} else {
+
+				var canvas = document.createElement("canvas");
+				canvas.setAttribute("width", "420");
+				canvas.setAttribute("height", "594");
+				document.getElementById("marketplace-avatar-preview").appendChild(canvas);
+
+				canvas = document.getElementsByTagName("canvas");
+				var ctx = canvas[i].getContext("2d");
+
+				img2 = new Image();
+				img2.onload = function() {
+					ctx.drawImage(img2, 0, 0);
+				};
+
+				img2.src = img;
+
+			};
+		};
+	} else {
+		var canvas = document.createElement("canvas");
+		canvas.setAttribute("width", "420");
+		canvas.setAttribute("height", "594");
+		document.getElementById("marketplace-avatar-preview").appendChild(canvas);
+	}
+	
+		
+};
+
+function selectItem(n) {
+	limpiarCanvas();
+
+	var addselect = document.getElementsByClassName("marketplace-abstract marketplace-search-item")[n];
+	selectedCode = addselect.getAttribute("data-itemid");
+
+	searchtoSelect(selectedCode);
+
 };
 
 function crearPagination() {
@@ -311,6 +424,7 @@ function cargaItems(pagsel) {
 
 	};
 
+	searchtoSelect(selectedCode);
 };
 
 function getItems() {
@@ -404,6 +518,8 @@ function getItems() {
 	itemEX.setAttribute("data-groupid", getGrupo);
 
 	if (typeof(getCodigo) === "string") {
+
+		itemEX.setAttribute("data-itemid", undefined);
 
 		// No mostrar código
 		var itemCode = document.createElement("div");

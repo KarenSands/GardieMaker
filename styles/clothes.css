@@ -227,6 +227,61 @@ body a{
 	top: -90px;
 	pointer-events: none;
 }
+/* start------------------------------------ */
+
+canvas {
+	position: absolute;
+}
+
+#marketplace-itemDetail {
+	position: absolute;
+	top: 500px;
+	right: 0;
+	width: 325px;
+	height: 80px;
+	text-align: center;
+}
+
+.marketplace-itemDetail-cont, .marketplace-itemDetail-cont2 {
+	margin: 0 0 0 10px;
+	width: 140px;
+	display: inline-block;
+	font-family: Rubik, cursive;
+	font-size: 16px;
+	color: rgb(552, 56, 111);
+	float: left;
+	padding-top: 10px;
+}
+.marketplace-itemDetail-cont2 {	
+	width: 90% !important;
+}
+
+.button {
+	background-color: #2293fb;
+	border: 2px solid #2293fb;
+	border-radius: 25px;
+	font-family: Rubik, cursive;
+	font-size: 14px;
+	color: #fff;
+	padding: 4px 8px;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 100%;
+
+	-webkit-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+	-moz-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+	-ms-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+	-o-transition: background-color 0.3s ease-in, color 0.3s ease-in;
+	transition: background-color 0.3s ease-in, color 0.3s ease-in;
+	margin: 0 5px;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #2293fb;
+}
+
+/* end------------------------------------ */
 
 .marketplace-abstract{
 	width: 427px;

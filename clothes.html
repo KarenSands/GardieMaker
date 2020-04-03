@@ -28,7 +28,7 @@
 <!-- header -->
 	<div id="header">
 		<div id="header-in">
-			<a id="logo" title="Eldarya Clothing" href="/">
+			<a id="logo" title="Eldarya Clothing" href="/es/clothes">
 			<h1>Eldarya Clothing</h1>
 			</a>
 		</div>
@@ -36,14 +36,19 @@
 			<div id="header-top-in">
 				<ul id="header-menu">
 					<li>
-						<a href="">TIENDA</a>
-					</li>
-					<li>
-						<a href="">VESTIDOR</a>
-					</li>
-					<li>
 						<a href="">BLOG</a>
 					</li>
+					<li>
+						<a href="">GUIA</a>
+					</li>
+					<li>
+						<a href="">APORTES</a>
+					</li>
+					
+					<li>
+						<a href="">AYUDA</a>
+					</li>
+
 				</ul>
 			</div>
 		</div>
@@ -127,6 +132,31 @@
 							<div id="marketplace-avatar-preview">
 								<canvas width="420" height="594"></canvas>
 							</div>
+
+
+
+							<!-------- NUEVO -------->
+
+							<div id="marketplace-itemDetail" style="display:none" data-itemid="">
+								<div class="marketplace-itemDetail-cont">
+									<div class="button marketplace-itemDetail-opt" onclick="doMove('prev');">RETRASAR</div>
+								</div>
+								<div class="marketplace-itemDetail-cont">
+									<div class="button marketplace-itemDetail-opt" onclick="doMove('next');">AVANZAR</div>
+								</div>
+								<div class="marketplace-itemDetail-cont2">
+									<div class="button marketplace-itemDetail-set" onclick="doSet()">FIJAR</div>
+								</div>
+
+							</div>
+
+							<!----------------------->
+
+
+
+
+
+
 						</div>
 						<ul id="marketplace-search-items">
 							<!-- Lista con todos los artículos -->
@@ -165,51 +195,3 @@
 
 </body>
 </html>
-
-
-<!-- <li> original
-								<li class="marketplace-abstract marketplace-search-item" data-itemid="####">
-								
-**								Icon
-								<img class="abstract-icon" src="https://www.eldarya.es/static/img/player/hair/icon/abbfa1d6058b52c5357734b3f18ac519.png">
-								<div class="rarity-marker-event"></div>
-								<div class="anim-marker"></div>
-								<div class="tooltip guard-gem guard-2"></div>
-								<div class="abstract-container">
-**									Title
-									<div class="abstract-name">Wendy</div>
-**									Content
-									<div class="abstract-content">
-										<div class="abstract-type">Cabello</div>
-										<div class="abstract-code">
-**											Pendiente / DEFINIR
-											<div class="code-info">
-												COD. 
-												<span class="universalCode">20117</span>
-											</div>
-										</div>
-									</div>
-									<div class="abstract-note">Navidad 2020</div>
-								</div>
-							</li>
-
-
--->
-<!-- <div class="pagination"> original
-
-						<div class="pagination">
-							<a class="page selected" rel="1">1</a>
-							<a class="page" rel="2">2</a>
-							<a class="page" rel="3">3</a>
-							<a class="page" rel="4">4</a>
-							<a class="page" rel="5">5</a>
-							<a class="page" rel="6">6</a>
-							<a class="page" rel="8">7</a>
-							<a class="page" rel="9">8</a>
-							<a class="page" rel="9">9</a>
-							<span class="truncation">...</span>
-							<a class="page" rel="9">19</a>
-							<a class="page" rel="9">20</a>
-						</div>
-
--->
