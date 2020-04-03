@@ -47,7 +47,6 @@ function getCustom() {
 };
 
 function selectLoad() {
-	// Selecciona los items cuyos id coincidan con los de customArray
 
 	// Carga los items de customArray en canvas
 	for (i = 0; i < customArray.length; i++) {
@@ -75,7 +74,10 @@ function searchtoSelect(code) {
 
 			} else {
 				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item selected");
-				document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
+
+				if (lista[i].getAttribute("data-itemid") != "undefined") {
+					document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
+				} 
 				cargarCanvas(i);
 
 			};
@@ -98,7 +100,12 @@ function cargarCanvas(n) {
 		document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + newimg + "')";
 		//
 	} else {
-
+//*------------------
+		var canvas = document.createElement("canvas");
+		canvas.setAttribute("width", "420");
+		canvas.setAttribute("height", "594");
+		document.getElementById("marketplace-avatar-preview").appendChild(canvas);
+//-----------------*/
 		var canvas = document.getElementsByTagName("canvas");
 		var ctx = canvas[canvas.length-1].getContext("2d");
 
@@ -161,25 +168,19 @@ function cargarArray(i) {
 function limpiarCanvas(){
 
 	document.getElementById("marketplace-avatar-background-preview").removeAttribute("style");
-	var cleaner = document.getElementsByTagName("canvas");
+	var child = document.getElementsByTagName("canvas");
+	var parent = document.getElementById("marketplace-avatar-preview");
 
-	for (i = 0; i < cleaner.length; i++) {
-		$("canvas")[i].remove();
+	for (i = child.length-1; i >= 0; i--) {
+		parent.removeChild(child[i]);
 		
 	};
-
 
 	// Si hay algo fijado en array, cargarlo
 	if (customArray.length != 0) {
 			cargarArray(0);
 
-	} else {
-		var canvas = document.createElement("canvas");
-		canvas.setAttribute("width", "420");
-		canvas.setAttribute("height", "594");
-		document.getElementById("marketplace-avatar-preview").appendChild(canvas);
-	}
-	
+	};
 		
 };
 
@@ -192,6 +193,23 @@ function selectItem(n) {
 	searchtoSelect(selectedCode);
 
 };
+
+function doSet(code) {
+	customArray.push(code);
+
+	var str = "?s=";
+
+	for (i = 0; i < customArray.length; i++) {
+
+		(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
+
+	};
+	
+	window.location.search = str;
+
+};
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 function crearPagination() {
 
@@ -288,8 +306,6 @@ function crearPagination() {
 		};
 	};
 };
-
-	/////////////////////////////////////////////////////////////////////////////////////
 	
 function limpiaElementos() {
 	var itemsVisibles = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
@@ -303,7 +319,6 @@ function limpiaElementos() {
 	};
 };
 
-// PENDIENTE
 function selectPage(n) {
 
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
