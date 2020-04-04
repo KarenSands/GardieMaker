@@ -21,7 +21,7 @@ var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNo
 //Variables para filtros
 var fGrupos, fCategorias, fEspecial, fRareza, fOrden, fName;
 // Variables para fijar items
-var customArray = [], selectedCode;
+var customArray = [], selectedCode, unset, hijo;
 //----------------------------------------------
 
 $(document).ready(function iniciaTodo() {
@@ -49,8 +49,8 @@ function getCustom() {
 function selectLoad() {
 
 	// Carga los items de customArray en canvas
-	for (i = 0; i < customArray.length; i++) {
-		searchtoSelect(customArray[i]);
+	for (b = 0; b < customArray.length; b++) {
+		searchtoSelect(customArray[b]);
 	};
 
 	limpiarCanvas();
@@ -77,8 +77,19 @@ function searchtoSelect(code) {
 
 				if (lista[i].getAttribute("data-itemid") != "undefined") {
 					document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
-				} 
-				cargarCanvas(i);
+					document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "FIJAR";
+				}
+
+				unset = "";
+				for (b = 0; b < customArray.length; b++) {
+					if (code == customArray[b]) {
+						document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "QUITAR";
+						unset = b;
+						break;
+					};
+				};
+
+				(unset == "")?cargarCanvas(i):"";
 
 			};
 
@@ -100,12 +111,13 @@ function cargarCanvas(n) {
 		document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + newimg + "')";
 		//
 	} else {
-//*------------------
+	//*------------------
 		var canvas = document.createElement("canvas");
+		canvas.setAttribute("id", selectedCode);
 		canvas.setAttribute("width", "420");
 		canvas.setAttribute("height", "594");
 		document.getElementById("marketplace-avatar-preview").appendChild(canvas);
-//-----------------*/
+	//-----------------*/
 		var canvas = document.getElementsByTagName("canvas");
 		var ctx = canvas[canvas.length-1].getContext("2d");
 
@@ -117,12 +129,18 @@ function cargarCanvas(n) {
 
 		img.src = newimg;
 	};
-}
+
+	var cont = document.getElementsByTagName("canvas");
+	for (z = 0; z < cont.length; z++) {
+		if (cont[z].getAttribute("id") == selectedCode) {
+			hijo = z;
+		};
+	};
+};
 
 function cargarArray(i) {
 		var img, img2;
 
-		
 			//Es necesario saber si hay un fondo 
 			var buscaMain = groupList.filter(function(v){return v.itemId == customArray[i]});
 			var filtro = groupInfo.filter(function(v){return v.groupId == buscaMain[0].groupId});
@@ -157,12 +175,11 @@ function cargarArray(i) {
 
 			};
 
-	if (i < customArray.length - 1) {
-		i++
-		cargarArray(i);
-	}
-
-}
+		if (i < customArray.length - 1) {
+			i++
+			cargarArray(i);
+		};
+};
 
 
 function limpiarCanvas(){
@@ -194,18 +211,70 @@ function selectItem(n) {
 
 };
 
+function doMove(place) {
+	var nodo = document.getElementById(selectedCode);
+	var padre = document.getElementById("marketplace-avatar-preview");
+	var cont = document.getElementsByTagName("canvas");
+
+	if (place == "prev") {
+		if (hijo > 0) {
+			nodo.parentNode.removeChild(nodo);
+			hijo--;
+			padre.insertBefore(nodo, cont[hijo]);
+		}
+	} else if (place == "next") {
+		nodo.parentNode.removeChild(nodo);
+		hijo++;
+		padre.insertBefore(nodo, cont[hijo]);
+	};
+
+};
+
 function doSet(code) {
-	customArray.push(code);
 
-	var str = "?s=";
+	setunset = document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML;
 
-	for (i = 0; i < customArray.length; i++) {
+	if (setunset == "FIJAR") {
 
-		(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
+		if (code != "undefined") {
+
+			if (filtro[0].category != "Fondos") {
+
+				customArray.splice(hijo,0, selectedCode);
+			} else {
+				customArray.push(selectedCode);
+			};
+			
+			var str = "?s=";
+
+			for (i = 0; i < customArray.length; i++) {
+				(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
+			};
+	
+			window.location.search = str;
+
+		} else {
+			alert("No se puede fijar un artículo sin código.");
+		};
+
+	} else if (setunset == "QUITAR") {
+		var b;
+
+		for (i = 0; i < customArray.length; i++) {
+			if (code == customArray[i]) {b = i;break;};
+		};
+
+		customArray.splice(i,1);
+
+		var str = "?s=";
+
+		for (i = 0; i < customArray.length; i++) {
+			(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
+		};
+	
+		window.location.search = str;
 
 	};
-	
-	window.location.search = str;
 
 };
 
