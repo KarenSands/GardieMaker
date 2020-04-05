@@ -6,6 +6,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: transparent;
 }
 
+select, input {
+	margin-right: 2px !important;
+}
+
 strong, em, i, u, span, b, sub, sup, a, label, tt, var {
     font-size: inherit;
 }
