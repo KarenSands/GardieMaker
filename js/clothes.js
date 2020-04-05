@@ -648,9 +648,8 @@ function getInfo() {
 	if (groupInfo != undefined) {
 		filtro = groupInfo.filter(function(v){return v.groupId == getGrupo});
 
-		getNombre = filtro[0].name;
+		(filterGroup[item].name == undefined)?(getNombre = filtro[0].name):(getNombre = filterGroup[item].name);
 		getCategoria = filtro[0].category;
-
 		(filterGroup[item].rarity == undefined)?(getRareza = filtro[0].rarity):(getRareza = filterGroup[item].rarity);
 		(filterGroup[item].note == undefined)?(getNota = filtro[0].note):(getNota = filterGroup[item].note);
 		(filterGroup[item].especial == undefined)?(getEspecial = filtro[0].especial):(getEspecial = filterGroup[item].especial);
