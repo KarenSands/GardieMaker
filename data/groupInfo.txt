@@ -10,7 +10,13 @@
 	
 	{"groupId":1032, "name":"Effie", "category":"Cabello", "rarity":"Épico", "note":"Exploración"},
 	{"groupId":1062, "name":"Mimi", "category":"Cabello", "rarity":"Raro", "note":"Costales"},
-	{"groupId":1269, "name":"", "category":"Pieles", "rarity":"Común", "note":"Tienda"},
+	
+	{"groupId":1269, "name":"Sílex", "category":"Pieles", "rarity":"Común", "note":"Tienda"},
+	{"groupId":1275, "name":"Hada de los Hielos", "category":"Pieles", "rarity":"Común", "note":"Tienda"},
+	{"groupId":1276, "name":"Pecas", "category":"Pieles", "rarity":"Común", "note":"Exploración"},
+	{"groupId":1277, "name":"Glaciar", "category":"Pieles", "rarity":"Común", "note":"Tienda"},
+	{"groupId":1278, "name":"Lila", "category":"Pieles", "rarity":"Común", "note":"Tienda"},
+
 	{"groupId":1279, "name":"Nan'vi", "category":"Pieles", "rarity":"Legendario", "note":"Exploración"},
 	{"groupId":1295, "name":"Short Eldarya", "category":"Pantalones", "rarity":"Común", "note":"Tienda"},
 	{"groupId":1316, "name":"Abrigo Eldarya", "category":"Abrigos", "rarity":"Común", "note":"Costales"},
