@@ -169,7 +169,7 @@
 	{"groupId":7936, "name":"Body Dama Fénix", "category":"Ropa interior", "rarity":"Común", "note":"Tienda"},
 	{"groupId":7939, "name":"Pantalón Dama Fénix", "category":"Pantalones", "rarity":"Común", "note":"Tienda"},
 
-	{"groupId":8016, "name":"Flauta de Oberón", "category":"Accesorios manos", "rarity":"Evento", "note":"Música 2017"},
+	{"groupId":8016, "name":"Flauta de Oberón", "category":"Accesorios manos", "rarity":"Evento", "note":"Música 2017"},º
 	{"groupId":8026, "name":"Short nublado", "category":"Pantalones", "rarity":"Legendario", "note":"Costales"},
 	{"groupId":8036, "name":"Guantes nublados", "category":"Guantes", "rarity":"Legendario", "note":"Costales"},
 	{"groupId":8086, "name":"Tehani", "category":"Cabello", "rarity":"Evento", "note":"Verano 2016"},
@@ -315,8 +315,23 @@
 	{"groupId":20333, "name":"Claro romántico", "category":"Fondos", "rarity":"Evento", "note":"San Valentín 2019"},
 	{"groupId":20610, "name":"Corona imperial", "category":"Sombreros", "rarity":"Legendario", "note":"Premio del mes"},
 	{"groupId":20699, "name":"Lobo de medianoche", "category":"Accesorios cara", "rarity":"Legendario", "note":"Premio del mes"},
+	{"groupId":20700, "name":"Jardín de chocolate", "category":"Fondos", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20701, "name":"Parque de la fuente de chocolate", "category":"Fondos", "rarity":"Evento", "note":"Pascua 2019"},
 	{"groupId":20702, "name":"Serpentina", "category":"Cabello", "rarity":"Legendario", "note":"Premio del mes"},
-	
+	{"groupId":20705, "name":"Camisón Loleaster", "category":"Ropa interior", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20717, "name":"Pendientes Loleaster", "category":"Accesorios cara", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20729, "name":"Guantes Loleaster", "category":"Guantes", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20741, "name":"Capa Loleaster", "category":"Abrigos", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20753, "name":"Capucha Loleaster", "category":"Sombreros", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20765, "name":"Corpiño Loleaster", "category":"Partes de arriba", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20777, "name":"Falda Loleaster", "category":"Pantalones", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20789, "name":"Bajo falda Loleaster", "category":"Pantalones", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20801, "name":"Medias Loleaster", "category":"Calcetines", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20813, "name":"Botines Loleaster", "category":"Zapatos", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20825, "name":"Cinturón Loleaster", "category":"Cinturones", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20837, "name":"Abanico Loleaster", "category":"Accesorios manos", "rarity":"Evento", "note":"Pascua 2019"},
+	{"groupId":20850, "name":"April", "category":"Cabello", "rarity":"Evento", "note":"Pascua 2019"},
+
 	{"groupId":21529, "name":"Arco efímero", "category":"Accesorios manos", "rarity":"Legendario", "note":"Premio del mes"},
 	{"groupId":21771, "name":"Falda Cnidarya", "category":"Pantalones", "rarity":"Legendario", "note":"Premio del mes"},
 	{"groupId":21772, "name":"Vestido Seapunk", "category":"Vestidos", "rarity":"Legendario", "note":"Premio del mes"},
@@ -346,6 +361,14 @@
 	{"groupId":23557, "name":"Obi Cherry Tree Archer", "category":"Zapatos", "rarity":"Evento", "note":"San Valentín 2020"},
 	{"groupId":23569, "name":"Arco y flecha Cherry Tree Archer", "category":"Accesorios manos", "rarity":"Evento", "note":"San Valentín 2020"},
 	{"groupId":23581, "name":"Pulsera Cherry Tree Archer", "category":"Accesorios manos", "rarity":"Evento", "note":"San Valentín 2020"},
-	{"groupId":23593, "name":"Collar Cherry Tree Archer", "category":"Collares", "rarity":"Evento", "note":"San Valentín 2020"}
+	{"groupId":23593, "name":"Collar Cherry Tree Archer", "category":"Collares", "rarity":"Evento", "note":"San Valentín 2020"},
+	{"groupId":23914, "name":"Zapatos Mischievous Easter", "category":"Zapatos", "rarity":"Evento", "note":"Pascua 2020"},
+	{"groupId":23926, "name":"Cinturón Mischievous Easter", "category":"Cinturones", "rarity":"Evento", "note":"Pascua 2020"},
+	{"groupId":23938, "name":"Sombrero Mischievous Easter", "category":"Sombreros", "rarity":"Evento", "note":"Pascua 2020"},
+	{"groupId":23950, "name":"Mangas Mischievous Easter", "category":"Accesorios manos", "rarity":"Evento", "note":"Pascua 2020"},
+	{"groupId":23962, "name":"Top Mischievous Easter", "category":"Partes de arriba", "rarity":"Evento", "note":"Pascua 2020"},
+	{"groupId":23974, "name":"Minifalda Mischievous Easter", "category":"Pantalones", "rarity":"Evento", "note":"Pascua 2020"},
+	{"groupId":23986, "name":"Bolso Mischievous Easter", "category":"Accesorios manos", "rarity":"Evento", "note":"Pascua 2020"},
+	{"groupId":23998, "name":"Becky", "category":"Cabello", "rarity":"Evento", "note":"Pascua 2020"}
 
 ]
