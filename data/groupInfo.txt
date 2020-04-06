@@ -169,7 +169,7 @@
 	{"groupId":7936, "name":"Body Dama Fénix", "category":"Ropa interior", "rarity":"Común", "note":"Tienda"},
 	{"groupId":7939, "name":"Pantalón Dama Fénix", "category":"Pantalones", "rarity":"Común", "note":"Tienda"},
 
-	{"groupId":8016, "name":"Flauta de Oberón", "category":"Accesorios manos", "rarity":"Evento", "note":"Música 2017"},º
+	{"groupId":8016, "name":"Flauta de Oberón", "category":"Accesorios manos", "rarity":"Evento", "note":"Música 2017"},
 	{"groupId":8026, "name":"Short nublado", "category":"Pantalones", "rarity":"Legendario", "note":"Costales"},
 	{"groupId":8036, "name":"Guantes nublados", "category":"Guantes", "rarity":"Legendario", "note":"Costales"},
 	{"groupId":8086, "name":"Tehani", "category":"Cabello", "rarity":"Evento", "note":"Verano 2016"},
