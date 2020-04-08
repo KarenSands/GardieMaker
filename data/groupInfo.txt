@@ -133,7 +133,7 @@
 	{"groupId":5655, "name":"Juguetona", "category":"Bocas", "rarity":"Evento", "note":"Navidad 2015"},
 	{"groupId":5728, "name":"Cerezo Centenario", "category":"Fondos", "rarity":"Evento", "note":"Navidad 2015"},
 	{"groupId":5729, "name":"Parque de la fuente", "category":"Fondos", "rarity":"Evento", "note":"Navidad 2015"},
-	{"groupId":5799, "name":"Sendero de Arcos", "category":"Fondos", "rarity":"Evento", "note":"Navidad 2915"},
+	{"groupId":5799, "name":"Sendero de Arcos", "category":"Fondos", "rarity":"Evento", "note":"Navidad 2015"},
 	{"groupId":5984, "name":"Gorro Crylasm", "category":"Sombreros", "rarity":"Evento", "note":"Navidad 2015"},
 
 	{"groupId":6767, "name":"Piel helada", "category":"Pieles", "rarity":"Evento", "note":"Navidad 2015"},
