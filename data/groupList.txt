@@ -2200,7 +2200,7 @@
 	{"itemId":7158, "groupId":2044, "itemURL":"7f12005da1be8d6580f40788fc6c4d3c.png"},
 	{"itemId":7159, "groupId":2044, "itemURL":"071681b9c600732a9a20dcf7994c26b9.png"},
 	{"itemId":7160, "groupId":2044, "itemURL":"91df9225e3ef8d645cba5b346467ac2d.png"},
-	{"itemId":"--", "groupId":2044, "itemURL":"2d56e3e703aea1ec62b3cbe2f2e8c849.png", "rarity":"Evento", "note":"Santos Inocentes 2015 (FR)"},  
+	{"itemId":"--", "groupId":2044, "itemURL":"2d56e3e703aea1ec62b3cbe2f2e8c849.png", "rarity":"Evento", "note":"1 de Abril 2015 (FR)"},  
 
 	{"itemId":7208, "groupId":1032, "itemURL":"d1f921b85a24e63be38ccc59dbc3611e.png", "note":"Alquimia", "especial":"Arcoíris"},
 
@@ -2242,7 +2242,7 @@
 	{"itemId":7248, "groupId":1665, "itemURL":"97c3d85d8f4a9b712e54f1eecfef965a.png"},
 	{"itemId":7249, "groupId":1665, "itemURL":"2b35db2fdbd546cc0c43fbe5cdf41161.png"},
 	{"itemId":7250, "groupId":1665, "itemURL":"28cc2b300dd9744d0c4c9cc0cda9b962.png"},
-	{"itemId":7251, "groupId":1665, "itemURL":"ebd505de472ea5765ade3e8b675c9f0a.png"},
+	{"itemId":7251, "groupId":1665, "itemURL":"b2a5513b9507661b9b12aa949c63a5fb.png"},
 
 	{"itemId":7253, "groupId":1637, "itemURL":"7d0a29b1f98c3e58df74c050e02a8816.png"},
 	{"itemId":7254, "groupId":1637, "itemURL":"d37f93d89985da8c1ab47effac32260d.png"},
