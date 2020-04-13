@@ -2202,11 +2202,13 @@
 	{"itemId":7160, "groupId":2044, "itemURL":"91df9225e3ef8d645cba5b346467ac2d.png"},
 	{"itemId":"--", "groupId":2044, "itemURL":"2d56e3e703aea1ec62b3cbe2f2e8c849.png", "rarity":"Evento", "note":"1 de Abril 2015 (FR)"},  
 
+	{"itemId":7207, "groupId":910, "itemURL":"611f0931742ab68a7caaeaf95ded9828.png", "note":"Alquimia", "especial":"Arcoíris"},
 	{"itemId":7208, "groupId":1032, "itemURL":"d1f921b85a24e63be38ccc59dbc3611e.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":7211, "groupId":1665, "itemURL":"4fbe09b181e4759eefa741ce2ebbcd57.png"},
 	{"itemId":7212, "groupId":1665, "itemURL":"3dd03b50cda219a3011c2a0ccaec4329.png"},
 	{"itemId":7213, "groupId":1665, "itemURL":"62564bc7f4019b101b91594ee61d112b.png"},
+	{"itemId":7214, "groupId":1665, "itemURL":"b2a5513b9507661b9b12aa949c63a5fb.png"},
 	{"itemId":7215, "groupId":1665, "itemURL":"fe101c2680fda6711825e7de8847a3f7.png"},
 	{"itemId":7216, "groupId":1665, "itemURL":"4e575e8b578d4983189e02e6ff91908d.png"},
 	{"itemId":7217, "groupId":1665, "itemURL":"d2016dfff349a7b7d89ee2b2a4ee4f36.png"},
@@ -2242,7 +2244,7 @@
 	{"itemId":7248, "groupId":1665, "itemURL":"97c3d85d8f4a9b712e54f1eecfef965a.png"},
 	{"itemId":7249, "groupId":1665, "itemURL":"2b35db2fdbd546cc0c43fbe5cdf41161.png"},
 	{"itemId":7250, "groupId":1665, "itemURL":"28cc2b300dd9744d0c4c9cc0cda9b962.png"},
-	{"itemId":7251, "groupId":1665, "itemURL":"b2a5513b9507661b9b12aa949c63a5fb.png"},
+	{"itemId":7251, "groupId":1665, "itemURL":"ebd505de472ea5765ade3e8b675c9f0a.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":7253, "groupId":1637, "itemURL":"7d0a29b1f98c3e58df74c050e02a8816.png"},
 	{"itemId":7254, "groupId":1637, "itemURL":"d37f93d89985da8c1ab47effac32260d.png"},
@@ -2425,8 +2427,7 @@
 	{"itemId":7522, "groupId":7483, "itemURL":"110159eb7afebc42113ca093adfb51e8.png"},
 	{"itemId":7523, "groupId":7483, "itemURL":"5f5901090f0a89b7f142e21c8b23d5b8.png"},
 	{"itemId":7524, "groupId":7483, "itemURL":"9524218e3b4fd728005f1ed974e86b37.png"},
-	{"itemId":"--", "groupId":7483, "itemURL":"b7181cfd595bdc37990da97888ff5f2f.png", "note":"Alquimia", "especial":"Arcoíris"},
-
+	{"itemId":7525, "groupId":7483, "itemURL":"b7181cfd595bdc37990da97888ff5f2f.png", "note":"Alquimia", "especial":"Arcoíris"},
 	{"itemId":7526, "groupId":7526, "itemURL":"ad7972953494e557a9bc74919e72a561.png"},
 	{"itemId":7527, "groupId":7526, "itemURL":"c7628751e7e34346e53060cfa83fb43e.png"},
 	{"itemId":7528, "groupId":7526, "itemURL":"9c3276b26eabeaf3fa581b3d3f7f9779.png"},
@@ -2570,8 +2571,7 @@
 	{"itemId":7674, "groupId":7635, "itemURL":"34d1e73cbad604f90fc90f1d73fef270.png"},
 	{"itemId":7675, "groupId":7635, "itemURL":"a5fa2c0482d7704a0b5c7a86c4235036.png"},
 	{"itemId":7676, "groupId":7635, "itemURL":"6d1cef3eadfbf0f067554901093168d8.png"},
-	{"itemId":"--", "groupId":7635, "itemURL":"77c44131c242f28ee18a498323fd7d9a.png", "note":"Alquimia", "especial":"Arcoíris"},
-
+	{"itemId":7677, "groupId":7635, "itemURL":"77c44131c242f28ee18a498323fd7d9a.png", "note":"Alquimia", "especial":"Arcoíris"},
 	{"itemId":7678, "groupId":7678, "itemURL":"7370b1b98efc6f88baf234eb6dfff374.png"},
 	{"itemId":7679, "groupId":7678, "itemURL":"ef193fa7e1ec37d348de5a88b573d590.png"},
 	{"itemId":7680, "groupId":7678, "itemURL":"8abbc160fc5e6d86d2a01c8de8c6c138.png"},
@@ -3117,7 +3117,6 @@
 
 	{"itemId":8499, "groupId":786, "itemURL":"b61412807319f7f75f0089d70be22fe3.png"},
 
-	{"itemId":"--", "groupId":910, "itemURL":"611f0931742ab68a7caaeaf95ded9828.png", "note":"Alquimia", "especial":"Arcoíris"},
 	{"itemId":8504, "groupId":910, "itemURL":"50a962163369450f4c1aaeb49c3f3e8e.png"},
 	{"itemId":8505, "groupId":940, "itemURL":"780e1e5504152cf761e11057eaa2bc60.png"},
 
@@ -3125,13 +3124,11 @@
 	{"itemId":8509, "groupId":1062, "itemURL":"7df679a145d31d75c44c175638434661.png"},
 
 	{"itemId":8512, "groupId":1152, "itemURL":"f5a56cff1ac0f31cb14fe1075a829b02.png"},
-	{"itemId":"--", "groupId":1152, "itemURL":"911a79290bbd76cdccf43de779cf6ecf.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":8517, "groupId":1637, "itemURL":"262a9699469664be1327b6232e8e7c8f.png"},
 	{"itemId":8518, "groupId":1637, "itemURL":"75796bcd84171137b147c040d8551f30.png"},
 	{"itemId":8519, "groupId":1665, "itemURL":"1a123beed317b5d0e22b6e930ac65638.png"},
 	{"itemId":8520, "groupId":1665, "itemURL":"dfd16b34f59e41a22843ded9f9da11d4.png"},
-	{"itemId":"--", "groupId":1665, "itemURL":"ebd505de472ea5765ade3e8b675c9f0a.png", "note":"Alquimia", "especial":"Arcoíris"},
 
 	{"itemId":8526, "groupId":8526, "itemURL":"c7a42f345f037cba49fbb383bbf752c3.png", "especial":"Premio"},
 	{"itemId":8527, "groupId":8527, "itemURL":"ac125edd40f5da2ef277bc0cad688237.png"},
@@ -4186,8 +4183,7 @@
 	{"itemId":14036, "groupId":13819, "itemURL":"c2af4b5d500fdb04d17dc7f10620642c.png"},
 	{"itemId":14037, "groupId":13825, "itemURL":"7a9d6fee7af72fc67c3cd9f534df32a6.png"},
 	{"itemId":14038, "groupId":13825, "itemURL":"ece2a34b63773360dce29cb9b11b67c9.png"},
-	{"itemId":"---", "groupId":13819, "itemURL":"1a3f5714a9894235839320c2e8cc49d3.png", "note":"Alquimia", "especial":"Arcoíris"},
-
+	
  	{"itemId":14041, "groupId":13820, "itemURL":"780c98f81bd6d66c1bf2a29637387e79.png"},
  	{"itemId":14042, "groupId":13820, "itemURL":"7ba207bfa881254a4ee0b8c0be0a3fed.png"},
 	{"itemId":14043, "groupId":13821, "itemURL":"8eaa96ff9c60b8ddd18799d861866c10.png"},
@@ -4195,7 +4191,7 @@
 
 	{"itemId":14049, "groupId":14049, "itemURL":"d33c902bc3eb6e8afc0afc1174480ed4.png", "especial":"Premio"},
 	{"itemId":14050, "groupId":8086, "itemURL":"1a6a16fd3f00eba5f6147315ffcf495e.png", "note":"Alquimia", "especial":"Arcoíris"},
-
+	{"itemId":14051, "groupId":13819, "itemURL":"1a3f5714a9894235839320c2e8cc49d3.png", "note":"Alquimia", "especial":"Arcoíris"},
 	{"itemId":14052, "groupId":14052, "itemURL":"b2a4e69f4258587c0fb3f100c620faf7.png"},
 	{"itemId":14053, "groupId":14052, "itemURL":"1c9008fa1f0edcf6d59d5ccc975e4137.png"},
 	{"itemId":14054, "groupId":14052, "itemURL":"ea506fbd1599b49caea8af4f2853290d.png"},
@@ -5619,6 +5615,7 @@
 
 	{"itemId":21529, "groupId":21529, "itemURL":"64d6466f2c79d76a43aa7b2257d27ac7.png", "especial":"Premio"},
 
+	{"itemId":21764, "groupId":1152, "itemURL":"911a79290bbd76cdccf43de779cf6ecf.png", "note":"Alquimia", "especial":"Arcoíris"},
 	{"itemId":21766, "groupId":5419, "itemURL":"8fb367bf931ee534aab5eff4487088ed.png", "note":"Alquimia", "especial":"Arcoíris"}, 
 
 	{"itemId":21771, "groupId":21771, "itemURL":"dd8c327c623e5127ea67bb556e807b37.png", "especial":"Premio"},
