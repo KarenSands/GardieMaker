@@ -89,7 +89,7 @@ function searchtoSelect(code) {
 					};
 				};
 
-				(unset == "")?cargarCanvas(i):"";
+				(unset === "")?cargarCanvas(i):"";
 
 			};
 
@@ -250,8 +250,11 @@ function doSet(code) {
 			for (i = 0; i < customArray.length; i++) {
 				(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
 			};
-	
-			window.location.search = str;
+
+			history.pushState(null, "", str);
+			searchtoSelect(code);
+
+			limpiarCanvas();
 
 		} else {
 			alert("No se puede fijar un artículo sin código.");
@@ -264,15 +267,24 @@ function doSet(code) {
 			if (code == customArray[i]) {b = i;break;};
 		};
 
-		customArray.splice(i,1);
+		var str
 
-		var str = "?s=";
+		customArray.splice(b,1);
+		if (customArray.length == 0) {
+			window.location.search = "";
+		} else {
+			str = "?s=";
+		};
+		
 
 		for (i = 0; i < customArray.length; i++) {
 			(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
 		};
-	
-		window.location.search = str;
+		
+		history.pushState(null, "", str);
+		searchtoSelect(code);
+
+		limpiarCanvas();
 
 	};
 
@@ -936,3 +948,9 @@ function key() {
 	});
 
 };
+
+// ----------------------------------------------------
+
+window.addEventListener('popstate', (event) => {
+  getCustom();
+});
