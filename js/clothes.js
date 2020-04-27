@@ -25,11 +25,11 @@ var customArray = [], selectedCode, unset, hijo;
 //----------------------------------------------
 
 $(document).ready(function iniciaTodo() {
-	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupInfo.txt", function(dataInfo, success, xhr) {
+	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupInfo.json", function(dataInfo, success, xhr) {
 		groupInfo = JSON.parse(dataInfo);
 	});
 
-	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupList.txt", function(dataList, success, xhr) {
+	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupList.json", function(dataList, success, xhr) {
 		groupList = JSON.parse(dataList);
 		updateFilters();
 		getCustom();
@@ -289,6 +289,12 @@ function doSet(code) {
 	};
 
 };
+
+function genPerfil() {
+	var str = window.location.search;
+	
+	window.location.href = "./profile" + str;
+}
 
 /////////////////////////////////////////////////////////////////////////////////////
 
