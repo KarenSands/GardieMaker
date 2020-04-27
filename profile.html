@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+			<meta charset="utf-8">
+			<link rel="shortcut icon" type="image/png" href="https://66.media.tumblr.com/b4b28acca1a1fadead8554e42ca84748/tumblr_inline_q8c0e0MN2r1wxxmsr_500.png">
+			<link rel="shortcut icon" type="image/x-icon" href="https://66.media.tumblr.com/b4b28acca1a1fadead8554e42ca84748/tumblr_inline_q8c0e0MN2r1wxxmsr_500.png">
+
+			<link href="https://fonts.googleapis.com/css?family=Rubik:400&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
+			<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet"> 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script type="text/javascript" src="js/profile.js"></script>
+
+			<title>Perfil - Eldarya Clothing</title>
+			<link rel="stylesheet" type="text/css" href="styles/profile.css">
+	</head>
+	<body>
+		<div id="header">
+			<div id="header-in">
+				<a id="logo" title="Eldarya Clothing" href="/es/clothes">
+					<h1>Eldarya Clothing</h1>
+				</a>
+			</div>
+			<div id="header-top">
+				<div id="header-top-in">
+					<ul id="header-menu">
+						<li>
+							<a href="https://eldaryaclothing.tumblr.com">BLOG</a>
+						</li>
+
+						<li>
+							<a href="https://eldaryaclothing.tumblr.com/submit">APORTES</a>
+						</li>
+
+						<li>
+							<a href="https://eldaryaclothing.tumblr.com/es/clothes">VOLVER AL VESTIDOR</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div id="content">
+			<div id="container">
+				<div class="page-main-container player-main-container">
+					<h1>
+						Mi personaje
+						<span class="title-end"></span>
+						<!--falta CSS -->
+					</h1>
+					<div id="player-display" class="isDraggable">
+						<div class="player-element background-element" style="background: url('https://www.eldarya.es/assets/img/item/player/web_full/ebe3cacec9acff9a1ae9d9554a3192c0.jpg')"></div>
+						<div id="player-pet-containment" style="width: 1164.8px; height: 864px; left: -182.4px; top: -132px;"></div>
+						<div id="player-display-pet" class="dragEnabled ui-draggable ui-draggable-handle" onmousedown="dragPet()" style="position: absolute; inset: 100px auto auto 100px; width: auto; height: auto">
+							<img src="">
+						</div>
+						<div id="player-display-draggable" class ="dragEnabled ui-draggable" style="position: absolute; left: 50px" onmousedown="dragGardienne()">
+							<div class="playerProfileAvatar">
+								<canvas width="420" height="594"></canvas>
+							</div>
+							<div id="player-display-draggable-handler" class="ui-draggable-handle"></div>
+						</div>
+					</div>
+					<ul id="player-actions-tab">
+						<li>
+							<div id="reLoad" class="button">Volver a cargar</div>
+						</li>
+						<li>
+							<div id="borderRad" class="button">Cambiar esquinas</div>
+						</li>
+						<li>
+							<div id="getPortrait" class="button">Ver Portrait</div>
+						</li>
+						<li>
+							<div id="getCode" class="button">Copiar código</div>
+						</li>
+					</ul>
+					<div id="player-left-tab">
+						<div id="left-info-tab">
+							<h3>Bonus</h3>
+							<br>
+							<div style="margin: 3px 8px; float:left;">Seleccionar familiar: </div>
+
+							<select id="selectPet" style="float:left">
+							</select>
+
+							<input type="checkbox" id="chkPet" class="chkVb" style="margin: 3px 8px;float:left; display: none"><div style="margin: 4px 5px;float:left; display: none;" class="chkVb">Adulto</div><br>
+							<div class="clearer"></div><br>
+
+						</div>
+					</div>
+					<div id="right-profile-tab">
+						<div id="profile" style="text-align: center;">
+							<span><b>INFORMACIÓN:</b><br><br>
+								1) Para guardar un render de tu guardianna haz clic en "Ver Portrait". Para cerrarlo haz clic en "Mi personaje" en la parte superior.<br><br>
+
+								2) Los familiares y el desplazamiento del mismo y la guardiana no se guardan, solo sirven como decoración para hacer capturas del perfil. <br><br>
+
+								3) Si tu guardiana no carga bien pulsa el botón para "Volver a cargar". <br><br>
+
+								4) Siempre puedas utilizar el "código" para volver a generar la misma guardiana.
+
+								</span>
+						</div>
+					</div>
+					<div class="clearer"></div>
+				</div>
+			</div>
+		</div>
+	
+		<!--footer-->
+		<div id="footer" itemscope="" itemtype="https://schema.org/WPFooter">
+			<div id="footer-in">© 2020 | Eldarya Clothing
+				<span id="footer-links">Se ha producido un error.</span>
+			</div>
+		</div>
+
+	</body>
+</html>
