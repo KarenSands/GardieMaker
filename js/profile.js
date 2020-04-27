@@ -14,7 +14,7 @@ var imgurl;
 var groupInfo, groupList, groupPet;
 var i = 0;
 var str;
-
+var galor;
 //================================================================
 
 $(document).ready(function iniciaTodo() {
@@ -169,8 +169,25 @@ function cargarPet(select, check) {
             (check === false)?(imgPet = fPet[0][1]):(imgPet = fPet[0][2]);
         };
 
-        imagep.src = "https://www.eldarya.es/assets/img/pet/mood/profile/" + imgPet;    
+        imagep.src = "";
+        imagep.src = "https://www.eldarya.es/assets/img/pet/mood/profile/" + imgPet;
+        
+        if (select == "Galorze") {
+            imagep.style.margin = "-300px 0 -200px -100px";
+            galor = true;
+        } else {
+            
+            imagep.style.margin = "0";
 
+            if (galor == true) {
+                var asda = document.getElementById("player-display-pet");
+                asda.setAttribute("style","position: absolute; inset: 100px auto auto 100px; width: auto; height: auto");
+                galor = false;
+            };
+            
+            
+        }
+        
     };
 
 
@@ -290,9 +307,14 @@ $(function() {
     $("#reLoad").click(function() { 
 
         var child = document.getElementsByTagName("canvas")[0];
-        var parent = document.getElementById("content");
+        var parent = document.getElementsByClassName("playerProfileAvatar")[0];
 
         parent.removeChild(child);
+
+        var canvas =document.createElement("canvas");
+        canvas.width = 420;
+        canvas.height = 594;
+        parent.appendChild(canvas);
 
         i = 0;
         cargarCanvas(customArray[i]);
