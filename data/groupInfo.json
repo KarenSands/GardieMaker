@@ -694,7 +694,7 @@
 	{"groupId":22472, "name":"Corona Necromancer", "category":"Sombreros", "rarity":"Evento", "note":"Halloween 2019"},
 	{"groupId":22779, "name":"Varita mágica", "category":"Accesorios manos", "rarity":"Legendario", "note":"Premio del mes"},
 	{"groupId":22780, "name":"Adina", "category":"Cabello", "rarity":"Evento", "note":"Navidad 2019"},
-	{"groupId":22823, "name":"Capa Festive Pilgrim,", "category":"Abrigos", "rarity":"Evento", "note":"Navidad 2019"},
+	{"groupId":22823, "name":"Capa Festive Pilgrim", "category":"Abrigos", "rarity":"Evento", "note":"Navidad 2019"},
 	{"groupId":22835, "name":"Vestido Festive Pilgrim", "category":"Vestidos", "rarity":"Evento", "note":"Navidad 2019"},
 	{"groupId":22847, "name":"Botines Festive Pilgrim", "category":"Zapatos", "rarity":"Evento", "note":"Navidad 2019"},
 	{"groupId":22883, "name":"Conjunto de ropa interior Festive Pilgrim", "category":"Ropa interior", "rarity":"Evento", "note":"Navidad 2019"},
@@ -752,5 +752,3 @@
 	{"groupId":23998, "name":"Becky", "category":"Cabello", "rarity":"Evento", "note":"Pascua 2020"}
 
 ]
-
-
