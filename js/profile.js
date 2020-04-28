@@ -367,4 +367,27 @@ $(function() {
         var b = $("#chkPet").prop('checked');
         cargarPet(a,b);
     });
+
+    $("#loadCode").click(function() {
+        var inCode = $("#inputCode").val();
+        window.location.search = "?s=" + inCode;
+        
+    });
+
+
 });
+
+// ------------------------------------------------------
+
+function key() {
+
+    var input = document.getElementById("inputCode");
+
+    input.addEventListener("keypress", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("loadCode").click();
+        };
+    });
+
+};
