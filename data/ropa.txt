@@ -27,6 +27,9 @@ Steam Girl - Japan Expo
 
 ========================= Revisar =========================
 
+5628 Arco de principiante / Accesorios manos / Episodio 9
+	5628,"634028dbcf63e7622ccbf461cdb2389a.png"
+
 6000 Gorro Ayudante de Papá Noel / Sombreros / Evento N15 (10)
 	(6000),"7ab399214067fdfc47afd45071ae4747.png"
 	6001,"1d5c2e133a2d303653086462f66ffd07.png"
@@ -88,6 +91,132 @@ Steam Girl - Japan Expo
 	(10),0b569266e6835a129c216f8c611ea54d.png
 
 ======================== Completos ========================
+
+16341 Pendientes Pure Bride / Accesorios cara / Evento (San Valentín 2018)
+	16341,16341,"ce4a6369743f432bd46d28ec222eceb0.png"
+	16342,16341,"6bf88f38e6a1955aba7a5662c4f00b1f.png"
+	16343,16341,"b73ebab63d0b06083ed4d35f4a17d309.png"
+	16344,16341,"df9add68d4ef1778bc7347f86bb43261.png"
+	16345,16341,"25ccf622de37996411a77f43913c681a.png"
+	16346,16341,"dd450e2074dbbbaab586be64fb7652a4.png"
+	16347,16341,"af8e0a2ba4f6e3037bbda472110a9310.png"
+	16348,16341,"b2b102d6fcde9fb8290c5fcc7a3530ed.png"
+	16349,16341,"d607a2ec7a9cf9d068d24248dff192f7.png"
+	16350,16341,"087820bf10c226adf8d87425cdd1b71f.png"
+	16351,16341,"940bcd02fd4408356aaae42c4123650b.png"
+	16352,16341,"dd0af9c2fd2ad058ba4609a5008ac1b9.png"
+
+16353 Ramo Pure Bride / Accesorios manos / Evento (San Valentín 2018)
+	16353,16353,"0825e151149d45fefb1d92752f9f63ae.png"
+	16354,16353,"c890a1bb3615c98fb9da20c641efaa82.png"
+	16355,16353,"548102cf909c56988f3635c100d3c22d.png"
+	16356,16353,"8ca9457f8499ed4d5bb3615365bce2da.png"
+	16357,16353,"667af0b39c69e33c4bb61ef9521853ca.png"
+	16358,16353,"5fc292ae98486efaaa44dbb501a93dd3.png"
+	16359,16353,"c53a4fefa3f0e8eabdd50a2280518acc.png"
+	16360,16353,"3971fb2122350bcab48c17c7c6eb4b69.png"
+	16361,16353,"a583098efa0146696f780ff70fa04d12.png"
+	16362,16353,"a4c7f6f0cb16b31b453d1649c1cbe363.png"
+	16363,16353,"4a8e36f17f48d3ce4b56467eef3ab92b.png"
+	16364,16353,"97f67146561edc830494112c5558b7e5.png"
+
+16365 Capa Pure Bride / Abrigos / Evento (San Valentín 2018)
+	16365,16365,"bae6b019b42436ea38cc9187e3745110.png"
+	16366,16365,"4e6aa647ce9a58eee651bd19c1b5f6d6.png"
+	16367,16365,"95d76c0d9fc6937c4a8cb7dec6709a5a.png"
+	16368,16365,"e33fc087a11be85423771b4538acb34f.png"
+	16369,16365,"8feba96903886c4a31479b90b9dc6e8d.png"
+	16370,16365,"fa577870e0f6afc46a3625d278692aa4.png"
+	16371,16365,"fbc48da3f3356e981c97978f623cc0fd.png"
+	16372,16365,"048c2ea07166bc778e317d0b882cbe1d.png"
+	16373,16365,"9eb78e00f0f8a152e32009442ec5b610.png"
+	16374,16365,"a525ce391c8d8ec995663be1fc9a87df.png"
+	16375,16365,"4aee6df8df649d9d1c8c853bdfde4f48.png"
+	16376,16365,"4ac0300e7e0bbe1575d92a4522202171.png"
+
+16377 Corona Pure Bride / Sombreros / Evento (San Valentín 2018)
+	16377,16377,"81a4d27bbe4f88164dc6c5108394359d.png"
+	16378,16377,"d8226f5290659fdb7ef2159c9b109ed5.png"
+	16379,16377,"335baa8d85767dee645e118263948d53.png"
+	16380,16377,"c0c9d748a5eb71cce0eea87678200e86.png"
+	16381,16377,"69101a09f37bf385c2dde9c19ac84ea2.png"
+	16382,16377,"54f698f4014ffc207ce73c4788c46d18.png"
+	16383,16377,"d8fc43b220f1583e8468f8bc5d5c5ab8.png"
+	16384,16377,"bfc164b8f3fdd29bbb7e10b0ee1d5400.png"
+	16385,16377,"20baf426ef7c7b6144d4a544e9d24294.png"
+	16386,16377,"81a7fea845ccd834549af76e24175d90.png"
+	16387,16377,"75d541e256ee98b2d7612d9339fb7db6.png"
+	16388,16377,"2454f0cb1b70e3e41a3009e1ca9d0a28.png"
+
+16389 Guantes Pure Bride / Guantes / Evento (San Valentín 2018)
+	16389,16389,"276f390c17b87f13ac631b2dd13f06ef.png"
+	16390,16389,"acb3a7d1246a70fc2b3e1a38103248d1.png"
+	16391,16389,"ad68de66ad5923519be0721790ae4da6.png"
+	16392,16389,"38f71588159c1f01b4ab676fa3fc8d8e.png"
+	16393,16389,"5b7280b2c4521cc233274cf8eb16fa2e.png"
+	16394,16389,"14428c9792b0e2321f359c41b88f3b7f.png"
+	16395,16389,"b3f2ad952a72f08154d4fd2352536157.png"
+	16396,16389,"6ff032c3b70d25558e805da54d67f7d0.png"
+	16397,16389,"912d7517ac6ffb90c634eb7e0083cd44.png"
+	16398,16389,"17a315c2b8d5ac14521910eacaa9214c.png"
+	16399,16389,"f6644dea3735e8de6490ed536dd2f63e.png"
+	16400,16389,"afedc52d59eaf612f35939562a3c17b8.png"
+
+16401 Pétalos Pure Bride / Ambientes / Evento (San Valentín 2018)
+	16401,16401,"e702abcf7fc04c0129a6ea0b3a22198f.png"
+	16402,16401,"cc26ebbb793bd0b4a8512d149118a615.png"
+	16403,16401,"aa715196be4c8bc33b93fa29b1e165df.png"
+	16404,16401,"1bbf9709ec644c07eaaf35e02f781c8f.png"
+	16405,16401,"ebac8b6c7fefed5986c512b5aab2a514.png"
+	16406,16401,"ebaab35afb67a22093644999a584e651.png"
+	16407,16401,"753384ac2a112b81966555ea7d5a543c.png"
+	16408,16401,"15125a82e299228db6beaa86737c7c36.png"
+	16409,16401,"d6a21192ac724313398161e28c37b2c5.png"
+	16410,16401,"508305fbe4b3dadd4bcb98f702c1fd40.png"
+	16411,16401,"6bc44845c2839d40b15837196dea770d.png"
+	16412,16401,"bc23229d3c43019720308ebaf3f22377.png"
+
+16413 Vestido Pure Bride / Vestidos / Evento (San Valentín 2018)
+	16413,16413,"e0546101777536755105c0bdaa705c31.png"
+	16414,16413,"f361a9f5c36087a2f46e9074e827c729.png"
+	16415,16413,"0261b0390cb3b3c1bcd30bcd95ffd98c.png"
+	16416,16413,"b11b13fa31e1e6e7b49891cd06804b2d.png"
+	16417,16413,"d28d388813c09449f96cb8e02b9fb153.png"
+	16418,16413,"017182edd26f3e1df9507d3d03980235.png"
+	16419,16413,"f7e768741e26cbea4e3683da06fc75e2.png"
+	16420,16413,"8906ed75cd87aa55ee219e0f799739a2.png"
+	16421,16413,"79e005e96f187d8c36385b4cea795416.png"
+	16422,16413,"4af1e40c6061ef92b54f4c1cd9f2dc3f.png"
+	16423,16413,"6d6a8a2d49f7260db92ffa24031e819a.png"
+	16424,16413,"ae5a106ade00cbfe7130f6a82882ecda.png"
+
+16425 Sandalias Pure Bride / Zapatos / Evento (San Valentín 2018)
+	16425,16425,"6de016de18f8cf1571a1d0414213775c.png"
+	16426,16425,"10a2c86c5b24b470506f5beb6813ab7f.png"
+	16427,16425,"74a9fc23d6bfc584318077ceed60dbae.png"
+	16428,16425,"e84119b0514b4f8c732f17f17a9808a8.png"
+	16429,16425,"e8a1d46698e0b7f429cec84199d94316.png"
+	16430,16425,"92609ff04ca7c4d4cf247abfd45e9886.png"
+	16431,16425,"c074027ee7d536df2e84f86a64f2b984.png"
+	16432,16425,"9534ad5db4ec8983e20273e3f191a8f2.png"
+	16433,16425,"89270e2c6ce3213a13ded9cda02204bf.png"
+	16434,16425,"505f737ce7eb2b6f1eff08adb721fc58.png"
+	16435,16425,"c521ab7361584d1915a8a3f9f57e5943.png"
+	16436,16425,"bfca9101472e133558d446dbd72353c5.png"
+
+16437 Chaqueta Pure Bride / Abrigos / Evento (San Valentín 2018)
+	16437,16437,"dc3399b0c28d46406f71e319b2dd3869.png"
+	16438,16437,"9ad4ae853eb088e27455bf00c22cade3.png"
+	16439,16437,"beadfc2bcabf89ebbd31813828851e7a.png"
+	16440,16437,"44e53b0d547ab1a1c8ce131623143808.png"
+	16441,16437,"41029c11e0e72b3c82454432dcdc2673.png"
+	16442,16437,"ae389646f81eaa36de266d1f969fe6f7.png"
+	16443,16437,"19299a91528754c63ba7f7b76c2d312e.png"
+	16444,16437,"5322140a743c242ec80ca0364f0764ab.png"
+	16445,16437,"d74f3b22de5e57d51ad33f99563fc33c.png"
+	16446,16437,"9ecd8076d8ee4dda4bcf86c2ccf19886.png"
+	16447,16437,"dad27f476e954e9294b81f5d4353de01.png"
+	16448,16437,"5a5b33c1a590b193e3897adfd8bfc171.png"
 
 ================================================================
 ================================================================
@@ -332,6 +461,7 @@ Steam Girl - Japan Expo
 	4132,"0acba77c10c624573535c2d9eccfae2c.png"
 	4133,"670001b6318b21ea92ed4f86afe9b2ae.png"
 	8482,"d08fdb10abcf3cc979f95900dc3c8632.png"
+	8483,"a54ad34216a42dc4f3adfc66b05f4049.png"
 
 3362 Makoto / Cabello / Épico (42)
 	3362,
@@ -555,7 +685,7 @@ Steam Girl - Japan Expo
 	4957,"3e835c7e94925adf4edfb3da6e03fe8c.png"
 	4958,"6efa28b8c126d4bf565dcdbb18f6ae91.png"
 	4959,"c116823e78638c62d91c984efbf3d77d.png"
-	4960,
+	4960,"803efc5408b7b76f43683bb288dbf2b0.png"
 	4961,"289bef570b93ff0ad59c63aafeb0c764.png"
 	4962,"f7d799f8b41c9063f13e7a114b7fd799.png"
 	4963,"3b10f532871a2137a21609f128fc222b.png"
@@ -580,7 +710,7 @@ Steam Girl - Japan Expo
 	4982,
 	4983,"12a19591bfcb95838e22b9c075ec9949.png"
 	4984,"056a0e5569aa4d46731734d7a9a03362.png"
-	4985,
+	4985,"924e33bf242cd910c398d6efa8492df8.png"
 	4986,"bc14988a7b0cc260537bf3dc5bf2ad5f.png"
 
 5063 Ojos Vampíricos / Ojos / Evento H15 (38)
@@ -840,12 +970,12 @@ Steam Girl - Japan Expo
 	6361,
 
 6362 Ojos helados / Accesorios cara / Evento N15 (9)
-	6362,
+	6362,"4720638988b7f267167fdad19c2473fa.png"
 	6363,
 	6364,
 	6365,"69ce87d21400cff681133f6497e43aef.png"
 	6366,
-	6367,
+	6367,"a069679d140000f6a603c7e8ac31d59a.png"
 	6368,"a9ed53b64a5e4cf480daf7fde45d2bed.png"
 	6369,"c28b92f60d5c74a24b78f75de92a1439.png"
 	6370,"0615e48b22e1cd66446e0711fb59ae95.png"
@@ -876,7 +1006,7 @@ Steam Girl - Japan Expo
 	6393,"d2e7f220f13f8ce27bb749cb80bc6058.png"
 	6394,"d9c3ca8a7ff88520d409a8362a114666.png"
 	6395,"12d3c5ac58df4fcaa7469b98f46d67bb.png"
-	6396,
+	6396,"a4e31dae26307f5ba83cc68f0782cdf7.png"
 	6397,"7ae4ec90e6a66c808947532f20269357.png"
 	6398,
 	6399,"e0cb7d8ff500b369cd2e34df416cac68.png"
@@ -911,6 +1041,7 @@ Steam Girl - Japan Expo
 	6456,"77c8804cf47d80b958d4846ce9a696d1.png"
 	6457,"7927c02f4151ef1d6dca76fc6eb66ece.png"
 	6458,"1a25a0c71b28f258856a694bb736a8c1.png"
+	6459,"034c0866dd7502666a854bc996f92911.png"
 
 6665 Acebo Star Angel / Sombreros / Evento N15 (10)
 	6665,
@@ -929,7 +1060,7 @@ Steam Girl - Japan Expo
 	6677,"682bb3f1eec3b99fdd12b7f006f7f14d.png"
 	6678,
 	6679,
-	6680,
+	6680,"8f1b7eeea4ceb6b8d341ba56bc8db871.png"
 	6681,"77d08d9b2ccebb0ecb0d6688b9a6d2a0.png"
 	6682,"231fb7d8f1dee32ca59ff1a3663f22b1.png"
 	6683,
@@ -1166,9 +1297,9 @@ Steam Girl - Japan Expo
 	9448,"792cb85f652fc3988a24bc02655e2f38.png"
 	9449,"00e8b2a0fd3d70e5f68fcc70469f21c6.png"
 	9450,"4e0e0bf533de2f475ba5c9410de36142.png"
-	9451,
+	9451,"eb9f20ef6b1ace6c8f7a50ffc3e51412.png"
 	9452,"66e8cf962d521c5324e6f61fc30358af.png"
-	9453,
+	9453,"ef798db2347e29f9fda1c1f6b86f0668.png"
 	9454,"20a6838ee78cb4692e1d6ced950c0018.png"
 	9455,"d7cb88957b94159025a5b1370ced37fe.png"
 	9456,
@@ -1221,7 +1352,7 @@ Steam Girl - Japan Expo
 	9426,"0a8b8289818d2591c6945a751de76bed.png"
 	9427,"e13c30138f79f9ec58d7f39f9d8ec21d.png"
 	9428,
-	9429,
+	9429,"4635b298beb672929ffb0d3f682b07c5.png"
 	9430,"dc518e17f44d49b82deaf20b845f3196.png"
 	9431,"5855d4b2f7c345893b56ecdbdca518d5.png"
 	9432,"7e6b45dc1840296e7cfc7327c6a3cba4.png"
@@ -1329,7 +1460,7 @@ Steam Girl - Japan Expo
 	9557,
 	9558,"b35a9bd74abde155e3ad473912b973f1.png"
 	9559,"4579bff0fd8d622851a7c5cd29ed0228.png"
-	9560,
+	9560,"7673e73eb21985caeffc06a80f4dd3cd.png"
 	9561,"9e7c4c86fdff00314c116f5244e2a73a.png"
 	9562,"c78c8311d8dbcb81796b6046d1318b3a.png"
 	9563,
@@ -1448,7 +1579,7 @@ Steam Girl - Japan Expo
 	9717,"f2d1c34f2f18c949e303c6fe0c2b23c6.png"
 	9718,
 	9719,"e46b12b25b326eb141ff1ba0258ad418.png"
-	9720,
+	9720,"1aa8898aaa66bf4f4af375c383843319.png"
 	9721,"bb6d45cc1b53f3e7b35fcee599d3cc35.png"
 	9722,"11ab2dd5a5a525b847eb4a1feb2758aa.png"
 	9723,"bdd4f7b6d5f80f0b7fd9b61b0cf6d3f0.png"
@@ -1632,7 +1763,7 @@ Steam Girl - Japan Expo
 	10157,"f4380c2e9e72af3bc1f6c03566436446.png"
 	10158,
 	10159,
-	10160,
+	10160,"6ef83c112145b006d009b19381f35d58.png"
 	10161,
 	10162,"840bac1cc711bf55aeeff81f0aa72d7a.png"
 	10163,
@@ -1871,7 +2002,7 @@ Steam Girl - Japan Expo
 	10351,"c099aa496c4cae440379d4c5c2c62a87.png"
 	10352,"3412459bb1b20adcdc25462a07d6ddfb.png"
 
-9496 Guadaña Skeleton Witch / Accesorios manos / Evento H16 (12)
+9496 Guadaña Skeleton Witch / Accesorios manos / Evento H16 (full)
 	9496,"610b7889d2680c39976979728f775c8d.png"
 	10310,"d7486fb687563801157b887cbec62583.png"
 	10311,"65ae46307f84c5e86b0a71dfcc0edcdf.png"
@@ -1883,7 +2014,7 @@ Steam Girl - Japan Expo
 	10317,"2e9284fbab21882247ca40fb318c06f3.png"
 	10318,"ecaa10081772790369ada0d8b0aa3562.png"
 	10319,"21ec029222b73c75c5803e269a704ca5.png"
-	"---","e9c70b5fd91c3c9e5557edc5b235e7c9.png"
+	10320,"e9c70b5fd91c3c9e5557edc5b235e7c9.png"
 
 10464 Medias Night Owl / Calcetines / Evento N16 (12)
 	10464,"e9c281153c62b87fdfb58780edce26aa.png"
@@ -2030,7 +2161,8 @@ Steam Girl - Japan Expo
 	10531,"8587fa8db38de17ad762a92b7caa4b66.png"
 	10532,"a38e0fd9239f58ecaea635fe637d033f.png"
 
-*Gafas Myre's Saint / Accesorios cara / Evento N16 (13)
+10572 Gafas Myre's Saint / Accesorios cara / Evento N16 (13)
+	10660,"23b02ccf4ee8fab643cd16d5e4fe7b6a.png"
 	10667,"9852e5684070184b2351f7103418b1cf.png"
 
 10567 Vestido Myre's Saint / Vestidos / Evento N16 (13)
@@ -2229,7 +2361,6 @@ Steam Girl - Japan Expo
 	11555,"78ee059488403503f5eed5207e9be856.png"
 	11556,"306c388b038e99091072e42bd44c5e8b.png"
 	11557,
-	11558,
 	11559,"ebdbdab0ef76ad77b94b941f6158cbbc.png"
 	11560,
 	11561,
@@ -2238,7 +2369,7 @@ Steam Girl - Japan Expo
 10693 Shiva / Cabello / Evento N16 (41)
 	10693,"1d5c38ddc3c8c54b81c6f2e69985aefe.png"
 	11179,"65ba3ca7dd92b09cd3c1917eeca37342.png"
-	11180,
+	11180,"2d2e24eac9a5d1a0c431e27178d183d4.png"
 	11181,"4b46cd2330f3d6ffba7601a878a44fb2.png"
 	11182,
 	11183,
@@ -2357,7 +2488,7 @@ Steam Girl - Japan Expo
 	10807,
 	10808,"a57f5a6c5eb17754b2611ce034e1c0ea.png"
 	10809,
-	10810,
+	10810,"fd08e30feb2afe93e1f711333969c4b5.png"
 	10811,"e205d9e219594c5b09724046780c3584.png"
 	10812,
 	10813,"4fca5930b7aee383c03b9fe79f3043bc.png"
@@ -2372,7 +2503,13 @@ Steam Girl - Japan Expo
 10758 Adornos piernas Yeti's Hunter / Calcetines / Evento N16 (13)
 	10758,"081feb68099e20ce324f001088d42b07.png"
 	10792,"83b5826968a099c68572af72154b34ad.png"
+	10793,
+	10794,
+	10795,
 	10796,"bb04617c1c1075a95428dd1dc26020e5.png"
+	10797,
+	10798,
+	10799,"0843b1626a8a307d455e667abfe17266.png"
 
 10862 Barba de Papá Noel / Accesorios cara / Evento N16 (41)
 	10862,"faa9a756adc0f25cf907493a343b4039.png"
@@ -2407,7 +2544,7 @@ Steam Girl - Japan Expo
 	10891,"9d5c03e57319769f688e3e6ddf9fdfeb.png"
 	10892,
 	10893,"db76780c223befae23d7e4a862aa8793.png"
-	10894,
+	10894,"429fdbbcff76e328b291c3db4ccebb4c.png"
 	10895,"d1a8bce62111a8d94d1ac9dced4b63bc.png"
 	10896,"b342d7360f1a212dab0df9461b529a3c.png"
 	10897,
@@ -2593,7 +2730,7 @@ Steam Girl - Japan Expo
 	11098,"13fc73cdcddd9a787b646155ba49a25c.png"
 	11099,
 	11100,"9240536ca27b95c046419f73d704c7a4.png"
-	11101,
+	11101,"6cdbba8b8566cb3af52c7e836a85ecf3.png"
 	11102,
 	11103,"6123bb55d051fa6da72503340a70bb7e.png"
 	11104,"d70736480c5c3b3547efaf843366e65e.png"
@@ -2834,6 +2971,8 @@ Steam Girl - Japan Expo
 
 11502 Cristales brazos Snow Queen / Accesorios manos / Evento N16 (15)
 	11502,"1676c5f9eb31e462579478e17eb7360a.png"
+	11518,"da6f4e3b0b0b1b9bc495aa3dacb2bb73.png"
+	11519,
 	11520,"704a6eb2317c053afc388113cce91054.png"
 	11521,
 	11522,"17f8842788d2522b3d42b839931a77fc.png"
@@ -2844,31 +2983,32 @@ Steam Girl - Japan Expo
 	11527,
 	11528,"4c1c4bdf88a932fd369390fb8509418e.png"
 	11529,
-	11530,
+	11530,"ae49a0cd3136cc630caebe38e3a33a4d.png"
 	11531,
 	11532,"b0b13afb43cd96a1de1d5add65bb9cf9.png"
 	11533,
-	11534,
+	11534,"d008fd0ccc595f4ec8b71d3e534a9768.png"
 	11535,
 	11536,"2cb63a08c86e8109b65ccd0d0e5da8fd.png"
 
-	11549 Cristales Piernas Snow Queen / Calcetines / Evento N16 (15)
-		11549,"ebcacd12febd9fdb8b7f09721f4b55b5.png"
-		11565,"3d4f10808b966dd519d79320fdbd4f77.png"
-		11566,"bc45bf54013958eb66d9cc8d997b47c6.png"
-		11567,
-		11568,
-		11569,
-		11570,
-		11571,"7a6a723392e6492f9d7572870e2308b3.png"
-		11572,
-		11573,
-		11574,"36fa3aa7c8c9b13c5b6010be88abb2e5.png"
-		11575,"81b8f89e4e35d58d492464e7edf4eb37.png"
-		11576,"423e5877740d8bd3bf130af8afd0870f.png"
+11549 Cristales Piernas Snow Queen / Calcetines / Evento N16 (15)
+	11549,"ebcacd12febd9fdb8b7f09721f4b55b5.png"
+	11565,"3d4f10808b966dd519d79320fdbd4f77.png"
+	11566,"bc45bf54013958eb66d9cc8d997b47c6.png"
+	11567,
+	11568,
+	11569,
+	11570,
+	11571,"7a6a723392e6492f9d7572870e2308b3.png"
+	11572,
+	11573,
+	11574,"36fa3aa7c8c9b13c5b6010be88abb2e5.png"
+	11575,"81b8f89e4e35d58d492464e7edf4eb37.png"
+	11576,"423e5877740d8bd3bf130af8afd0870f.png"
 
-	11558 Cristal pecho Snow Queen / Collares / Evento N16 (15)
+11558 Cristal pecho Snow Queen / Collares / Evento N16 (15)
 		11577,"d3e117de313cce4b7f51f3b84ea0558b.png"
+		11578,"a4ae49cee7c2f47ff1de3e32127e6b8a.png"
 		11580,"3bbf4508d52c73d6b6342fd8ff1ac3f7.png"
 		11581,"612abdd3d117e18cd008f70507510aa6.png"
 
@@ -3141,7 +3281,7 @@ Steam Girl - Japan Expo
 	15137,"5bc9867b224b5d7619a8e8fe970b9983.png"
 	15138,"c0dacf072e8de8c5fda1e7320a4cfc80.png"
 	15139,"17b1659a8f695ede0decdf22e647c648.png"
-	15140,
+	15140,"c4f29cde3283b27e57560678fa944f81.png"
 	15141,"83e43da9ecf3d90c042ac08fa560e15d.png"
 	15142,
 	15143,"54131fe44bedd157393963b4d8ce20b9.png"
@@ -3624,12 +3764,13 @@ Steam Girl - Japan Expo
 16791 Pulsera de perlas Fortune Beads / Accesorios manos / Legendario (12)
 	16791,"c6d10ad9afe923c4c90d769a7038736b.png"
 	16855,"2f405f2bba33056f423b8a4b9c7d5a68.png"
+	16859,"e4136a03bf7eb549d887dabe921590eb.png"
 	16861,"336ebe505d645e1933ab9172799b4676.png"
 
 16792 Cinturón de perlas Fortune Beads / Cinturones / Legendario (12)
 	16863,"c3fe236e81e97b56a827e91b1a22fbda.png"
 	16864,"82095e15d8bc23ac9c64692c8aa9497a.png"
-	16865,
+	16865,"28c8c803e65c49b22b57df178e14e9ce.png"
 	16866,"6a124e00b0d009530141dd4e5d17c04a.png"
 	16867,"ffbd7ea1dc86bef0c7c254a9dfcf3754.png"
 	16868,
@@ -3779,7 +3920,7 @@ Maquillaje Eagles Pride / Accesorios cara / Épico (12)
 	18280,
 	18281,
 	18282,
-	18283,
+	18283,"4ed988e08a0e4de0a6aba4ac08031d97.png"
 
 18284 Bufanda Eagles Pride / Abrigos / Épico (12)
 	18284,"84a38236b979610b4290d859fd54a90d.png"
@@ -4174,35 +4315,35 @@ Maquillaje Eagles Pride / Accesorios cara / Épico (12)
 
 *********************** CODIGOS ***********************
 
-@13822,_hat,ES=Velo Roving Lass (14)
-	@13822,#13822,539777228f5f3a71297eabd13a6f5832.png
-	@13822,#13951,2879ec2841230d29bc46fbcca3624eff.png
-	@13822,#13952,4a5afe306fd626a2bf1c00682da73c4a.png
-	@13822,#13953,bf3d9d95231b6e20be021c5c8a914a32.png
-	@13822,#13954,13d382f6adc4e612287dbf8f153f8adf.png
-	@13822,#13955,5dbdb07381314431de3d1864e01715e7.png
-	@13822,#13956,484179265f6fd2672043eb743b0039a9.png
-	@13822,#13958,5cfbbff054077e49301dc2a6a5d7c406.png
-	@13822,#13959,d3eb7ac900614018489bc87f0d75ac6a.png
-	@13822,#13960,487ec1beb9bc66a0148a22486ca80af7.png
-	@13822,#13961,3d3cb09ebe998e07794decde01401f3e.png
-	@13822,#13962,0e7ced7d617698a635c304be1a693f04.png
-	#14048,9be23e95cd8ed113d37743a2fe8b987b.png
+@13822 Velo Roving Lass / Sombreros / Evento V17 (14)
+	13822,13822,"539777228f5f3a71297eabd13a6f5832.png"
+	13951,13822,"2879ec2841230d29bc46fbcca3624eff.png"
+	13952,13822,"4a5afe306fd626a2bf1c00682da73c4a.png"
+	13953,13822,"bf3d9d95231b6e20be021c5c8a914a32.png"
+	13954,13822,"13d382f6adc4e612287dbf8f153f8adf.png"
+	13955,13822,"5dbdb07381314431de3d1864e01715e7.png"
+	13956,13822,"484179265f6fd2672043eb743b0039a9.png"
+	13958,13822,"5cfbbff054077e49301dc2a6a5d7c406.png"
+	13959,13822,"d3eb7ac900614018489bc87f0d75ac6a.png"
+	13960,13822,"487ec1beb9bc66a0148a22486ca80af7.png"
+	13961,13822,"3d3cb09ebe998e07794decde01401f3e.png"
+	13962,13822,"0e7ced7d617698a635c304be1a693f04.png"
+	14048,"9be23e95cd8ed113d37743a2fe8b987b.png"
 
-@13823,_hat,ES=Joyas Roving Lass (14)
-	@13823,#13823,73cd81c981cb88148def4bf20661d0db.png
-	@13823,#13963,15954130592e3a0e1f8ab31b533e8c85.png
-	@13823,#13964,75809b17118095ad075af9dd3eece5f8.png
-	@13823,#13965,66bfb8a644dd8354e4ce681ebafb7b98.png
-	@13823,#13966,87752e890f7cea6a67aa156c593f8809.png
-	@13823,#13967,5cf91d966d4be14d4659ee93423d347e.png
-	@13823,#13968,b31d234c1a82db828a3ce332581f341a.png
-	@13823,#13970,1d748d7cd2e71c2256535fb135833211.png
-	@13823,#13971,3537e2b4e6581306e9365d2bdf87a1e9.png
-	@13823,#13972,85b2d46c0a84e9b85e47bf7ed7c27d5e.png
-	@13823,#13973,26d60d789f947cedd066ed54f408833b.png
-	@13823,#13974,2a61ad4020590a9512a55dd39eb0dd88.png
-	#14046,b679b11f3efb72af9ddb0cf0f2f64a76.png
+@13823 Joyas Roving Lass / Sombreros / Evento V17 (14)
+	13823,13823,"73cd81c981cb88148def4bf20661d0db.png"
+	13963,13823,"15954130592e3a0e1f8ab31b533e8c85.png"
+	13964,13823,"75809b17118095ad075af9dd3eece5f8.png"
+	13965,13823,"66bfb8a644dd8354e4ce681ebafb7b98.png"
+	13966,13823,"87752e890f7cea6a67aa156c593f8809.png"
+	13967,13823,"5cf91d966d4be14d4659ee93423d347e.png"
+	13968,13823,"b31d234c1a82db828a3ce332581f341a.png"
+	13970,13823,"1d748d7cd2e71c2256535fb135833211.png"
+	13971,13823,"3537e2b4e6581306e9365d2bdf87a1e9.png"
+	13972,13823,"85b2d46c0a84e9b85e47bf7ed7c27d5e.png"
+	13973,13823,"26d60d789f947cedd066ed54f408833b.png"
+	13974,13823,"2a61ad4020590a9512a55dd39eb0dd88.png"
+	14046,"b679b11f3efb72af9ddb0cf0f2f64a76.png"
 
 =================== EXCLUSIVO ==================
 
@@ -4223,11 +4364,10 @@ Maquillaje Eagles Pride / Accesorios cara / Épico (12)
 	*Vestido Cosy Winter
 
 Youth Seeker
-	*Hacha Youth Seeker / Accesorios manos / Evento H16 (15)
-
 	!@9513 Vestido Youth Seeker / Vestidos / Evento H16 (15)
 		9513,"14ee968d15404beff7c88d104abfc3c0.png"
 		10440,"51541b912f87475ed84de4ba2c6a2156.png"
+		10450,"010d141d72eda27985c910918c241674.png"
 	!@9514 Collar Youth Seeker / Collares / Evento H16 (15)
 		9514,
 		10427,"85d125f909856a0fb5952380bae5d4b5.png"
@@ -4240,7 +4380,8 @@ Youth Seeker
 		10434,
 		10435,
 		10436,"b3e2a29a99b1719f02a55bbb3a9eb0ea.png"
-
+	!@9515 Hacha Youth Seeker / Accesorios manos / Evento H16 (15)
+		9515,"8b6a68b47009a9f2df594e3f181ded51.png"
 	!@9516 Espejo Youth Seeker / Accesorios manos / Evento H16 (15)
 		9516,"50d10931461b0f4cdd3cfa4d44f11a1e.png"
 		10396,"b0c9b9f399b4bce42a37b4fe9d832b6f.png"
@@ -4262,21 +4403,7 @@ Youth Seeker
 		10368,"9e31749fda8c99d04df306553099efeb.png"
 		10380,"393333b34e4e3a20eb8618dd8ce82d2d.png"
 
-	!@9518,Zapatos Youth Seeker / Zapatos / Evento H16 (15)
-		10390,"7f4dcb72f835737d30d2a9783629e48d.png"
-		10394,"da91deefa3364b403149b3eea43cdfb6.png"
-
-	!@9519,Corsé Youth Seeker / Ropa interior / Evento H16 (15)
-		9519,"a1d94acd3322a3f63c275e60a535cda6.png"
-		10356,"757fb9404285c56c0d9a8670304c030a.png"
-		10357,
-		10358,"6873ac8239f4a9c6b9fc8ddf0dd26537.png"
-		10359,
-		10360,
-		10361,
-		10362,"911adf968df6294d91cf49fc579698b4.png"
-		10363,
-		10364,"3b7b3407ff57cc439c48f363868e3c4a.png"
+	!@9518 / 
 
 **Clause's Maiden (9 prendas x 12 colores)
 	*Cinturón Clause's Maiden / Cinturones / Evento N16 (12)
@@ -4296,39 +4423,40 @@ Youth Seeker
 ============================
 
 Secret Ingredient
-	!@11846,Body Secret Ingredient,Ropa interior / 
+	!@11846 Body Secret Ingredient / Ropa interior
 		11846,"efc526d7e3ee4e0a50f2791427a60426.png"
 		12014,"d6284b3aeacd69d367db2185bb99e2f4.png"
-		12015,
+		12015,"874268b086fb8f7b3ed1541c1f9b90d3.png"
 		12016,
 		12017,
-		12018,
+		12018,"b92aeb6e6532ff999ad60aba4219eb3f.png"
 		12019,"fff2ac324960949aa28309215c69026f.png"
 		12020,
 		12021,
-		12022,
+		12022,"f5744fbc635718781a8fdaec14ab3752.png"
 		12023,
 		12024,
 		12025,"b5ba84d0bcaefe23aed9f49ccbe0b93d.png"
 
-	!@11847,Corsé Secret Ingredient,Partes de arriba / #
+	!@11847 Corsé Secret Ingredient / Partes de arriba
 		11847,fdaabfd42dae225a221bb1d1df3cd35a.png
 		12134,"b0f86a776abaac380a1fab0b9325282e.png"
+		12135,"0a480064a406e83bdac0200de9662c32.png"
 		12139,"0e800c296641854a78b936bb3476bf4c.png"
 		12140,
 		12141,
-		12142,
+		12142,"c59c40e429efe961b9950f5c5eed9187.png"
 		12143,
 		14144,
 		12145,"bd52407b260787a4c6f2a453200cfa5e.png"
 
-	!@11848,Calcetines Secret Ingredient,Calcetines / #
+	!@11848 Calcetines Secret Ingredient / Calcetines
 		11848,c2f5c60465b2a4f66fb4de5d89b4458c.png
 		12038,"8ff012c662c37477c04a8c02e8fdae9c.png"
 		12039,"64b6ea49e7234ea281edbc6932ecd4ac.png"
 		12040,"3e5fa5fa2f32ff659c1326df57464702.png"
-		12041,
-		12042,
+		12041,"75ea3ff62bf68cc814471bfcd3d29588.png"
+		12042,"88545ef6fac6cacbccda4f50f3cde43f.png"
 		12043,"afd06b56db48a8fded9e51be106d6b98.png"
 		12044,
 		12045,
@@ -4337,7 +4465,7 @@ Secret Ingredient
 		12048,
 		12049,"5a68962272648c84f6b23dbddfab0439.png"
 
-	!@11849,Brazaletes Secret Ingredient,Accesorios manos / 
+	!@11849 Brazaletes Secret Ingredient / Accesorios manos
 		11849,"f97db4bc907cc5077d74e7ae67356e8c.png"
 		12110,"1fb3157f5b05957af1c4fbd209b9a284.png"
 		12111,
@@ -4348,53 +4476,64 @@ Secret Ingredient
 		12116,
 		12117,
 		12118,"4c00870ec8231d9f27bfa196ece602d3.png"
-		12119,
+		12119,"460c7ab7e78d64c88c1499a093eb6abc.png"
 		12120,
 		12121,"4d8c887eb0cd59d802ed6307937fb262.png"
 
-	!@11850 Alas Secret Ingredient / Sombreros / #
+	!@11850 Alas Secret Ingredient / Sombreros
 		11850,"1f05747793a754ba1ee3dd14be4e49ef.png"
 		12266,"105f56993dac9b58e91c5c29ee802b5a.png"
+		12267,
+		12268,
+		12269,
+		12270,
 		12271,"9f7a4360442ee051df618b68192d48bc.png"
 		12272,
 		12273,
-		12274,
+		12274,"1743fc189c74edbfbf4f20b7a7af5fe7.png"
 		12275,
 		12276,
 		12277,"074c41da86822f3e345c6b41d054df80.png"
 
-	!@11851 Cinturón Secret Ingredient / Cinturones / 
+	!@11851 Cinturón Secret Ingredient / Cinturones
 		11581,"b303d5b43afc9f596d15cf898fa6fb76.png"
 		12098,"5990d96c3fee4aff03f04a01c2978789.png"
 		12099,"3cbf56834e914ff449074b7618b8af22.png"
 		12100,"bf8215d1c1a6b116cf6d620257cf0fd5.png"
 		12101,
-		12102,
+		12102,"3aab3f193f305f6ea197e3da1f91e8b7.png"
 		12103,"20272c189bb63753daf99273572fca73.png"
 		12104,
 		12105,
-		12106,
+		12106,"dd257e7d7293ee8a427db8d8491b219e.png"
 		12107,
 		12108,
 		12109,"fc4171237dc3c605c2b3243a028ff164.png"
 
-	!@11852,Guantes Secret Ingredient / Guantes / #
+	!@11852 Guantes Secret Ingredient / Guantes
 		11852,72905cbc68d77496dc470ebf1011bf3a.png
 		12086,"5a2ed0313eb49255a718f7aeed22403f.png"
 		12087,"bec47584338e0c05351718c6434994ad.png"
+		12088,
+		12089,
+		12090,
 		12091,"726c8da0169f0382ab1d0fb2e45367bf.png"
 
-	!@11853 Pendientes Secret Ingredient / Accesorios cara / #
+	!@11853 Pendientes Secret Ingredient / Accesorios cara
 		11853,d9fcb230721df03dfcc4d6deb7d28805.png
 		12244,"e43e1c2ace779054ef78a55a9f1c95ae.png"
+		12245,
+		12246,
 		12247,"2823e060b4866fff3b04f3e8a0891059.png"
 
-!@11854,Elda,Cabello / #
+!@11854 Elda / Cabello
 	11854,
+	11892,"5b8f820180bf627de4ee90adbabb327c.png"
+	11893,"8b08cc5ee62426fff62806b67ccee8c4.png"
 	11897,"ea960242f4034e12ee2d35d1b108b3ad.png"
 	11898,"c3b4b78505847390c66e569317bf2b43.png"
 	11899,
-	11900,
+	11900,"59a502345f0ebd8550e5998e2bfc1bdb.png"
 	11901,
 	11902,
 	11903,
@@ -4402,7 +4541,7 @@ Secret Ingredient
 	11912,"5dd88563fad72fd7428de243a2075b27.png"
 	11913,"b7c84f58bdf779a8e74b5712552d0a73.png"
 
-!@11855,Venus,Cabello / 
+!@11855 Venus / Cabello
 	11855,
 	11937,"ba988cebba8c1f657eb89da62a51b9b4.png"
 	11938,
@@ -4411,7 +4550,7 @@ Secret Ingredient
 	11941,"d934d32f8bb49fa5a63bd7248fe78ecd.png"
 	11955,"68fce922b1225a2ad7868a052f4233f9.png"
 
-!@11856,Freya / Cabello
+!@11856 Freya / Cabello
 	11856,
 	11979,"635c58ec282cd87e37e28f3501aa943f.png"
 	11980,
@@ -4425,7 +4564,7 @@ Secret Ingredient
 	11988,
 	11989,
 	11990,
-	11991,
+	11991,"5320aa674722d876c9c2eb9af25ecce7.png"
 	11992,
 	11993,
 	11994,
@@ -4435,7 +4574,7 @@ Secret Ingredient
 	11998,"2b7ad19fcbe75196a417e761873e036d.png"
 
 Shadow's Mistress
-	!@11857,Velo Shadow's Mistress,Accesorios manos / #
+	!@11857 Velo Shadow's Mistress / Accesorios manos
 		12122,"9b23d7fdf4f79aec7c43273acf9b4b6d.png"
 		12123,
 		12124,"7a2d082de35ee7be06b65f450ab5ccb0.png"
@@ -4444,45 +4583,53 @@ Shadow's Mistress
 		12127,"7296177d20976b10b4693e9f73ca564c.png"
 		12128,"d75211570cc3047e5c3771b8630f8ce9.png"
 		12129,
-		12130,
+		12130,"0679a90d71b653f89ebc4f0fe7b2a360.png"
 		12131,
 		12132,
 		12133,"60fff8fa59de2a1b25097546a21fd5c0.png"
 
-	!@11858 Vestido Shadow's Mistress / Vestidos / #
+	!@11858 Vestido Shadow's Mistress / Vestidos
 		11858,
 		12196,"1cd0ce1faeb0a28857b4264e8f236f97.png"
 		12197,"7cae5ea8acbc7b148eec4398a75f3f13.png"
 		12198,
 		12199,"f35bbcd7f5bc9fcd6e73bdf2626169bb.png"
+		12200,"92bf2d08293ed9e126748234c63e8a9f.png"
 
-	!@11859,Top Shadow's Mistress,Partes de arriba / #
+	!@11859 Top Shadow's Mistress / Partes de arriba
 		11859,
 		12184,"efdeac47ec31d1ca18d5fe148c1f239c.png"
 		12185,"cb15fd63af59894a9a37455df3317d69.png"
 		12186,
 		12187,"5041983b514bbd5336c05666df6af7a3.png"
-		12188,
+		12188,"e625586a5c3592ee5061c6cc4744d85f.png"
 		12189,
 		12190,
 		12191,
 		12192,
 		12193,"7c7eb1099076ba54ff38358979af8018.png"
 
-	!@11860, Zapatos Shadow's Mistress * (Calcetines),Zapatos / 
+	!@11860 Zapatos Shadow's Mistress * (Calcetines) / Zapatos
 		11860,"a2706eaf3af9a970845557e65b091bcf.png"
+		12050,"305cd05ec51909aab69b30d0ff3abb4f.png"
+		12051,
 		12052,"f9c7de71f504be4b35932bf1475901d7.png"
 		12053,
 		12054,"47595fb1e0ceed2db1d421d6643b3872.png"
+		12055,
+		12056,
+		12057,
 		12058,"5a00fe113fc0d0b99484258c1d99aa31.png"
 
-	!@11861 Velo cara Shadow's Mistress / Accesorios cara / 
+	!@11861 Velo cara Shadow's Mistress / Accesorios cara
 		11861,
 		12256,"6040aea32d7e891b5155a5b477cffd72.png"
 		12257,"d20da681d169f989fd1e40db02fc0290.png"
 		12258,"fb5671e406e727e96f48d1b312f240dd.png"
+		12259,
+		12260,"d9a6b9594cf096c398eb9ba5f361dd18.png"
 
-	!@11862 Pendientes Shadow's Mistress / Accesorios cara / #
+	!@11862 Pendientes Shadow's Mistress / Accesorios cara
 		11862,
 		12280,"efbccfeeb4b82724915ae09ed378d6f6.png"
 		12281,
@@ -4495,7 +4642,7 @@ Shadow's Mistress
 		12288,
 		12289,"4ffcd0f29cea60b6623308d31e1db465.png"
 
-	!@11863,Velo hombro Shadow's Mistress / Abrigos / 
+	!@11863 Velo hombro Shadow's Mistress / Abrigos
 		11863,
 		12232,"9eada0d0d0da9c7089d558029ac5ad42.png"
 		12233,"35a9df424d5e566bd5be2a398ddcd90e.png"
@@ -4508,30 +4655,40 @@ Shadow's Mistress
 		12240,
 		12241,"000e596b0b183fc9155d53265548203b.png"
 
-	!@11864,Abanico Shadow's Mistress / 
+	!@11864 Abanico Shadow's Mistress / Accesorios manos
 		11864,"eb243e805a42e1e16f9b65a1a831f449.png"
 		12172,"dfca3b9d9287b9f64d1456cff71f0ac1.png"
 		12173,"26aad4e0ec0e923002789a1572ea805b.png"
 		12174,"95fdc65f2b498a5dad3c50b0f6a04756.png"
-		12175,
+		12175,"6eba41924b955d8d7e7a25cffd9fc7db.png"
 		12176,"25d454247729b19f0855f051b203807a.png"
 
 Warrior's Maid
-	!@11865,Body Warrior's Maid / Ropa interior
+	!@11865 Body Warrior's Maid / Ropa interior
 		11865,
 		12026,"509a0524b34194799c59e3798c738fa8.png"
 		12027,
 		12028,"df7223a716dbeb718e1d1c75bd71b0e3.png"
 		12029,"840c300224298a46437c1f05494e7ff7.png"
+		12030,
+		12031,
+		12032,
+		12033,
+		12034,
+		12035,"8a07bce36c84176ff8a8fd45fb3ee1a3.png"
 
-	!@11866,Top Warrior's Maid / Partes de arriba / 
+	!@11866 Top Warrior's Maid / Partes de arriba
 		11866,
 		12208,"7760f0d6598feb44612788c8153c7dcc.png"
 		12209,"a2324f6996bce926766f78fcff9c535d.png"
 		12210,
 		12211,"1a6a89eb8cca8f05f08205e14f49b9b8.png"
+		12212,
+		12213,
+		12214,
+		12215,"48beab97be55cf6a1ad7fe68b4e11914.png"
 
-	!@11867,Ornamenta brazo Warrior's Maid / 
+	!@11867 Ornamenta brazo Warrior's Maid / Accesorios manos
 		11867,"333f8d1e5a5b98ffed43ed0c19ca6427.png"
 		12160,"2386ddf8eba6fe811abf278b2e504264.png"
 		12161,"41df53ebb9d58ffc8e42fa7ac0f38ba7.png"
@@ -4539,12 +4696,12 @@ Warrior's Maid
 		12163,
 		12164,
 		12165,
-		12166,
+		12166,"91f90c44e900ab0e6ff712c0b505a411.png"
 		12167,
 		12168,
 		12169,"c9e97ba830101394e101b0c625bbc00d.png"
 
-	!@11868,Zapatos Warrior's Maid,Zapatos / 
+	!@11868 Zapatos Warrior's Maid / Zapatos
 		11868,"067a45dbefac01d8c7c802c4c919bfeb.png"
 		12064,"9e704debc5d4c41f5fee9fe3d9203afa.png"
 		12065,"fde285802b3bd425dc50063a6757c0d1.png"
@@ -4552,27 +4709,36 @@ Warrior's Maid
 		12067,
 		12068,
 		12069,
-		12070,
+		12070,"4c7df750eaba2abb9043b5eae3ad4aee.png"
 		12071,
 		12072,
 		12073,"983d9e43da1f4800f33195b070c3a836.png"
 
-	!@11869,Collar Warrior's Maid / Collares
+	!@11869 Collar Warrior's Maid / Collares
 		11869,"275ff9463e7f4cc07a7ebf0b100d015f.png"
+		12218,"91420ad034fbf7582659bd6987c343bf.png"
+		12219,
 		12220,"721173a6a9261022cbacffd5654c5752.png"
 		12221,"195f3c1d3ec1c92364272372f0eb616e.png"
+		12222,
+		12223,
+		12224,
+		12225,
+		12226,
+		12227,
+		12228,
 		12229,"a1b1371c88a014c689e618254825abd8.png"
 
-	!@11870 Cinturón de volantes Warrior's Maid / Cinturones / 
+	!@11870 Cinturón de volantes Warrior's Maid / Cinturones
 		11870,"99d7c5e9d234c0ab34be5f5c0a9b58ab.png"
 		12074,"3f2a93f889214ce64422421cfced109a.png"
 		12075,
 		12076,"fdb5507cce1ed7304c554e10fd3f6a5a.png"
 		12077,"320e739264b189f4ab5b21af518d87d6.png"
-		12078,
+		12078,"a84b4c0ae716c4540b204681ec1770ad.png"
 		12079,"c9c2858ac7b9ff1859f4068adcffbf1e.png"
 
-	!@11871,Frasco Warrior's Maid / Accesorios manos
+	!@11871 Frasco Warrior's Maid / Accesorios manos
 		11871,
 		12151,"3ead6e3c665e1ae872d9c311e1deea5a.png"
 		12152,
@@ -4582,10 +4748,13 @@ Warrior's Maid
 		12156,
 		12157,"9340a801b84f7e0b6736917f7b4c5077.png"
 
-	!@11872,Tatuaje Warrior's Maid,Tatuajes / #
+	!@11872 Tatuaje Warrior's Maid / Tatuajes
 		11872,"016254ab4d17fe4e3fcd157e6f6a3d53.png"
+		12002,"9fb0379ef6607374bf1395a6e0f52c25.png"
+		12003,
+		12004,
 		12005,"e8dfb4c44714654d1da38d68c1f1aba1.png"
-		12006,
+		12006,"119eb7a4971f4a58b757b9f3dc1b2478.png"
 		12007,
 		12008,"da783ce00064af03a1a8421b4c7447b0.png"
 		12009,
@@ -4595,38 +4764,44 @@ Warrior's Maid
 		12013,"e1a2b5fed26bda921b11178ff2477e34.png"
 
 Egg Artist
-	!@12591,Botas Egg Artist,Zapatos
+	!@12591 Botas Egg Artist / Zapatos
 		12591,"9815d239f22a68cbc43534550bc477f3.png"
 		12875,"44c7a80668a2b2d6f0871a13399ec156.png"
 		12876,
 		12877,"742860fbbfb12c1c1ca6fbc43c4c761e.png"
 		12878,
 		12879,"747c43b0d2dc6588dee137e0a749d85c.png"
+		12880,
+		12881,
+		12882,"985c519ca50333012196c8006659ae90.png"
+		12883,
+		12884,"084fb5fb3be4aee5d43eecc06c62e135.png"
 
-	!@12592,Zapatos Bells Bearer,Zapatos / #
+	!@12592 Zapatos Bells Bearer / Zapatos
 		12592,"d67898313d569f6801ed849623efcfad.png"
+		13100,"ff2d484cfce93be708cc66cae0ce662d.png"
 
-	!@12593,Botas Hunter Instinct,Zapatos / #
+	!@12593 Botas Hunter Instinct / Zapatos
 		13009,"9a1861100c4464e8f6d891b68d159994.png"
 		13015,"486b7816d783a6ff2ea06b48b379bfbb.png"
 
-	!@12594,Medias Bells Bearer,Calcetines
+	!@12594 Medias Bells Bearer / Calcetines
 		12594,"e7edd25ba34fe48f033af1647346f0a1.png"
 		13113,"70ca9427fc7dfa37685069f620feed7d.png"
 		13114,"c974567b12fd6264c6e180a072db77c1.png"
 
-	!@12595,Medias Egg Artist,Calcetines / 
+	!@12595 Medias Egg Artist / Calcetines
 		12595,"4253c862a9222dc61d72a0874c9f8a48.png"
 		12869,"d8372e718d25dcb63d2e566e899fae2d.png"
 		12870,"2f07226e88122ca68f6866b5420a15d1.png"
-		12871,
+		12871,"1e85fd90b621113273b6ad9ee1a74e52.png"
 		12872,"b40861517e3f41d20c723ae31ac99b6c.png"
 		12873,"22fb472e183354ba9d59b523c63e358f.png"
 
-!@12597,Tatuaje Bells Bearer,Tatuajes / 
+!@12597 Tatuaje Bells Bearer / Tatuajes
 	12597,"143736ba2ba2ee259405edba4b260920.png"
 	13128,"3722e16ed27b2a1e270d02fbd52e8ab4.png"
-	13129
+	13129,"0559575baefe4cc732574c8b2717b436.png"
 	13130,
 	13131,
 	13132,"68d649c492c72ef56ce3e601439bcdbe.png"
@@ -4637,14 +4812,16 @@ Egg Artist
 	13137,
 	13138,"bf87c8dcce23bdc430ced2027bf2c455.png"
 
-!@12598,Pantalón Egg Artist,Pantalones / 
+!@12598 Pantalón Egg Artist / Pantalones
 	12598,"c01e7ebfd6a981d07e49070e35d8262c.png"
 	12910,"921491e9b531d8c8890694194da940ca.png"
 	12911,
 	12912,
 	12913,"bdd9c81d1cc15393b9f50bf51f16b326.png"
+	12914,"46e4abd18a458b7cc000d70a2d58e66b.png"
+	12915,"a7d0a4713f4a558b83841adad2a462af.png"
 
-!@12599,Falda Bells Bearer,Pantalones / #
+!@12599 Falda Bells Bearer / Pantalones
 	12599,"c43b4c67a9cd14df98ca47b010608b42.png"
 	13150,"48b99987ec3a1c5a52097e6b2e32eac6.png"
 
@@ -4653,7 +4830,7 @@ Egg Artist
 	12902,"6924d2ea21250987b10846cd97fc91c7.png"
 	12903,"d165daf761ffd4f625e61a488600b22d.png"
 
-!@12601,Mitones Bells Bearer / Guantes / #
+!@12601 Mitones Bells Bearer / Guantes
 	12601,"766ff6a6f84a489dfb136f2e9355586a.png"
 	13139,"e89df34baefca33097bc1a2256018127.png"
 	13143,"388b31470dd4b7f2f67596863a2903f6.png"
@@ -4664,18 +4841,18 @@ Egg Artist
 	12980,"89eb8081fb71214d4b3ed36409b7e68d.png"
 	12982,"042d0be29278d7162d2067aaff2b8c69.png"
 
-!@12604 Campanas Bells Bearer, Accesorios manos / #
+!@12604 Campanas Bells Bearer / Accesorios manos
 	12604,"419b46b1adb448efe9bf9d9891f35abf.png"
 	13087,"48a37a382b26f0736d4428224de98496.png"
 	13089,"059fc68f3609002eed61cc5c3ab81262.png"
 	13091,"517a49d45e5b7704ee2f430118e04492.png"
 
-!@12605 Pulseras Egg Artist,Accesorios manos / #
+!@12605 Pulseras Egg Artist / Accesorios manos
 	12605,"315046e421d7e4e17793a546f9557c0f.png"
 	12919,"2662a5a2e6513746f579a073060df77b.png"
 	12924,"b28bc2c14f3fc8e91b7201d1f8abbda7.png"
 
-!@12606 Pincel Egg Artist,Accesorios manos / #
+!@12606 Pincel Egg Artist / Accesorios manos
 	12606,
 	12888,"3b11ced080efb7c755e7ab42523fa313.png"
 	12889,
@@ -4686,13 +4863,17 @@ Egg Artist
 	12894,
 	12895,"608207a060ea3c121fe38b0c0674872e.png"
 
-!@12609 Top Hunter Instinct / Partes de arriba / 
+!@12609 Top Hunter Instinct / Partes de arriba
 	12609,"f401b2c1fcf5df6a91c450e4ddaa273c.png"
 	13040,"b9fccc07f1939ac64bcafe847c4f5198.png"
 	13041,"237b60f07a7cd6c5e178869cd80f2232.png"
 	13042,"f39759bcddb66b140095a3168b06b86e.png"
+	13043,
+	13044,
+	13045,
+	13046,"11c580d7e903db88065eee0948f2c9a0.png"
 
-!@12610 Top Bells Bearer / Partes de arriba / #
+!@12610 Top Bells Bearer / Partes de arriba
 	12610,"c019bf1b6ff0092c6797258fa83a69d6.png"
 	13117,"22657ec305dabff4a406a90ab5bfa65a.png"
 	13125,"1d58ea64471651ec763aab6d984c15b9.png"
@@ -4700,15 +4881,17 @@ Egg Artist
 !@12611 Top Egg Artist / Partes de arriba
 	12611,"8c3edf1d847daf757a896f2bac354e05.png"
 	12957,"34f27496b9123fab382a037f0e291c60.png"
+	12958,
+	12959,"473adfb4e2040f0ede7d35a639bf6609.png"
 	12960,"11fa2e1ed24cec6b9fc90fd6b687ce10.png"
 	12961,"a58dd1bff9b0a645fd05e58e406149c9.png"
 
-!@12612,Body Hunter Instinct,Ropa interior / #
+!@12612 Body Hunter Instinct / Ropa interior
 	12612,"f9f39c149426c56c4c47a59341037007.png"
 	12963,"663b7ca6af9dad4aaa18731d746f2083.png"
 	12965,"795bd32cf45bc96e56819d0c4a390024.png"
 
-!@12614,Blusa Hunter Instinct / Abrigos / #
+!@12614 Blusa Hunter Instinct / Abrigos
 	12614,
 	12985,"5b1b9c90a847c73614095611d14fa77e.png"
 	12986,"ff6c8921865fe2a00a266f1f16770312.png"
@@ -4720,11 +4903,12 @@ Egg Artist
 	12992,
 	12993,"af8ccf83f4359610a263f7e51817d540.png"
 
-!@12615,Chaqueta Hunter Instinct / Abrigos / #
+!@12615 Chaqueta Hunter Instinct / Abrigos
 	13051,"240504466ec694236a84b1e756b34625.png"
 	13053,"ba7bcbfc23f78d4adacdcb8a07cd0650.png"
+	13059,"07b1c65c238add789745751b524e2c3d.png"
 
-!@12616 Collar Bells Bearer / Collares / 
+!@12616 Collar Bells Bearer / Collares
 	12616,"93326216d15a4343743da0f8a6cdfc89.png"
 	13062,"b31154ae33cbc7d35156bff3ef206598.png"
 	13063,"d8519b2cc8067bad68b4f8799d638bf7.png"
@@ -4735,8 +4919,10 @@ Egg Artist
 	13068,
 	13069,"f8160f060598f8a9f76626603c8d5ceb.png"
 	13070,"0257df67a3084b65784bb968637630c6.png"
+	13071,
+	13072,"29e25fff81b585cf0b43972a71627c5e.png"
 
-!@12617 Pendientes Hunter Instinct / Accesorios cara / 
+!@12617 Pendientes Hunter Instinct / Accesorios cara
 	13020,"e919d104c432256b653dd2d4eb5edffc.png"
 	13021,
 	13022,
@@ -4745,11 +4931,11 @@ Egg Artist
 	13025,"5f3ae7385e019e27528bc3728161bc8c.png"
 	13026,"5b2d2e2615f1f912b5866c47529faa37.png"
 
-!@12618 Pendientes Egg Artist / Accesorios cara / #
+!@12618 Pendientes Egg Artist / Accesorios cara
 	12618,"7f39ed23e85dcb9896b2f3f8974edb38.png"
 	12946,"4d844efd0a84a516abf6a068f32432b6.png"
 
-!@12619,Chaqueta Bells Bearer / Abrigos / #
+!@12619 Chaqueta Bells Bearer / Abrigos
 	12619,"984bb48a3fb191e896079a9135880e67.png"
 	13073,"de63cfbb45e7a9ecfdcdbcdc1f14ae7b.png"
 	13074,
@@ -4759,7 +4945,7 @@ Egg Artist
 	13078,
 	13079,"2311101f6cbd56ddbcab67ee9264351a.png"
 
-!@12620 Lazo Hunter Instinct / Sombreros / 
+!@12620 Lazo Hunter Instinct / Sombreros
 	12620,"3d448ca053be8117cdbbf11965efb5a9.png"
 	12996,"d9d9d39013af00144bd8b3bbcd88f982.png"
 	12997,
@@ -4778,10 +4964,11 @@ Egg Artist
 	13031,"e6f84201b80df5bb6afd28ed6a17ce42.png"
 	13032,"d8c7d90b0e031d05a807ab566d2f0fde.png"
 
-!@12625 Huevos Egg Artist / Ambientes / #
+!@12625 Huevos Egg Artist / Ambientes
 	12625,"2fba24ddd9bc8688d0897d5f0339fe8f.png"
 
-!@12626,Rosie,Cabello / #
+!@12626 Rosie / Cabello
+	12631,"2de0d546f85613df60891a6d7735c8a0.png"
 	12654,"71905c99e6a332c3a9029462f1045524.png"
 	12655,"c01385c3d3c425a3db2bb39148b61f63.png"
 	12656,
@@ -4799,42 +4986,68 @@ Egg Artist
 	12668,
 	12669,"cb94496e27473674d95a0bfdf85ab054.png"
 
-!@12627,Niamh,Cabello / #
+!@12627 Niamh / Cabello
 	12678,"d7d5ece10da7120fac86c2c7c8e8c3a8.png"
 	12698,"517d8266e72698b687a0caa668ad1203.png"
 	12699,
-	12700,
-	12701,
+	12700,"df42392ba0e00f1a6d6d05c99cbef9ce.png"
+	12701,"edb0052dcfd6eff0734025b8fe8c18c8.png"
 	12702,
 	12703,"80d0f326648882ddf47e2b9c22638700.png"
 	12704,"281669290a36aea0a4a44bce090880f6.png"
+	12717,"7229e46acb37c58440b1834812679004.png"
+	12718,
 	12719,"77fd060dd1a1f93b591744c7156c5ef8.png"
 
-!@12628,Lola,Cabello / #
+!@12628 Lola / Cabello
 	12748,"a46b57887ebe0e504113d6806a9db82e.png"
 	12749,"8628389e737d6191b79bc17767b16921.png"
+	12750,"f24afdde73e91915b1bab5e66b13e1ef.png"
 	12761,"a7bc27ec6c2b7a214c6cd45e957a7809.png"
 
-!@13163,Batuta Maestro,Accesorios manos / #
+!@13163 Batuta Maestro / Accesorios manos
+	13163,"00714ed08f8ccb5cf496e9e6845878bb.png"
 	13340,"d5b1768d7a3a0b89eedf1ad06fef9728.png"
+	13341,
+	13342,
+	13343,
 	13344,"9eb36bbb1ee01e41813f7da232174f21.png"
+	13345,
+	13346,
 	13347,"8db806abe8e7e41dd8e5cdd798ef919c.png"
 	13348,"262e1ec2a90611937d2e6566ca6bf043.png"
+	13349,"52537b073c2dd9f8ac7a8f1ca237d7f0.png"
 
-!@13164,Botas Maestro,Zapatos / #
+!@13164 Botas Maestro / Zapatos
 	13164,"4282c7ca3f626b19802b99607f1b0c5d.png"
 	13373,"dcfc6dc6a41b91f5753028b6b9b1d938.png"
 	13374,"2e71da1059f7ea4c9bbacb0530901554.png"
+	13375,
+	13376,
+	13377,
+	13378,
+	13379,
+	13380,
+	13381,"e2ba5b1833df85aa14dd760f8a2ac4fd.png"
 
-!@13165 Pendientes Maestro / Accesorios cara / 
+!@13165 Pendientes Maestro / Accesorios cara
 	13308,"3d458e4ceae088957c33931d969db9d2.png"
+	13317,"d4307308d71d44a3fa10907e29822024.png"
 
-!@13166, Cinturón Maestro / Cinturones
+!@13166 Cinturón Maestro / Cinturones
 	13166,"9eba2fc5309c311c20127bcae5477dac.png"
 	13352,"ae89e4ac0b90bd86e75a8801c5e8ff95.png"
+	13353,
+	13354,
+	13355,
+	13356,
 	13357,"ca7c57f8f58806f59741c6ac65af4926.png"
+	13358,
+	13359,
+	13360,
+	13361,"75202d6a0d36957438bf572f0f96afc0.png"
 
-!@13167,Camisa Maestro,Partes de arriba / #
+!@13167 Camisa Maestro / Partes de arriba
 	13167,"085eb152226871aaf119dbe9f72b38cd.png"
 	13384,"ef51f7e005f242f3422b655275b91d41.png"
 	13385,"632af7c41ed4a22739c981deb15e704d.png"
@@ -4847,12 +5060,13 @@ Egg Artist
 	13392,
 	13393,"21160a822307e84612f01f9a33446f39.png"
 
-!@13168,Ella,Cabello / #
+!@13168 Ella / Cabello
 	13277,"1f370ad1da15ea4b6ecd9379d6af5886.png"
 	13290,"9de10eaa3f7d027f28b46140c9f404cd.png"
+	13292,"2cd4316e2c456e97363995ddad9e1325.png"
 	13303,"c5a72d5697f5cacd62a064fa7bc3dc72.png"
 
-!@13169,Guantes Maestro / Guantes / #
+!@13169 Guantes Maestro / Guantes
 	13169,"85ec6d97cc87fbeacb6831206a86b397.png"
 	13395,"4c1b83e97136196e0800cf51a195cac9.png"
 	13396,"936dbb08497174eb085a5806d06ad00d.png"
@@ -4865,27 +5079,28 @@ Egg Artist
 	13403,
 	13404,"da7e648954258b0fef15aeb337b8ba9a.png"
 
-!@13170 Nube de Partituras Maestro / Ambientes / #
+!@13170 Nube de Partituras Maestro / Ambientes
 	13329,"59bc66fa108ade4420f07cb7f27be7e9.png"
 	13330,"fc52f283796fc6c679bae4772313276e.png"
 	13331,
-	13332,
+	13332,"8911edf08de951c38a8cb9931b37f07b.png"
 	13333,"98491fc299d973d9708d2e4e46a1d35c.png"
 	13334,
 	13335,"611d76212a21e2b8d46759e6c38df7ad.png"
 	13336,"f6358dab589cb6de450b826a1a416e5c.png"
 
-!@13171,Pantalón corto Maestro,Pantalones / #
+!@13171 Pantalón corto Maestro / Pantalones
 	13171,"1bb4a91893bf1d9da092a8d5cf3ddd89.png"
 	13362,"be6d39a20dd3c5fe4e721f4192f4094b.png"
 	13363,"a6c1e929a29e76108de48066840ac99a.png"
+	13369,"31e6b34b077299e1380927f7aed2c54d.png"
 
-!@13172,Chaqueta Maestro / Abrigos / #
+!@13172 Chaqueta Maestro / Abrigos
 	13172,"6bf0150f439e4ed7e38ef209d7f1cf08.png"
 	13318,"9bb663473c19337ccaa48329672952a4.png"
 	13319,"8e47ad9dd9015af31f9bc95bfa5c3a91.png"
 
-!@13173,Pulseras Minstrel,Accesorios manos / #
+!@13173 Pulseras Minstrel / Accesorios manos
 	13173,"099bfbbf2935ccb2886ac478261b04df.png"
 	13406,"63c04757bdcf4105b60d2b6eb89651ec.png"
 	13407,
@@ -4896,8 +5111,10 @@ Egg Artist
 	13412,"a0621d5ed32206ce00a568ec5d6fe10b.png"
 	13413,"59146c40f6428891ad66936e8a44c994.png"
 	13414,"01f6f2a02517aa10ef4cb1b58f3b7642.png"
+	13415,
+	13416,"1febf109a3f9128b9b2382673255c68b.png"
 
-!@13174 Cinturón Minstrel / Cinturones /
+!@13174 Cinturón Minstrel / Cinturones
 	13174,"ba55bf704db0fde14f9703e9816f259a.png"
 	13487,"ec4b51a0e6381f8f5987cb598ff2a0db.png"
 	13488,
@@ -4905,43 +5122,44 @@ Egg Artist
 	13490,
 	13491,"8871a6b038e4d341170eb2b8ae16e9a6.png"
 
-!@13175 Cinturón de lazos Minstrel / Cinturones /
+!@13175 Cinturón de lazos Minstrel / Cinturones
 	13175,"319ac2abdfad75c1afa14e98144b0dce.png"
 	13498,"ea96874704e95fca7880e2fa9425f320.png"
 	13499,"97876dbb03c92774b3f2eb08eac7a0f8.png"
 	13500,
 	13501,"2e36b33b5930bfe024b082abb03f1075.png"
 
-!@13176,Top Minstrel,Partes de arriba / #
+!@13176 Top Minstrel / Partes de arriba
 	13176,"a77aa29dbe2569dae24c3bfa99fcde0b.png"
 	13432,"8d96d4bf6ff395a9bed72bf92fa2c23c.png"
 	13433,"703723d2e3f60dbcbf45304d8b3b830e.png"
 	13435,"2395c9ad3e34e65195faaaa3c8f4927c.png"
 	13436,"aeb8191a3d3d292d7382868a39e4bcae.png"
 
-!@13177,Falda Minstrel,Pantalones / #
+!@13177 Falda Minstrel / Pantalones
 	13177,"fea01d60669984316f0841de227abc66.png"
 	13475,"1a5d6049ae7acc82d9e119e7b2c7d5d9.png"
 	13476,"25f6bf5a47a6c798de110a9ed2775ea5.png"
 	13479,"5d31ae8bac9bf56a6ac20400ecfcc8fc.png"
 
-!@13178,Mangas Minstrel,Accesorios manos / #
+!@13178 Mangas Minstrel / Accesorios manos
 	13178,"bf59e391b6eaf40ebfbd99ce61ea6607.png"
 	13421,"16b910fcb3f9b341d023b209671be389.png"
 	13424,"da03b300c8e4f92bbb7be569e1ee6d2d.png"
 
-!@13179,Calliope,Cabello / #
+!@13179 Calliope / Cabello
+	13513,"582482525eaa23a9ee7f036b74d093a5.png"
 	13547,"1a1cbbad72fada4d3de6c7b8827d7fe4.png"
 	13549,"0d1bfe4889eaa5b3e2bd9ff0f650fc66.png"
 	13552,"2c400ec9c68de4917c9b798a8e8e3251.png"
 	13562,"71da2b39f0f6e188b2fddd79f5d2dddb.png"
 
-!@13180,Ukelele Minstrel,Accesorios manos / #
+!@13180 Ukelele Minstrel / Accesorios manos
 	13443,"83508ca6a706c6e5b875956a3ad1b421.png"
 	13444,"b9fcf69038161bf39baec647a3203e20.png"
 	13446,"e68203bb03c33a1ec48c4e69f3c544d2.png"
 
-!@13181,Chaqueta Minstrel / Abrigos / #
+!@13181 Chaqueta Minstrel / Abrigos
 	13181,"6fa011555725dfe74de3ee25230cfd83.png"
 	13453,"7a280c058b5991e34d19c2cc75025dec.png"
 	13454,"f2949cd02ae79ff67cd5578169bc964b.png"
@@ -4949,33 +5167,38 @@ Egg Artist
 	13456,
 	13457,"e3940144eb0e9da116ebe76e0ba7afe2.png"
 
-!@13182,Tobilleras Minstrel,Calcetines / 
+!@13182 Tobilleras Minstrel / Calcetines
 	13182,"57dd4e4df0e4d0c3e1d2e473069ddd04.png"
 	13467,"fae134d4118f718c1d52e2f674249ec0.png"
 	13468,"564d42c0fe094617677a614f61ac47fc.png"
 	13469,"74866adf09cbbcbb78be08feedbcde47.png"
+	13471,"4e0786dd738bc409951a31013ac93f53.png"
 
-!@13183,Anillos Diva / Accesorios masno / #
+!@13183 Anillos Diva / Accesorios masno
 	13183,"d44dd3d5fd8d4a03d935e6d6c10b2240.png"
+	13581,"b1261cc99b567fa72487342fc1d246ef.png"
+	13582,
 	13583,"793f07f78e303ffb6eed99305a1eb461.png"
-	13584,
+	13584,"24a064cc9d3a80e758fef4c5102e62d7.png"
 	13585,"d5c95a1a9d0775888f233eb9d83d45ff.png"
 	13586,
 	13587,
-	13588,
+	13588,"d717abfc740d6ac594d0387b3af18fa6.png"
 	13589,"6b3708f38e5172cf7f859e0425977768.png"
 
-!@13184,Chal Diva / Abrigos / #
+!@13184 Chal Diva / Abrigos
 	13184,"660487b7a7c6720cb0519d84f67a76d5.png"
+	13592,"ef7aff0467207d88c2cfe948ed0bac44.png"
+	13593,
 	13594,"c64c95c849662688505869bb8bf35205.png"
 	13595,
 	13596,
 	13597,
 	13598,
-	13599,
+	13599,"dff6ce03ee3c929d5d7eb33604ccb736.png"
 	13600,"e7f504f482357d1d55f3b2afde8b4fa2.png"
 
-!@13185,Bianca,Cabello / #
+!@13185 Bianca / Cabello
 	13691,"6e88b7e15fe3f650349dee8b52dac4d2.png"
 	13698,"80e83a1b11d70bbcaeed3d0636681d68.png"
 	13702,"85b46fa09411cf1a888a679673387655.png"
@@ -4983,7 +5206,7 @@ Egg Artist
 	13706,"33f0f4caf7aedb957e8350fac527d43f.png"
 	13717,"132670c233835efb1765d7e6a423ad65.png"
 
-!@13186 Collar Diva / Collares / #
+!@13186 Collar Diva / Collares
 	13186,"65cc13dfa1f5d19c338d4f06350b5ef0.png"
 	13602,"4e0038ef54321dab24b6ad19f11c0be3.png"
 	13603,
@@ -4996,12 +5219,12 @@ Egg Artist
 	13610,
 	13611,"f2f257d24f339f87a648807cdcb828a7.png"
 
-!@13187 Diadema Diva / Sombreros / 
+!@13187 Diadema Diva / Sombreros
 	13187,"ab781a436f39879eb4881bd64aca9bff.png"
 	13620,"2785578c91a557af51ad44e57a4b3642.png"
 	13622,"4765a1900101060db4c368e7483215c6.png"
 
-!@13188,Falda Diva,Pantalones
+!@13188 Falda Diva / Pantalones
 	13188,"e604666dd7c894e79fab1e4b323f9fff.png"
 	13624,
 	13625,
@@ -5015,7 +5238,7 @@ Egg Artist
 	13633,"b605151083b475ccd050fd868c45a484.png"
 	13634,
 
-!@13189,Micro Diva / Accesorios manos / #
+!@13189 Micro Diva / Accesorios manos
 	13189,"dfdde6173046e8ad8458b294adc3577d.png"
 	13636,"21ea03c8df848e9e02d904253e2af5fe.png"
 	13637,
@@ -5027,12 +5250,13 @@ Egg Artist
 	13643,
 	13644,"7490585fce376ad1ad9d294dbfb26c9b.png"
 
-!@13190,Corpiño Diva,Partes de arriba /
+!@13190 Corpiño Diva / Partes de arriba
 	13190,"1294009d62a609bafcd6325e8a551a3f.png"
 	13651,"16d4595a7e24efc567c494d80c0c2c76.png"
+	13653,"368e19bd0fc5ca8e00bc8c69df9f4aae.png"
 	13655,"1ee1636d8055063abcb18888e7646f7d.png"
 
-!@13191,Plumas Diva / Abrigos / 
+!@13191 Plumas Diva / Abrigos 
 	13191,"f970431e448731d1181bcd0ec8678596.png"
 	13661,"ead406aad47c7a319a0a6fa376f7b588.png"
 	13662,
@@ -5042,7 +5266,7 @@ Egg Artist
 	13666,"5fa7bb1ef35966af14f72f16674c8d43.png"
 	13667,"382325a063c097b287bdd1e6150f45ea.png"
 
-!@13192,Sandalias Diva,Zapatos
+!@13192 Sandalias Diva / Zapatos
 	13192,"63e32cfea90725aca2cf310ad0160b9b.png"
 	13668,
 	13669,
@@ -5057,14 +5281,20 @@ Egg Artist
 	13678,
 
 Starry Witch (MO) (10 prendas x 13 colores)
-	*Escoba Starry Witch
-	*Short Starry Witch
+!@14227 Escoba Starry Witch / Accesorios manos / Evento H17
+	14227,"80f71daa505cf18bc7000409853adac6.png"
+
+!@14235 Short Starry Witch / Pantalones / Evento H17
+	14235,"9d1055c92aa7d19b4560835615228bbe.png"
 
 !@14226 Bastón Starry Witch / Accesorios manos (H17) / 
 	14226,"c21aec0c60667afbd1c70c10e8d63b54.png"
 	14477,"57af88ae7eb1fdfc1ba76a56aa89b532.png"
+	14478,
+	14479,"48ac44a72496cf4023f047283132413a.png"
 
 !@14228 Sombrero Starry Witch / Sombreros (H17)
+	14228,"b04528e1cda5f749980d0ca2120085a4.png"
 	14415,"9591d7e7b1f2ee442095e3aced3f086a.png"
 	14416,"1f687303cbe76afd5e4e40e7856308c1.png"
 	14417,
@@ -5076,12 +5306,16 @@ Starry Witch (MO) (10 prendas x 13 colores)
 	14423,"0d48363ff9d2473c859af6bb602ed29a.png"
 
 !@14229 Bailarinas Starry Witch / Zapatos / Halloween 2017
+	14229,"9e4f10ce6890f7ca9929f27ff21c25b0.png"
 	14440,"43da1ffb68bf38b073a6df2ceea1818e.png"
 
 !@14230 Melissa / Cabello / Halloween 2017
 	14930,"a1b3671a4de2d7f61cfd992892ce51cd.png"
+	14938,"d5497d3d7aa85c53cd56f9811287dd1a.png"
+	14957,"7332a5fb3a878c9d866c95b6eab551ba.png"
 
 !@14231 Medias Starry Witch / Calcetines / Halloween 2017
+	14231,"c77fb4ea4a4174ef219e445c080645f6.png"
 	14427,"cb9d8bbef174a0de2042e9f76d1a3e3f.png"
 	14428,
 	14429,
@@ -5101,6 +5335,7 @@ Starry Witch (MO) (10 prendas x 13 colores)
 	14233,"ac3562e2e77d268ea2dcad805e452920.png"
 
 !@14234 Chaqueta Starry Witch / Abrigos / Halloween 2017
+	14234,"b9111280edebab807f6795ecfaba57dd.png"
 	14393,"db6fb6560702fb20229b9ff6b6e9fde7.png"
 	14394,
 	14395,"6283ee4c9cb7081f35283fcaf3cd3d5a.png"
@@ -5116,140 +5351,13 @@ Starry Witch (MO) (10 prendas x 13 colores)
 	16053,
 	16054,"12b9f4601484a4de1ffb40ccc7ed012d.png"
 
-Pure Bride
-	!@16341 Pendientes Pure Bride / Accesorios cara
-		16341,"ce4a6369743f432bd46d28ec222eceb0.png" (1)
-		16342,"6bf88f38e6a1955aba7a5662c4f00b1f.png" (3)
-		16343,b73ebab63d0b06083ed4d35f4a17d309.png 	(4)
-		16344,"df9add68d4ef1778bc7347f86bb43261.png" (2)
-		16345,"25ccf622de37996411a77f43913c681a.png" (5)
-		16346,
-		16347,"af8e0a2ba4f6e3037bbda472110a9310.png" (7)
-		16348,
-		16349,"d607a2ec7a9cf9d068d24248dff192f7.png" (9)
-		16350,
-		16351,
-		16352,dd0af9c2fd2ad058ba4609a5008ac1b9.png (12)
-		//
-	!@16353 Ramo Pure Bride / Accesorios manos
-		16353,"0825e151149d45fefb1d92752f9f63ae.png" (1)
-		16354,"c890a1bb3615c98fb9da20c641efaa82.png" (3)
-		16355,548102cf909c56988f3635c100d3c22d.png (4)
-		16356,8ca9457f8499ed4d5bb3615365bce2da.png (2)
-		16357,"667af0b39c69e33c4bb61ef9521853ca.png"
-		16358,
-		16359,c53a4fefa3f0e8eabdd50a2280518acc.png (7)
-		16360,
-		16361,a583098efa0146696f780ff70fa04d12.png (9)
-		16362,
-		16363,
-		16364,"97f67146561edc830494112c5558b7e5.png" (12)
-		//
-	!@16365 Capa Pure Bride / Abrigos / #
-		16365,"bae6b019b42436ea38cc9187e3745110.png" (1)
-		16366,"4e6aa647ce9a58eee651bd19c1b5f6d6.png" (3)
-		16367,95d76c0d9fc6937c4a8cb7dec6709a5a.png (4)
-		16368,"e33fc087a11be85423771b4538acb34f.png" (2)
-		16369,8feba96903886c4a31479b90b9dc6e8d.png (5)
-		16370,"fa577870e0f6afc46a3625d278692aa4.png"
-		16371,fbc48da3f3356e981c97978f623cc0fd.png (7)
-		16372,
-		16373,9eb78e00f0f8a152e32009442ec5b610.png (9)
-		16374,
-		16375,
-		16376,4ac0300e7e0bbe1575d92a4522202171.png (12)
-		//
-	!@16377 Corona Pure Bride / Sombreros / 
-		16377,"81a4d27bbe4f88164dc6c5108394359d.png" (1)
-		16378,"d8226f5290659fdb7ef2159c9b109ed5.png" (3)
-		16379,335baa8d85767dee645e118263948d53.png (4)
-		16380,"c0c9d748a5eb71cce0eea87678200e86.png" (2)
-		16381,"69101a09f37bf385c2dde9c19ac84ea2.png" (5)
-		16382,
-		16383,"d8fc43b220f1583e8468f8bc5d5c5ab8.png" (7)
-		16384,"bfc164b8f3fdd29bbb7e10b0ee1d5400.png"
-		16385,"20baf426ef7c7b6144d4a544e9d24294.png" (9)
-		16386,
-		16387,
-		16388,2454f0cb1b70e3e41a3009e1ca9d0a28.png (12)
-		//
-	!@16389 Guantes Pure Bride / Guantes / #
-		16389,"276f390c17b87f13ac631b2dd13f06ef.png" (1)
-		16390,"acb3a7d1246a70fc2b3e1a38103248d1.png" (3)
-		16391,"ad68de66ad5923519be0721790ae4da6.png" (4)
-		16392,38f71588159c1f01b4ab676fa3fc8d8e.png (2)
-		16393,"5b7280b2c4521cc233274cf8eb16fa2e.png"
-		16394,
-		16395,b3f2ad952a72f08154d4fd2352536157.png (7)
-		16396,
-		16397,912d7517ac6ffb90c634eb7e0083cd44.png (9)
-		16398,
-		16399,
-		16400,afedc52d59eaf612f35939562a3c17b8.png (12)
-		//
-	!@16401 Pétalos Pure Bride / Ambientes
-		16401,"e702abcf7fc04c0129a6ea0b3a22198f.png" (1)
-		16402,"cc26ebbb793bd0b4a8512d149118a615.png" (3)
-		16403,"aa715196be4c8bc33b93fa29b1e165df.png" (4)
-		16404,"1bbf9709ec644c07eaaf35e02f781c8f.png" (2)
-		16405,"ebac8b6c7fefed5986c512b5aab2a514.png" (5)
-		16406,"ebaab35afb67a22093644999a584e651.png"
-		16407,753384ac2a112b81966555ea7d5a543c.png (7)
-		16408,
-		16409,"d6a21192ac724313398161e28c37b2c5.png" (9)
-		16410,
-		16411,"6bc44845c2839d40b15837196dea770d.png"
-		16412,"bc23229d3c43019720308ebaf3f22377.png" (12)
-		//
-	!@16413 Vestido Pure Bride / Vestidos
-		16413,"e0546101777536755105c0bdaa705c31.png" (1)
-		16414,f361a9f5c36087a2f46e9074e827c729.png (3)
-		16415,0261b0390cb3b3c1bcd30bcd95ffd98c.png (4)
-		16416,b11b13fa31e1e6e7b49891cd06804b2d.png (2)
-		16417,"d28d388813c09449f96cb8e02b9fb153.png" (5)
-		16418,"017182edd26f3e1df9507d3d03980235.png"
-		16419,f7e768741e26cbea4e3683da06fc75e2.png (7)
-		16420,
-		16421,79e005e96f187d8c36385b4cea795416.png (9)
-		16422,
-		16423,"6d6a8a2d49f7260db92ffa24031e819a.png"
-		16424,ae5a106ade00cbfe7130f6a82882ecda.png (12)
-		//
-	!@16425 Sandalias Pure Bride / Zapatos
-		16425,6de016de18f8cf1571a1d0414213775c.png (1)
-		16426,"10a2c86c5b24b470506f5beb6813ab7f.png" (3)
-		16427,"74a9fc23d6bfc584318077ceed60dbae.png" (4)
-		16428,e84119b0514b4f8c732f17f17a9808a8.png (2)
-		16429,"e8a1d46698e0b7f429cec84199d94316.png" (5)
-		16430,
-		16431,c074027ee7d536df2e84f86a64f2b984.png (7)
-		16432,
-		16433,"89270e2c6ce3213a13ded9cda02204bf.png" (9)
-		16434,
-		16435,"c521ab7361584d1915a8a3f9f57e5943.png"
-		16436,bfca9101472e133558d446dbd72353c5.png (12)
-		//
-	!@16437 Chaqueta Pure Bride / Abrigos / #
-		16437,"dc3399b0c28d46406f71e319b2dd3869.png" (1)
-		16438,9ad4ae853eb088e27455bf00c22cade3.png (3)
-		16439,beadfc2bcabf89ebbd31813828851e7a.png (4)
-		16440,44e53b0d547ab1a1c8ce131623143808.png (2)
-		16441,41029c11e0e72b3c82454432dcdc2673.png (5)
-		16442,
-		16443,19299a91528754c63ba7f7b76c2d312e.png (7)
-		16444,
-		16445,d74f3b22de5e57d51ad33f99563fc33c.png (9)
-		16446,
-		16447,
-		16448,5a5b33c1a590b193e3897adfd8bfc171.png (12)
-
 Sword and Roses
-	!@16449 Botas Sword and Roses,Calcetines / #
+	!@16449 Botas Sword and Roses / Calcetines
 		16449,"850acefa8f12e3632117d0241a51ffb0.png"
 		16450,
 		16451,"f1b7012914b33702fe673a4f0f1944a0.png"
 		16452,
-		16453,
+		16453,"69c5973eeaa6987150b0b416cd9fa95d.png"
 		16454,
 		16455,
 		16456,
@@ -5257,10 +5365,10 @@ Sword and Roses
 		16458,
 		16459,
 		16450,
-	!@16462 Hombreras Sword and Roses / Abrigos / #
+	!@16462 Hombreras Sword and Roses / Abrigos
 		16462,"0154099708310f6499ff4e07f89aafc7.png"
 		16463,
-		16464,
+		16464,"5b2dfa0beaf1d28087419bad7ebffa82.png"
 		16465,
 		16466,
 		16467,
@@ -5270,7 +5378,7 @@ Sword and Roses
 		16472,
 		16473,
 		16474,
-	!@16475,Espada Sword and Roses / Accesorios manos
+	!@16475 Espada Sword and Roses / Accesorios manos
 		16475,"31e60182def172e70804d2fa981aa723.png"
 		16476,
 		16477,"690aaf378e85294a74750b60a9bbd9bf.png"
@@ -5283,7 +5391,7 @@ Sword and Roses
 		16484,"2532e015902a22eda244b29853f2b414.png"
 		16485,
 		16486,
-	!@16487,Top Sword and Roses / Partes de arriba / #
+	!@16487 Top Sword and Roses / Partes de arriba
 		16487,"7b963bc50680416a655b0120fa6f64b8.png"
 		16488,
 		16489,"33cb204d62d4398362948983c20e78b5.png"
@@ -5296,7 +5404,7 @@ Sword and Roses
 		16496,
 		16497,
 		16498,
-	!@16499 Vestido Sword and Roses / Vestidos / 
+	!@16499 Vestido Sword and Roses / Vestidos
 		16499,"784443179569a9dcff205ca811db3c5f.png"
 		16500,"e403cc7d8744e59aa57007072ccc2376.png"
 		16501,
@@ -5309,7 +5417,7 @@ Sword and Roses
 		16508,
 		16509,
 		16510,
-	!@16511 Antifaz Sword and Roses / Accesorios cara / #
+	!@16511 Antifaz Sword and Roses / Accesorios cara
 		16511,"25188fadeb67a0231aa703de61a4cd80.png"
 		16512,
 		16513,"2132ec2a91451c44a0541ef7944d936b.png"
@@ -5336,7 +5444,9 @@ Sword and Roses
 		16533,
 		16534,
 
-!@16535,Deloise,Cabello / #
+!@16535 Deloise / Cabello
+	16545,"911a5e480e2388dde41c462ede71fc86.png"
+	16546,
 	16547,"b0d945ec6fd9439f02302aa0011a4f76.png"
 	16558,"f4792b5fa46aa6cd0b100506e2e33d3a.png"
 	16559,
@@ -5344,23 +5454,30 @@ Sword and Roses
 	16561,"8c789e87be2884c65f81c1c9bdfa0bcd.png"
 	16562,"d6d51dd7679cf48d6ca1777e586e8330.png"
 
-!@16577,Bridín,6540,Cabello / #
+!@16577 Bridín / Cabello
 	16589,"1f1e5c19c05e52162cdd43c10f44273c.png"
+	16596,"21204ca2842fa784cee2f3cd28b97e6d.png"
+	16597,
+	16598,
 	16599,"ab157e2854a47752835dbec2c566648a.png"
+	16600,
+	16601,
 	16602,"ac5ddaa3e6916909edc51f44dd64acfc.png"
+	16603,
+	16604,
 	16605,"389bf928283d271619dc411282be08e1.png"
 
-!@16619,Nayeli,Cabello / #
+!@16619 Nayeli / Cabello
 	16623,"49e64e9f74b7889330b9431bc670823f.png"
 	16629,"92f6ee77dd40c443b416e69c540744cc.png"
 	16630,
 	16631,"3e968e82dc5138505b4db46cedf488cd.png"
 	16632,
 	16633,
-	16634,
+	16634,"6460d20f9d112c83e9f3ee10ef07fcd9.png"
 	16635,
-	16636,6553,
-	16637,
+	16636,
+	16637,"b76c021a0b0a4de898165c90be416256.png"
 	16638,
 	16639,
 	16640,"c74727740e1ffb61c5b650e7465335d0.png"
@@ -5374,9 +5491,9 @@ Sword and Roses
 	16648,
 	16649,
 	16650,
-	16651,6566,
+	16651,
 	16652,
-	16653,
+	16653,"49e64e9f74b7889330b9431bc670823f.png"
 	16654,"dc8e0b4beb0d44bbf3955135aae122e7.png"
 	16655,
 	16656,
@@ -5385,17 +5502,17 @@ Sword and Roses
 	16659,
 	16660,"bc7846ec56931a5498a179b83bf0ff19.png"
 
-!@16661,Thorned Eyes,Ojos / 
-	16661,
+!@16661 Thorned Eyes / Ojos
+	16661,"8b7f95dd5a51307c7a39feb332e965f8.png"
 	16662,
 	16663,
-	16664,6579,"5b9554fc67e070407966c44c1838108e.png"
+	16664,"5b9554fc67e070407966c44c1838108e.png"
 	16665,"70894a922eeaf34f185f2ec7fd67863d.png"
 	16666,
 	16667,"c2afb7fba16c7a9ad906a7e8232e44c4.png"
 	16668,
 	16669,
-	16670,
+	16670,"7bbb65fdbf56e7a661c8c02687339788.png"
 	16671,
 	16672,
 	16673,
@@ -5406,7 +5523,7 @@ Sword and Roses
 	16678,
 	16679,
 	16680,
-	16681,
+	16681,"fc3ef5b643ab6676bc939eb160e94bc9.png"
 	16682,
 	16683,"d93fefe3524c420ae2edd3131aa3a8cf.png"
 	16684,
@@ -5414,7 +5531,7 @@ Sword and Roses
 	16686,"7be1a635b0716df20caef959ff0edd27.png"
 	16687,"3a3665cc8e8ec38c1ad5a514ac2d1234.png"
 	16688,"c4bb7ad50113ddd7c5d6c876fb207d14.png"
-	16689,
+	16689,"59e023eb0e83e63b439963a06076dd18.png"
 	16690,"ce1728c2f43f1c264c44db47237bd9d5.png"
 	16691,"7ecf6f0979199d0ba614970c4885d764.png"
 	16692,"1d6aa111272fafc3fb34e58658609dbc.png"
@@ -5424,7 +5541,7 @@ Sword and Roses
 	16696,
 	16697,"19410b3693c2b574187fbb7e39b15426.png"
 
-!@16884 Plumas traje Maulix / Accesorios cara / 
+!@16884 Plumas traje Maulix / Accesorios cara
 	16884,"a35cb6da1030fc78c983df922e8f3f56.png"
 	17314,"bf8ec2185f8f287c288d6320a75c591a.png"
 	17315,
@@ -5436,8 +5553,9 @@ Sword and Roses
 	17321,
 	17322,
 	17323,"643c9b54161322322992d3ccf292902a.png"
+	17324,"39302461337a7f16bd03c79d102a8c8b.png"
 
-!@16886,Molly,Cabello / 
+!@16886 Molly / Cabello
 	17084,"1457611f83cbcef267bcaa168e97a25b.png"
 	17085,
 	17086,"b3453851dc28447007452bb67f23b871.png"
@@ -5472,7 +5590,7 @@ Sword and Roses
 	17115,
 	17116,"73dad3c620781e39daaa3b2b02e294fc.png"
 
-!@16701,Guantes Sword and Roses / Guantes / 
+!@16701 Guantes Sword and Roses / Guantes
 	16701,"98c9a7f54fa57ad025593dd7402801a9.png"
 	16702,
 	16703,"7d1a62869d73725ddbc079ff241362ee.png"
@@ -5483,7 +5601,7 @@ Sword and Roses
 	16708,
 	16709,"3ab36f473adcee7060965a2e8205ebea.png"
 
-!@16885 Orejas traje Maulix / Sombreros / 
+!@16885 Orejas traje Maulix / Sombreros
 	16885,"35a45d7b10b861aa95263fc8d1aa6279.png"
 	17304,"1d29cb6e17a5020af4ec5b4837077384.png"
 	17305,
@@ -5495,7 +5613,7 @@ Sword and Roses
 	17311,
 	17312,"141c8aff22748ea49dbf9a3205cca5ea.png"
 
-!@16887,Collar traje Maulix / Collares
+!@16887 Collar traje Maulix / Collares
 	16887,"0cab2dfaf76773f3a74053d30ca8d54e.png"
 	17297,"9134f677fcc5d7bcb8933ff4e03549c2.png"
 	17298,"7b8ec021a10d0773c879a0c36553d82e.png"
@@ -5504,35 +5622,40 @@ Sword and Roses
 	17301,
 	17302,"bb24a6231a42081880db1160662263c5.png"
 
-!@16888,Top traje Maulix / Partes de arriba / 
+!@16888 Top traje Maulix / Partes de arriba
 	16888,"e6ab0db932399411210e1a5f0784f67d.png"
 	17276,"cc7596305ba94288096bc508b21bcf6f.png"
 	17277,"7529108c0d4408963aa9e1b24e3bad54.png"
 	17279,"6b5f15e222b2cab2b99f07a9c8029461.png"
 
-!@16889 Cola traje Maulix / Abrigos /
+!@16889 Cola traje Maulix / Abrigos
 	16889,"1cdc604d4e8c9914f5fdee52bae59b50.png"
+	17281,"001330e8df641e141efd14fe219669d2.png"
+	17282,
 	17283,"d8b495b9b0e6d628f27bbedfcd4644fc.png"
 	17284,
 	17285,"7cd747ac54d6fe1c527b558b224686d5.png"
 	17286,"81938162f7ac09784fff2129a7bc0930.png"
 	17287,"d5c60e1051dfd182d0dcff1224a50985.png"
+	17288,
+	17289,
+	17290,"0c2ab37fc8bdaff18158935d1c6b84c3.png"
 
-!@16890,Zapatos traje Maulix,Zapatos / #
+!@16890 Zapatos traje Maulix / Zapatos
 	16890,"6db162630ad465043e44a4bd3e66748d.png"
 	17253,"2fbeebde6f89ab3ee11b40000827d1f5.png"
 	17254,"a43728350a6be255f92a32c320c0dd3d.png"
 
-!@16891,Pantalón traje Maulix,Pantalones
+!@16891 Pantalón traje Maulix / Pantalones
 	16891,"de551bdbaf0491b44692dd6464203b9c.png"
 	17268,"cd6dc55f647561f461646d129fe79e1a.png"
 
-!@16892,Body traje Maulix,Ropa interior
+!@16892 Body traje Maulix / Ropa interior
 	16892,"7ef0c7c3a1bbc97ea5747ed635a6a498.png"
 	17245,"d8e003346bae7b3ccb641f6356104eb1.png"
 	17246,"7a9ddf54673ba6fafe220d6f91a8ea02.png"
 
-!@16893 Antenas traje Dalafa / Sombreros / 
+!@16893 Antenas traje Dalafa / Sombreros
 	16893,"88f94d8a5fb665a072ad3e9a09d007a0.png"
 	16972,"1a9413c22410d64be4b143d9b6e18d70.png"
 	16973,
@@ -5543,32 +5666,37 @@ Sword and Roses
 	16978,
 	16979,"892dd46378fa22a6387dbb120ff07f46.png"
 
-!@16894,Delaila,Cabello / #
+!@16894 Delaila / Cabello
 	16922,"e79ecd8a3298ea33a630a79aba315c00.png"
+	16925,"59dcb26441edb61cc025f089c851d431.png"
+	16930,"118cf9e00ed4fd1e0cd49104655adbf1.png"
 	16955,"3deabacf6e706b205bb5eb96d676d01b.png"
 
-!@16895 Chaqueta traje Dalafa / #
+!@16895 Chaqueta traje Dalafa
 	17051,"866752e62434367758aa4dde437dbecc.png"
+	17052,
+	17053,
 	17054,"b43eb136a78975787fefd2178de5d924.png"
 
-!@16896,Chaleco traje Dalafa,Partes de arriba / #
+!@16896 Chaleco traje Dalafa / Partes de arriba
 	16896,"6f52d34a1554f8f31d70a6534c5dd35e.png"
 	17007,"63365da5e3ae72d3c8a246d0a791c993.png"
 
-!@16897,Corsé traje Dalafa,Cinturones / 
+!@16897 Corsé traje Dalafa / Cinturones
 	16897,"53804bd6257d1bd0ff785202568bbf8c.png"
 	17018,"146158cccf6242ffa53df59d6c67a03a.png"
 
-!@16898,Túnica traje Dalafa,Partes de arriba / #
+!@16898 Túnica traje Dalafa / Partes de arriba
 	16898,"3f92b20ca8da1454921df75905e15188.png"
 	17029,"886faf6ca3bc808d4b5acbc1d427c63a.png"
 
-!@16899,Tobillera traje Dalafa,Calcetines / #
+!@16899 Tobillera traje Dalafa / Calcetines
 	16899,"281fedfa2e62d1d4b1ab7b592059a80c.png"
+	16994,"1518037a5701f546362c480c20a21be3.png"
 	17000,"8f452fe27e25348e78aab220c3c2a20c.png"
 	17001,"6d825dbf44a9d930c89063d5fff7a3d3.png"
 
-!@16900,Pantalón traje Dalafa,Pantalones
+!@16900 Pantalón traje Dalafa / Pantalones
 	16900,"a98cb083b792472be406e795463f2936.png"
 	17038,"d3ffb4be9fa55a41326ce23f17dea69d.png"
 	17039,
@@ -5580,35 +5708,36 @@ Sword and Roses
 	17045,
 	17046,"e36ae6a14dcad108357cb9f73c3f3e41.png"
 
-!@16901,Zapatos traje Dalafa,Zapatos / 
+!@16901 Zapatos traje Dalafa / Zapatos
 	16901,"33b99a561709c60a3f141163fbef4df7.png"
 	16983,"23aba5b5d1adfd67aaae182c8da7f7e8.png"
 	16984,
 	16985,"0b4f43d423eb35e50980d740cc897ee6.png"
 	16986,"e43311fd62268ee32b5b0ed6f54ac315.png"
-	16987,
+	16987,"46235558fc07dfb624edf522b5bacaed.png"
 	16988,"c34a61ab64957daaaf451edaf0c14134.png"
 	16989,
 	16990,"8cb4c469bc2ca1d837aca42bba2ea325.png"
 
-!@16902 Orejas traje Beriflore / Sombreros / #
+!@16902 Orejas traje Beriflore / Sombreros
+	16902,"7a5b2a90a713258bcbe00fa4aeb81fe9.png"
 	17161,"fb2d6f8d848ac44654692c5c6ea1c84b.png"
 	17162,
 	17163,
-	17164,
-	17165,
+	17164,"854cab7e749b910328aa2a2c7082e913.png"
+	17165,"b2a80f549cb9984bb2251a5fd6cf6626.png"
 	17166,
 	17167,
 	17168,
 	17169,
 	17170,"d0cd6ecb3f8e906f773b249ecc8b0191.png"
 
-!@16903,Flora,Cabello / #
+!@16903 Flora / Cabello
 	17130,"5bb8335c364a8fa657a09353cd1b8a3c.png"
 	17139,"35f112f444e389bc3931499e4a65ce0a.png"
 	17143,"66d376157054ffe966054d8693acd37c.png"
 
-!@16905 Capa traje Beriflore / Abrigos / #
+!@16905 Capa traje Beriflore / Abrigos
 	16905,"f17fcc0c0c88430a7db8f646d337ca3a.png"
 	17223,"10fb46be7803ca87654f2abd930f9922.png"
 	17224,
@@ -5618,7 +5747,7 @@ Sword and Roses
 	17228,
 	17229,"d7101955299dccf196a1b13893df3b7a.png"
 
-!@16906 Vestido traje Beriflore / Vestidos / 
+!@16906 Vestido traje Beriflore / Vestidos
 	16906,"488c68bd4844df075043f79f15c6802d.png"
 	17215,"e2b73a55046e8d7bd230c701cf2189f6.png"
 	17216,
@@ -5626,17 +5755,17 @@ Sword and Roses
 	17218,
 	17219,"3fa9a061d8e0c1e381884bbad10ed79c.png"
 
-!@16907 Guantes traje Beriflore / Guantes / #
+!@16907 Guantes traje Beriflore / Guantes
 	17207,"b2c88a81a756a0e5fb9abe57824e0074.png"
 	17208,
 	17209,
 	17210,"9acb9ef10e5c082fdbc04c99199c6302.png"
 
-!@16908,Combinación traje Beriflore,Pantalones / #
+!@16908 Combinación traje Beriflore / Pantalones
 	16908,"b98e2c060e7fb8d3b4880c98a8de05a9.png"
 	17196,"4343c6a146788cf62dbb7c53bd4caad0.png"
 
-!@16909,Zapatos traje Beriflore,Zapatos / #
+!@16909 Zapatos traje Beriflore / Zapatos
 	16909,"7b6f228d0838301c41c1111e534e5e46.png"
 	17185,"0d2fd7588ae1e7f02d6874c32a8f3cab.png"
 	17186,
@@ -5644,18 +5773,18 @@ Sword and Roses
 	17188,
 	17189,"8f6e5ec51c8519e542d05ee3c1f2bd78.png"
 
-!@16910,Calcetines traje Beriflore,Calcetines / #
+!@16910 Calcetines traje Beriflore / Calcetines
 	17174,"605e0550e152cea8048834749919e82a.png"
 	17175,
 	17176,
 	17177,
 	17178,"ce30d97c976d36b7143e7303d743f89a.png"
 
-!@16904,Boca traje Beriflore,Bocas / #
+!@16904 Boca traje Beriflore / Bocas
 	16904,"a13b99424fbc75529d3bf96d9e1cfd10.png"
 	17064,"40b596c5c4308e4e692eb3118e114a40.png"
 
-!@17399,Armadura Moon Warrior / Partes de arriba / #
+!@17399 Armadura Moon Warrior / Partes de arriba
 	17610,"3d68af65aa4d83ef16d2c31cbc4b919c.png"
 	17611,
 	17612,"a5084b6f06f2ca8ec629dde22b3feea4.png"
@@ -5664,7 +5793,7 @@ Sword and Roses
 	17615,
 	17616,"e2c2204e8b9742b491c65dabb0dfee1a.png"
 
-!@17400,Medias Moon Warrior,Calcetines / #
+!@17400 Medias Moon Warrior / Calcetines
 	17400,"2b41895a06135b4550f15e4c652222c6.png"
 	17654,"a20dc88785b9697c2438afe7a85e60b9.png"
 	17655,
@@ -5674,17 +5803,17 @@ Sword and Roses
 	17659,
 	17660,"9e4b8926891bbbc0d5a14c9c4aa34e30.png"
 
-!@17401 Capa Moon Warrior / Abrigos / #
+!@17401 Capa Moon Warrior / Abrigos
 	17620,"74a3266175ee3bbf7f0b24c4ed8e6174.png"
 	17621,"68830eee9695b3ba1da47181755c8e01.png"
-	17622,
+	17622,"df2b963762c63e80de9be2a48e75c56c.png"
 	17623,
 	17624,"3abffd80c008284280acd8c3d7e4a762.png"
 	17625,
 	17626,
 	17627,"189c2792c33096d33ba571be0d0ab439.png"
 
-!@17402,Zapatos Moon Warrior,Zapatos #
+!@17402 Zapatos Moon Warrior / Zapatos
 	17643,"40326942e4490e9bfa3b3f042e59c6fe.png"
 	17644,
 	17645,"ad37659ef0955453cfa88abb7709565e.png"
@@ -5693,19 +5822,20 @@ Sword and Roses
 	17648,
 	17649,"bb49eac6cd21ea511bf29f7813d62457.png"
 
-!@17403 Diadema Moon Warrior / Sombreros / #
+!@17403 Diadema Moon Warrior / Sombreros
 	17596,"8e1f2fc3e630cbc3a94f3d1e895d58e8.png"
 	17597,
-	17598,
+	17598,"d75d16ab0024814725a993cacd8f262e.png"
 	17599,"e17a3016046047dbb3bed0eba50ffed2.png"
 	17600,"3542abf2c3fbaf957d519371edbc7f8e.png"
 	17601,
-	17602,
+	17602,"be5a39abebc8c5fd61dd152cd8730866.png"
 	17603,
 	17604,
 	17605,"4321b5cf81a9390f75d044a551d7bc1e.png"
 
-!@17404,Lanza Moon Warrior / Accesorios manos 
+!@17404 Lanza Moon Warrior / Accesorios manos 
+	17404,"d375cb3c5b728d1d6efd60a8c115792f.png"
 	17587,"f876032fd9b7e2a1f4f933cac268d69f.png"
 	17588,"b875a4fc65cc35c83a4bc6789ebdb8fc.png"
 	17589,
@@ -5715,7 +5845,7 @@ Sword and Roses
 	17593,
 	17594,"6c1d1d150d418d577763a1bb8f116080.png"
 
-!@17405 Vestido Moon Warrior / Vestidos / #
+!@17405 Vestido Moon Warrior / Vestidos
 	17632,"f6d43acc6458ba1144a7089d25294b79.png"
 	17633,
 	17634,
@@ -5724,7 +5854,7 @@ Sword and Roses
 	17637,"2ed6cf920453d077c25b8ffa0d816b8a.png"
 	17638,"9047f972d23b5c391d7ad7c3d3cf83bd.png"
 
-!@17406,Alhena,Cabello / #
+!@17406 Alhena / Cabello
 	17434,"6745b2fb2e1426f626f8549e9560bb3f.png"
 	17435,
 	17436,"cf5cbfba3f4cb8d81c80ae9703d1f63d.png"
@@ -5756,7 +5886,8 @@ Sword and Roses
 	17462,
 	17463,"ef0c6563015847f0918148c73421f34c.png"
 
-!@17407 Capa Shooting Star / Abrigos / #
+!@17407 Capa Shooting Star / Abrigos
+	17407,"a56734e970838f5bba5cf51db2ee83ed.png"
 	17663,"9d6df3cfe823ccfd966da94d834fc5e5.png"
 	17664,
 	17665,
@@ -5766,8 +5897,8 @@ Sword and Roses
 	17669,"d463c5206889653f312b1e6685246ede.png"
 	17670,"e93e4f2b5c0faec00fcc635b38625fb0.png"
 
-!@17408,Zapatos Shooting Star,Zapatos / 
-	17408,
+!@17408 Zapatos Shooting Star / Zapatos
+	17408,"938e10fc217d1ac3ee9c83840df1b561.png"
 	17694,"325285372ca8562439d2651ee28d1ae3.png"
 	17695,
 	17696,"bb49eac6cd21ea511bf29f7813d62457.png"
@@ -5780,7 +5911,7 @@ Sword and Roses
 	17703,"8639b0d2b9e3ee62de4d1f029235c07f.png"
 	17704,"b589df9c2be062c77d502e166a620841.png"
 
-!@17409,Medias Shooting Star,Calcetines / 
+!@17409 Medias Shooting Star / Calcetines
 	17718,"ba44fbbedcec4b9a292d572dab351334.png"
 	17719,
 	17720,
@@ -5790,7 +5921,8 @@ Sword and Roses
 	17724,
 	17725,"ae12e73d7032947d882edfacafbe40be.png"
 
-!@17410,Top Shooting Star,Partes de arriba / #
+!@17410 Top Shooting Star / Partes de arriba
+	17410,"89d7f3be3ea7e814f257dba0214a90b5.png"
 	17674,"a7aaa4bb6e4111f52662ef6106dd6265.png"
 	17675,
 	17676,
@@ -5801,7 +5933,7 @@ Sword and Roses
 	17681,"eb0851bcb855c60f492dd90006ad2666.png"
 	17682,"f81727aa741f109408687d72a892f7b0.png"
 
-!@17411,Falda Shooting Star,Pantalones / #
+!@17411 Falda Shooting Star / Pantalones
 	17411,"106bd529d116d2ebfaf54b3e21d88ec9.png"
 	17683,"aa50a48d291f21502063471976a92967.png"
 	17684,
@@ -5828,19 +5960,31 @@ Sword and Roses
 	17713,
 	17714,"b15158168e1d4585de0e4fff88584da6.png"
 
-!@17413,Eltanin,Cabello / #
+!@17413 Eltanin / Cabello
 	17519,"69d89e96bc71175d4fa03c7fcaa9dd3a.png"
+	17520,
+	17521,
+	17522,
+	17523,
+	17524,
+	17525,
 	17526,"96da61f409c185a8d143461856a30b5d.png"
+	17527,
+	17528,
+	17529,
+	17530,
+	17531,
 	17532,"bec25ce64206316d9923d554470b1d76.png"
+	17541,"49cf5975bb32e6418d927c3026100872.png"
 
-!@17414,Ojos Shooting Star,Ojos / #
+!@17414 Ojos Shooting Star / Ojos
 	17414,"d1c0a33bfffcec489639c8464e083918.png"
 	17549,"a5c15f995314fbe37af95657eb21b2d1.png"
 	17550,"1eeb9fdfb12b9c1fb21bf114390d4215.png"
-	17551,
+	17551,"8b53f938fd0c00bf58fca630e6101877.png"
 	17552,
 	17553,"7d2576abd9c5652d8a50df047802cb2f.png"
-	17554,
+	17554,"9ea5a3340cc344c8b35da9bae31d18ca.png"
 	17555,"303a7562e70aef440555c63bb83ebf5f.png"
 	17556,
 	17557,
@@ -5863,7 +6007,7 @@ Sword and Roses
 	17574,
 	17575,
 	17576,"d9e1cb7f286a4363368ab0a463008d26.png"
-	17577,
+	17577,"c82343719c4cced99dc91da2c0666a8e.png"
 	17578,
 	17579,
 	17580,
@@ -5871,19 +6015,26 @@ Sword and Roses
 	17582,
 	17583,"221f4c81843fff51c0bb2c7ad3eadaaa.png"
 
-!@17415,Cinturón Astral Prophet,Cinturones / 
+!@17415 Cinturón Astral Prophet / Cinturones
 	17415,"efe3c5bd7491dc5d6aab4bb7ceff7c51.png"
+	17750,"ea83e6b179a591a396b6993067f8fd91.png"
+	17751,
+	17752,
+	17753,
+	17754,
+	17755,
 	17756,"af32fa4dc1b367381779423eb242a3d8.png"
 	17757,"403760fd8e254b97fe75519faa822301.png"
+	17758,
 	17759,"e7fb5be9548a0e4ec54d1abf88846565.png"
 
-!@17416,Zapato Astral Prophet,Zapatos / #
+!@17416 Zapato Astral Prophet / Zapatos
 	17416,"58ff9fe3e25d35a07ab3d87dcd657958.png"
 	17771,"57b2f43f718a4b2d20cbe827f5660bbe.png"
-	17772,
+	17772,"5fd90497e49541aa937a942ad3bf9e8f.png"
 	17773,
 	17774,
-	17775,
+	17775,"4688006467c82ed16f09a8d1302404f9.png"
 	17776,
 	17777,"1f3aa676ba7d73d5441260a3948b0f67.png"
 	17778,
@@ -5891,22 +6042,29 @@ Sword and Roses
 	17780,
 	17781,"8b0da27efb8590ababa30e93ecef2911.png"
 
-!@17417,Piel Astral Prophet,Pieles / 
+!@17417 Piel Astral Prophet / Pieles / 
 	17417,"2e9e033b96b554c9709e8d9a034b628b.png"
 	17797,"fb9bcfe4af09a9e192ac6018dd2a523e.png"
 	17798,"411c890badc2ac76929fb1f83b185c64.png"
+	17799,
+	17800,
 	17801,"5417892ad950930f7d29b757973dff69.png"
 
-!@17418,Péndulo Astral Prophet, Accesorios manos / 
+!@17418 Péndulo Astral Prophet / Accesorios manos
 	17418,"1de366bfa1da5747d07f555e8c4200a0.png"
+	17728,"9e6baa80e5017cd55fd0e4d6ad2d7b94.png"
+	17729,
+	17730,
+	17731,
+	17732,
 	17733,"aeeefcf84ab294177772a95fb3b6b9b1.png"
 	17734,
 	17735,"56a7c4ed2af70337658b702b9403f401.png"
 	17736,
 	17737,"d8c28a7ddee5e6070c7dae2b9bb1a2e3.png"
 
-!@17419 Vestido Astral Prophet / Vestidos / #
-	17419,
+!@17419 Vestido Astral Prophet / Vestidos
+	17419,"c846dfdb87798dbc8c0b6f4a9c694f79.png"
 	17761,"4cc7486aadca78c7155426194f0041f3.png"
 	17762,"12c9a3d5993a5bc63cbf9785fbe7191c.png"
 	17763,
@@ -5918,7 +6076,7 @@ Sword and Roses
 	17769,
 	17770,"0682f747d3e922d252f4490d160aa046.png"
 
-!@17420 Tatuaje Astral Prophet / Tatuajes /
+!@17420 Tatuaje Astral Prophet / Tatuajes
 	17420,"147f15c85dd4bfb142b65505557552d9.png"
 	17782,"89a64b32814467fab568b4b9b1dc60e6.png"
 	17783,
@@ -5929,19 +6087,26 @@ Sword and Roses
 	17788,"49e1b1ab47aa8f5b263f301616da219b.png"
 	17789,"b76c9187753a82545c92333961a7924a.png"
 	17790,"7652a71dc5b17e3dc43fdee41af95787.png"
-	17791,
+	17791,"71e1da65e1b5f5b2b7f6573d77ca9c6e.png"
 	17792,"a9549ae97aaca820d2da2e0a4ac047d2.png"
 
-!@17421,Naos,Cabello / #
+!@17421 Naos / Cabello
 	17477,"f6b2f88c92bef4741ce00b4d5ee3f9dd.png"
 	17487,"41ce165aa2ae931734c35343b2681763.png"
+	17488,
+	17489,"d1a845fe4e529dc5a4297a8021255c14.png"
 	17490,"3c864df19cb22b6102cd86d4d284c420.png"
+	17491,
+	17492,
+	17493,"e1c1d41e643812b9dbc09518adc24c3d.png"
 	17502,"896b4641e196c07398f1c78b18f83b50.png"
 
-!@17422 Velo Astral Prophet / Abrigos / 
+!@17422 Velo Astral Prophet / Abrigos
 	17422,"81bcefd747a4371742e86b3611d9246e.png"
 	17744,"a8b861bb4f3ea948c3b7e5f53572f57f.png"
+	17745,
 	17746,"280ddf20a623355c78053b5cd1e2d304.png"
+	17747,
 	17748,"70a065c9b3ea3b0d0161a2077f042e33.png"
 
 !@17931 Joyas Pulpa Queen / Collares / Verano 2018
@@ -6004,7 +6169,8 @@ Sword and Roses
 	18008,"45fb7819d25f77357e3b3a48bd620b8e.png"
 	18018,"6354eaa1c86b001269e855eb10ab0c7c.png"
 
-!@18025,Murgelt,Cabello / 
+!@18025 Murgelt / Cabello / 
+	18026,"f286f7912f1cc1954e9ca4100a201562.png"
 	18030,"b1dafaf7667b493ea79497094350fd28.png"
 	18037,"194c4e80ad3cb5d964aeae55a8bdc6d4.png"
 	18049,"fdd7299b457478359fd646e98834646b.png"
@@ -6022,7 +6188,7 @@ Sword and Roses
 	18061,"cedd5d587818ff3c03fe71df488c724b.png"
 	18062,
 	18063,
-	18064,
+	18064,"5a0a466fefe192d8274eff574156499d.png"
 	18065,"5da4e7bc2ff3af8ec17b59bfd3d955da.png"
 	18066,"9bafbd50f8ba3fe6516cf4a7b3fcfc30.png"
 
@@ -6137,6 +6303,7 @@ Sword and Roses
 
 !@21716 Ewie / Cabello / Evento M19
 	21729,"65ee274ecb39686c06cdd7019883081b.png"
+	21742,"47fa351d1f70cc06dffe260000fa346f.png"
 
 !@21572 Body Countess of Pan / Ropa interior / Legendario M19
 	21572,
@@ -6220,14 +6387,14 @@ Sword and Roses
 !@21668 Body Music Paper / Ropa interior / Evento M19
 	21668,
 	21669,
-	21670,
+	21670,"51df4faf26357156f785299679411253.png"
 	21671,
 	21672,"0abbdf9f30f735431ac615deac6782b0.png"
 
 !@21680 Tutú Music Paper / Pantalones / Evento M19
 	21680,
 	21681,
-	21682,
+	21682,"a264a052d8fafb82d55d26a02deb111a.png"
 	21683,
 	21684,"c0a094c880b5b86c0dee352981dd67a9.png"
 
@@ -6246,14 +6413,15 @@ Sword and Roses
 !@21759 Piano aéreo / Accesorios manos / Evento M19
 	21759,"84f3fae453d808a54041175b94786c13.png"
 
-!@21773,Sia,Cabello / 
+!@21773 Sia / Cabello / 
 	21786,"70d04aa70e7de6890b0a99247d91182f.png"
 	21802,"1cbb869955089ec44adca255eac336c9.png"
 	21803,"2381447d4ed038c8e2379b621d42a9cf.png"
+	21805,"1c4ef978192c72a5c7b18a7c4f0392f9.png"
 	21811,"df7a8fff35081ab6bc49861501366258.png"
 
-!@21868,Ojos luminosos / Ojos / Evento (Verano 2019)
-	21868,
+!@21868 Ojos luminosos / Ojos / Evento (Verano 2019)
+	21868,"1bf0a098b943c2b11804ee6563e394f2.png"
 	21869,
 	21870,
 	21871,
@@ -6265,7 +6433,7 @@ Sword and Roses
 	21877,
 	21878,
 
-!@22510,Samara,Cabello / 
+!@22510 Samara / Cabello / 
 	22573,"20b425a54a39eea229c6d456e7f04870.png"
 	22574,"8020404fb1277e2d41b8239582f85a52.png"
 	22575,
@@ -6278,7 +6446,7 @@ Sword and Roses
 	22582,
 	22583,
 	22584,"ba046cb2b67400b80463fbfe5699440f.png"
-	22585,
+	22585,"55a35cd883f19d4ec9a892de222f3f8a.png"
 	22586,
 	22587,
 	22589,"5d72321f6bee9355d5036335467290ad.png"
@@ -6289,7 +6457,7 @@ Sword and Roses
 	22594,
 	22595,
 	22596,
-	22597,
+	22597,"51db5e21e839c756e9b5847a87dfee50.png"
 	22598,
 	22599,
 	22600,
@@ -6338,7 +6506,7 @@ Sword and Roses
 	22630,
 	22631,"70a104ad8ec3faf1cc26c533bc7d0d5d.png"
 
-!@22641, Alas Fallen Aengel / Abrigos (H19)
+!@22641 Alas Fallen Aengel / Abrigos (H19)
 	22641,
 	22642,"e8bdfa4d6bfd714377ff48425be178f8.png"
 	22643,
@@ -6403,7 +6571,7 @@ Sword and Roses
 	22980,
 	22981,
 	22982,
-	22983,
+	22983,"2aca0586a6d26f56548382071f784e0a.png"
 	22984,
 	22985,
 	22986,
@@ -6423,7 +6591,7 @@ Sword and Roses
 	23000,"362838da04abc1f47cf526572c2803c5.png"
 	23001,"4d76affa454908ff42c4b6e929b53c19.png"
 	23002,
-	23003,
+	23003,"88517505635d0752270c2da96e4dd525.png"
 	23004,
 	23005,
 	23006,
@@ -6431,7 +6599,7 @@ Sword and Roses
 	23008,
 	23009,
 	23010,
-	23011,
+	23011,"7249af91da162d5ad741b412638cf99f.png"
 	23012,
 	23013,
 	23014,
@@ -6484,7 +6652,7 @@ Sword and Roses
 
 23148 Falda Far North Sovereign / Pantalones / Evento N19
 	23148, (1)
-	23149, (2)
+	23149,"cef14db1fa9d9ef0c5bed90e5173c221.png"
 	23150,"7ac5f6c49ff18213eb8aa8c4f1df2e82.png"
 	23151, (4)
 	23152, (5)
@@ -6498,7 +6666,7 @@ Sword and Roses
 
 23160 Vestido Far North Sovereign / Vestidos / Evento N19
 	23160,"4da0ccbff46c2ac4ee069148d9977987.png"
-	23161, (2)
+	23161,"34d8ebfef072380db99f5a89559deccb.png"
 	23162,"0f26678979402b05a5e6bc5d682c22ef.png"
 	23163, (4)
 	23164, (5)
@@ -6526,7 +6694,7 @@ Sword and Roses
 
 23184 Cuello Far North Sovereign / Collares / Evento N19
 	23184, (1)
-	23185, (2)
+	23185,"711ebc222f9067db6145918c724ec7a2.png"
 	23186,"64de36e84c0961426e902955242811c9.png"
 	23187, (4)
 	23188, (5)
@@ -6540,21 +6708,21 @@ Sword and Roses
 
 23196 Guantes Far North Sovereign / Guantes / Evento N19
 	23196, (1)
-	23197, (2)
+	23197,"3abbca9075d9e03592ca5b0c434485da.png"
 	23198,"e788490763372128754e4af33dbeb881.png"
 
 !@23208 Alas Whanabe / Abrigos
 	23208,"870837a454440f5e2fd859cf167f9765.png"
-	23209,
-	23210,
-	23211,
+	23209, (2)
+	23210, (3)
+	23211, (4)
 	23212,"b956c7a42af4865c05026fff9385a437.png"
-	23213,
+	23213, (6)
 	23214,"5332981cdda176d7d776b4f5b0c7f9b7.png"
 	23215,"7abd91d6ee616273b6754b3dbe061a27.png"
-	23216,
+	23216, (9)
 	23217,"152f20666dad39ae1b6cbff218e2c900.png"
-	23218,
+	23218, (11)
 	23219,"3320b918f65aab14da26cc5a06b9b95e.png"
 
 !@23220 Piel Whanabe / Pieles 
@@ -6573,16 +6741,16 @@ Sword and Roses
 
 !@23232 Botas Whanabe / Zapatos 
 	23232,"5096b411338754c895b3b1a4beb444cd.png"
-	23233,
-	23234,
-	23235,
+	23233, (2)
+	23234, (3)
+	23235, (4)
 	23236,"5096b411338754c895b3b1a4beb444cd.png"
-	23237,
-	23238,
-	23239,
-	23240,
-	23241,
-	23242,
+	23237, (6)
+	23238, (7)
+	23239, (8)
+	23240, (9)
+	23241, (10)
+	23242, (11)
 	23243,"76bdcca310e2541c63a269dee42a2feb.png"
 
 !@23244 Mangas Whanabe / Accesorios manos
