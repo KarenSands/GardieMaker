@@ -4403,7 +4403,21 @@ Youth Seeker
 		10368,"9e31749fda8c99d04df306553099efeb.png"
 		10380,"393333b34e4e3a20eb8618dd8ce82d2d.png"
 
-	!@9518 / 
+	!@9518,Zapatos Youth Seeker / Zapatos / Evento H16 (15)
+		10390,"7f4dcb72f835737d30d2a9783629e48d.png"
+		10394,"da91deefa3364b403149b3eea43cdfb6.png"
+
+	!@9519,Corsé Youth Seeker / Ropa interior / Evento H16 (15)
+		9519,"a1d94acd3322a3f63c275e60a535cda6.png"
+		10356,"757fb9404285c56c0d9a8670304c030a.png"
+		10357,
+		10358,"6873ac8239f4a9c6b9fc8ddf0dd26537.png"
+		10359,
+		10360,
+		10361,
+		10362,"911adf968df6294d91cf49fc579698b4.png"
+		10363,
+		10364,"3b7b3407ff57cc439c48f363868e3c4a.png"
 
 **Clause's Maiden (9 prendas x 12 colores)
 	*Cinturón Clause's Maiden / Cinturones / Evento N16 (12)
@@ -4540,6 +4554,7 @@ Secret Ingredient
 	11904,"c45e9ce442d07a7f4fc47b8e47dff9d9.png"
 	11912,"5dd88563fad72fd7428de243a2075b27.png"
 	11913,"b7c84f58bdf779a8e74b5712552d0a73.png"
+	11916,11854,"d06d7787d7d1ff06be7917d2a50000f2.png" (Elda)
 
 !@11855 Venus / Cabello
 	11855,
@@ -4549,12 +4564,10 @@ Secret Ingredient
 	11940,
 	11941,"d934d32f8bb49fa5a63bd7248fe78ecd.png"
 	11955,"68fce922b1225a2ad7868a052f4233f9.png"
+	11958,11855,"0179ad85f883555a6f6944924d41f5d9.png" (Venus)
 
 !@11856 Freya / Cabello
 	11856,
-	11979,"635c58ec282cd87e37e28f3501aa943f.png"
-	11980,
-	11981,
 	11982,"999efabba04714477b2c1c0b70e01729.png"
 	11983,"a8b8b3417e643e2f05af15cddfa450d1.png"
 	11984,
@@ -4572,6 +4585,7 @@ Secret Ingredient
 	11996,
 	11997,
 	11998,"2b7ad19fcbe75196a417e761873e036d.png"
+	12001,11856,"58465c2d0713c919662f0303cc497b51.png" (Freya)
 
 Shadow's Mistress
 	!@11857 Velo Shadow's Mistress / Accesorios manos
