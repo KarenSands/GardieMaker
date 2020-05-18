@@ -272,7 +272,7 @@ Steam Girl - Japan Expo
 	7117,
 	7118,"809956f42e55789f8fbcb02a2a3f8207.png"
 	8515,"67eed04036440c2d044f2edebe4caedb.png"
-	----,"431725b379c48617dd412bd11dd06b2d.png" (arcoiris)
+	21765,"431725b379c48617dd412bd11dd06b2d.png" (arcoiris)
 
 ==================================0
 
@@ -2292,6 +2292,7 @@ Steam Girl - Japan Expo
 	11746,"9104a585f2119a2cc0206553b24e6022.png"
 	11747,
 	11748,"229d50e41b6b26b5d8cd0eefbaaae05f.png"
+	11749,"659431395ea2b9823a90d291907188b2.png" (arcoiris)
 
 *Falda Candy Lady / Pantalones / Evento N16 (13)
 	11510,"c1a1a9dd7174af11ab0dc8b7d9470223.png"
@@ -5079,6 +5080,7 @@ Egg Artist
 	13290,"9de10eaa3f7d027f28b46140c9f404cd.png"
 	13292,"2cd4316e2c456e97363995ddad9e1325.png"
 	13303,"c5a72d5697f5cacd62a064fa7bc3dc72.png"
+	21767,13168,"88278d37683414411db59ffe193d905a.png" (Ella)
 
 !@13169 Guantes Maestro / Guantes
 	13169,"85ec6d97cc87fbeacb6831206a86b397.png"
@@ -5219,6 +5221,7 @@ Egg Artist
 	13704,"f6cb16542abf03ef882e3593a60fe375.png"
 	13706,"33f0f4caf7aedb957e8350fac527d43f.png"
 	13717,"132670c233835efb1765d7e6a423ad65.png"
+	21768,13185,"37e6b5d8376bad5d01abe963645bdc74.png" (Bianca)
 
 !@13186 Collar Diva / Collares
 	13186,"65cc13dfa1f5d19c338d4f06350b5ef0.png"

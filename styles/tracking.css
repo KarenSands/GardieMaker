@@ -398,6 +398,11 @@ h1.itemInfo .countItemsOuter .countItems {
     width: 90px;
     height: 90px;
     transition: transform 300ms ease-in-out;
+    background: pink;
+}
+
+.itemIcon.true {
+    background: lightgreen;
 }
 
 .itemList li:hover {
