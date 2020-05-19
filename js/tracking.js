@@ -84,7 +84,7 @@ function firstLoad() {
 			var img = document.createElement("img");
 			(items[b][0] == 0)?(img.setAttribute("class", "itemIcon")):(img.setAttribute("class", "itemIcon true"));
 
-			img.src = URL_SRC + items[b][1];
+			img.src = URL_SRC + items[b][2];
 			document.getElementsByClassName("iconList")[iconListCounter].appendChild(img);
 
 			iconListCounter++;
