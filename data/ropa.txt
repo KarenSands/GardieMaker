@@ -6311,6 +6311,7 @@ Sword and Roses
 	21056,
 
 !@21528 Magdalena / Cabello / Legendario M19
+	21528,"a59697067bdaf9b7d72d4571b11c05ba.png"
 	21540,"8fe308200ed01381d5d728f1b5c40add.png"
 
 !@21588 Flauta Countess of Pan / Accesorios manos / Legendario M19
@@ -6335,9 +6336,6 @@ Sword and Roses
 	21581,"00691ba14b80dede62ce805f16dc59b5.png"
 	21582,
 	21583,"5c60a703a4e6bb99e7cccc4822335752.png"
-
-!@21528 Madeleyn / Cabello / Legendario M19
-	21528,"a59697067bdaf9b7d72d4571b11c05ba.png"
 
 !@21596 Mangas Countess of Pan / Accesorios manos / Legendario M19
 	21596,
@@ -6630,41 +6628,10 @@ Sword and Roses
 
 23106 Aurelia / Cabello / Evento N19
 	23106,"2dffad0508606e3632e015ee862e96b5.png"
-	23107
-	23108
-	23109
-	23110
-	23111
-	23112
-	23113
-	23114
-	23115
-	23116
-	23117
-	23118
 	23119,"d72edc90ca51e72dde2099ed127d755c.png"
-	23120
-	23121
-	23122
-	23123
-	23124
-	23125
 	23126,"e6dd1e6749001a14e14687e2976c7b60.png"
-	23127
-	23128
-	23129
-	23130
 	23131,"6ae4e277a5f67b2b12f27b214debe191.png"
-	23132
-	23133
-	23134
-	23135
-	23136
 	23137,"2a88040af21cb624d3b1d7754494e3db.png"
-	23138
-	23139
-	23140
-	23141
 	23142,"9c4c992a426532715fb92e695c2d95fd.png"
 
 23148 Falda Far North Sovereign / Pantalones / Evento N19
