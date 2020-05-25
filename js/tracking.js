@@ -1,6 +1,6 @@
 const URL_SRC = "https://www.eldarya.es/assets/img/player/hair/icon/";
-
-var trackingList;
+const URL_FULL = "https://www.eldarya.es/assets/img/player/hair/web_portrait/";
+var trackingList, tracking = "all";;
 //================================================================
 $(document).ready(function () {
 	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/trackingList.json", function(groupList, success, xhr) {
@@ -10,7 +10,6 @@ $(document).ready(function () {
 
 });
 
-
 function checkLoad() {
 
 	try {
@@ -18,11 +17,10 @@ function checkLoad() {
 			firstLoad();
 		};
 	} catch {
-		alert("Se ha producido un error, la página se actualizará");
-		//location.reload();
+		alert("Se ha producido un error, la página se actualizará.");
+		location.reload();
 	};
 };
-
 
 function firstLoad() {
 
@@ -35,11 +33,16 @@ function firstLoad() {
 	for (a = 0; a < trackingList.length; a++) {
 
 		var nombre = trackingList[a].name;
-		var items = trackingList[a].items;
+		
+		if (tracking == "all") {
+			var items = trackingList[a].items;
+		} else if (tracking == "true") {
+			var items = trackingList[a].items.filter(function(v){return v[0] != 0});
+		} else if (tracking == "false") {
+			var items = trackingList[a].items.filter(function(v){return v[0] == 0});
+		};
+		
 		var disponibles = items.filter(function(v){return v[0] != 0}); 
-
-		//alert('"' + nombre + '" contiene ' + disponibles.length + " artículos de un total de " + items.length + ".");
-		//alert(items[0][1]);
 
 		// Crear info de cada grupo
 
@@ -78,14 +81,26 @@ function firstLoad() {
 		for (b = 0; b < items.length; b++) {
 
 			var li = document.createElement("li");
-			li.setAttribute("class", "iconList")
+			li.setAttribute("class", "iconList");
 			itemList.appendChild(li);
+
+			var aa = document.createElement("a");
+			aa.setAttribute("class","fancybox");
+			if (items[b][0] == 0) {
+				aa.setAttribute("data-fancy-title","<p>undefined</p>");
+			} else {
+				aa.setAttribute("data-fancy-title","<p>" + items[b][0] + "</p>");
+			};
+			aa.setAttribute("href",URL_FULL + items[b][2]);
+			aa.setAttribute("target","_bank");
+			document.getElementsByClassName("iconList")[iconListCounter].appendChild(aa);
 
 			var img = document.createElement("img");
 			(items[b][0] == 0)?(img.setAttribute("class", "itemIcon")):(img.setAttribute("class", "itemIcon true"));
+			img.setAttribute("alt",items[b][0]);
 
 			img.src = URL_SRC + items[b][2];
-			document.getElementsByClassName("iconList")[iconListCounter].appendChild(img);
+			document.getElementsByClassName("fancybox")[iconListCounter].appendChild(img);
 
 			iconListCounter++;
 
@@ -94,22 +109,48 @@ function firstLoad() {
 	};
 };
 
+// ------------------------------------------------------
 
+var trackingB = document.getElementsByClassName("tracking");
 
+$(function() { 
+    $("#tracking-all").click(function() { 
+    	tracking = "all";
+    	$("h1").remove(".itemInfo");
+    	$("ul").remove(".itemList");
 
-/*
-	<h1 class="itemInfo">
-		<span class="diamond"></span>
-		<span class="itemName">Bridín (San Valentín 2018)</span>
-		<span class="countItemsOuter">
-			<span class="countItems">1/42</span>
-		</span>
-	</h1>
+    	trackingB[0].setAttribute("class","tracking current");
+    	trackingB[1].setAttribute("class","tracking");
+    	trackingB[2].setAttribute("class","tracking");
 
-	<ul class="itemList">
-		<li><img class="itemIcon" src="d9a616ae1c9b443bde6abedb5024f0e5.png"></li>
-		<li><img class="itemIcon" src="5dd9d145839d15ffa9862ca6c2493618.png"></li>
-		<li><img class="itemIcon" src="851c400b18fc4f750d8d1c36b1d36c8d.png"></li>
-		<li><img class="itemIcon" src="1b68a0ebda071a2dde3ae9191b481659.png"></li>
-	</ul>
-*/
+    	firstLoad();
+
+    });
+
+    $("#tracking-true").click(function() { 
+    	tracking = "true";
+    	$("h1").remove(".itemInfo");
+    	$("ul").remove(".itemList");
+
+    	trackingB[0].setAttribute("class","tracking");
+    	trackingB[1].setAttribute("class","tracking current");
+    	trackingB[2].setAttribute("class","tracking");
+
+    	firstLoad();
+
+    });
+
+	$("#tracking-false").click(function() { 
+    	tracking = "false";
+    	$("h1").remove(".itemInfo");
+    	$("ul").remove(".itemList");
+
+    	trackingB[0].setAttribute("class","tracking");
+    	trackingB[1].setAttribute("class","tracking");
+    	trackingB[2].setAttribute("class","tracking current");
+
+    	firstLoad();
+
+    });
+
+});
