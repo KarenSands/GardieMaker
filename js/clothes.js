@@ -841,19 +841,75 @@ function updateFilters() {
 
 			var nombre = normalize(fName).toLowerCase();
 
-			filtro = groupInfo.filter(function(v){return (normalize(v.name).toLowerCase()).includes(nombre)});
 
-			for (i = 0; i < filterB.length; i++) {
-				var currentGroup = filtro.filter(function(v){return v.groupId == filterB[i].groupId});
+			if (!fName.includes(":")) {
+				// Busqueda normal
+				filtro = groupInfo.filter(function(v){return (normalize(v.name).toLowerCase()).includes(nombre)});
 
-				if (currentGroup.length != 0) {
-					if (filterB[i].groupId == currentGroup[0].groupId) {
-						filterA.push(filterB[i]);
+				for (i = 0; i < filterB.length; i++) {
+					var currentGroup = filtro.filter(function(v){return v.groupId == filterB[i].groupId});
+
+					if (currentGroup.length != 0) {
+						if (filterB[i].groupId == currentGroup[0].groupId) {
+							filterA.push(filterB[i]);
+						};
+
+					};
+
+				};
+			
+
+			} else {
+
+				// Reiniciar todos los filtros
+
+				fCategorias = $("#filter-bodyLocationOptions").val("");	// categorias
+				fEspecial = $("#filter-guardOptions").val("");			// Guardias / Premio del mes
+
+				var espFilter = fName.split(":");
+
+				var pri = espFilter[0], seg = espFilter[1];
+/*
+				if (pri == "e") {
+					if ((seg).toLowerCase() == "so") {pri = "Spin-off";} 
+					else if ((seg).toLowerCase() == "ch") {pri = "Episodio";}
+				//	else if ((seg).toLowerCase() == "ex") {pri = "Exploración";}
+				//	else if ((seg).toLowerCase() == "ti") {pri = "Tienda";}
+					else {pri = "vacio"};
+				
+				} else {
+*/
+					switch (pri) {
+						case "SV":case "sv": pri = "San Valentín "; break;
+						case "A":case "a": pri = "1 de Abril "; break;
+						case "P":case "p": pri = "Pascua "; break;
+						case "M":case "m": pri = "Música "; break;
+						case "V":case "v": pri = "Verano "; break;
+						case "H":case "h": pri = "Halloween "; break;
+						case "N":case "n": pri = "Navidad "; break;
+						default: pri = "vacio";
+					};
+
+					pri = pri + seg;
+
+//				}
+
+
+				filtro = groupInfo.filter(function(v){return v.note.includes(pri)});
+
+				for (i = 0; i < filterB.length; i++) {
+					var currentGroup = filtro.filter(function(v){return v.groupId == filterB[i].groupId});
+
+					if (currentGroup.length != 0) {
+						if (filterB[i].groupId == currentGroup[0].groupId) {
+							filterA.push(filterB[i]);
+						};
+
 					};
 
 				};
 
-			};
+			}
 
 		// -----------------------------------------------------------
 
