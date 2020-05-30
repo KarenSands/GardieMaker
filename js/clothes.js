@@ -940,21 +940,6 @@ var normalize = (function() {
  
 })();
 
-// ------------------------------------------------------
-
-function key() {
-
-	var input = document.getElementById("filter-itemName");
-
-	input.addEventListener("keypress", function(event) {
-		if (event.keyCode === 13) {
-			event.preventDefault();
-			document.getElementById("filter").click();
-		};
-	});
-
-};
-
 // ----------------------------------------------------
 
 window.addEventListener('popstate', (event) => {
