@@ -18,6 +18,7 @@ var galor;
 //================================================================
 
 $(document).ready(function iniciaTodo() {
+
 	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupInfo.json", function(dataInfo, success, xhr) {
 		groupInfo = JSON.parse(dataInfo);
 	});
@@ -42,6 +43,8 @@ function getCustom() {
 		cargarCanvas(customArray[0]);
 
         $("#footer-links").html(customArray.length + " items en uso.");
+
+        document.getElementById("backC").setAttribute("href","https://eldaryaclothing.tumblr.com/es/clothes" + window.location.search);
 
 		dragGardienne();
 		dragPet();
