@@ -8944,6 +8944,8 @@
 
 {"itemId":11878, "groupId":11854, "itemURL":"4ac923c64e51dccc40141a2a68b35fd0.png"},
 
+{"itemId":11883, "groupId":11854, "itemURL":"da817224ee7e4ea68b96916bf5cd1c75.png"},
+
 {"itemId":11885, "groupId":11854, "itemURL":"7d8605c7ec2104e73bcf2337687817bd.png"},
 
 {"itemId":11887, "groupId":11854, "itemURL":"699434b2ad48de4943f269a10f9230a5.png"},
@@ -8986,6 +8988,7 @@
 
 {"itemId":11958, "groupId":11855, "itemURL":"0179ad85f883555a6f6944924d41f5d9.png", "note":"Alquimia", "especial":"Arcoíris"},
 
+{"itemId":11960, "groupId":11856, "itemURL":"7ecb8c27d4ce208807047cbb479a496c.png"},
 {"itemId":11961, "groupId":11856, "itemURL":"72d867c5ed61eb75d160f90af8fa39ca.png"},
 {"itemId":11962, "groupId":11856, "itemURL":"1e4e09be5f7f51f03da4960975b89d4d.png"},
 
@@ -10094,9 +10097,11 @@
 {"itemId":13289, "groupId":13168, "itemURL":"4a15d0162239d21dee5f4f949684e2b3.png"},
 {"itemId":13290, "groupId":13168, "itemURL":"9de10eaa3f7d027f28b46140c9f404cd.png"},
 
+{"itemId":13292, "groupId":13168, "itemURL":"2cd4316e2c456e97363995ddad9e1325.png"},
+
 {"itemId":13295, "groupId":13168, "itemURL":"6a37a5325680e1d3a5564684e454c974.png"},
 
-{"itemId":13292, "groupId":13168, "itemURL":"2cd4316e2c456e97363995ddad9e1325.png"},
+{"itemId":13298, "groupId":13168, "itemURL":"4466a1711bcca30b43d88c18bb584504.png"},
 
 {"itemId":13301, "groupId":13168, "itemURL":"a423784fac2dafcf90c15288cc1c5781.png"},
 
@@ -11558,6 +11563,8 @@
 
 {"itemId":14930, "groupId":14230, "itemURL":"a1b3671a4de2d7f61cfd992892ce51cd.png"},
 
+{"itemId":14936, "groupId":14230, "itemURL":"fa04c90021b0d384c3c0fc24309b3c00.png"},
+
 {"itemId":14938, "groupId":14230, "itemURL":"d5497d3d7aa85c53cd56f9811287dd1a.png"},
 
 {"itemId":14941, "groupId":14230, "itemURL":"2ac990d19efab09f07cd52fd9238c10a.png"},
@@ -12468,6 +12475,7 @@
 
 {"itemId":16049, "groupId":16029, "itemURL":"ece8d0e1e5c157d4814acf0b5776fcc9.png"},
 {"itemId":16050, "groupId":16029, "itemURL":"ecde19afac5d669b0b92103d90f37463.png"},
+{"itemId":16051, "groupId":16029, "itemURL":"d58a1c61585a8609bfa83ad997991407.png"},
 
 {"itemId":16054, "groupId":16029, "itemURL":"12b9f4601484a4de1ffb40ccc7ed012d.png"},
 
@@ -13076,7 +13084,7 @@
 {"itemId":16923, "groupId":16894, "itemURL":"3a02b35acd952fd01b90668b22b49899.png"},
 
 {"itemId":16925, "groupId":16894, "itemURL":"59dcb26441edb61cc025f089c851d431.png"},
-
+{"itemId":16926, "groupId":16894, "itemURL":"3c05b761b7eb52158d186d5c99fa2c63.png"},
 {"itemId":16927, "groupId":16894, "itemURL":"027b2b90a0feacd6220b595e825482d2.png"},
 
 {"itemId":16929, "groupId":16894, "itemURL":"925123136a394a3ac2760a4b3adf7cda.png"},
@@ -13088,6 +13096,8 @@
 {"itemId":16955, "groupId":16894, "itemURL":"3deabacf6e706b205bb5eb96d676d01b.png"},
 
 {"itemId":16959, "groupId":16894, "itemURL":"ecd182246b4a84d3cf03d213e6fca073.png"},
+
+{"itemId":16965, "groupId":16894, "itemURL":"b9f1c4c0b4582f21bc266e8f0c690e65.png"},
 
 {"itemId":16967, "groupId":16894, "itemURL":"75375f50902340ed25a183694e79b7fe.png"},
 
@@ -13193,7 +13203,7 @@
 
 {"itemId":17089, "groupId":16886, "itemURL":"a2b9a1bd800a902191ee772a0e44c2c1.png"},
 {"itemId":17090, "groupId":16886, "itemURL":"c87bff657af694c3a3c1b07a67526808.png"},
-
+{"itemId":17091, "groupId":16886, "itemURL":"966e99a479e508989c13974b93648df2.png"},
 {"itemId":17092, "groupId":16886, "itemURL":"9292171f9642f6e44e0cc1fdd0abbd6b.png"},
 {"itemId":17093, "groupId":16886, "itemURL":"2302faa5f6d28e8acadfd6230425b0ce.png"},
 {"itemId":17094, "groupId":16886, "itemURL":"c0a427b80ae7af9005d378672ea6c4ac.png"},
@@ -13440,6 +13450,8 @@
 {"itemId":17436, "groupId":17406, "itemURL":"cf5cbfba3f4cb8d81c80ae9703d1f63d.png"},
 {"itemId":17437, "groupId":17406, "itemURL":"44e87c6fb43fc512dbebbfaaa51fd7d0.png"},
 
+{"itemId":17439, "groupId":17406, "itemURL":"eec550abd2cb5ea1ff51692d6886181b.png"},
+
 {"itemId":17442, "groupId":17406, "itemURL":"3361d847d2874708a3cc8f8d9066ac8a.png"},
 {"itemId":17443, "groupId":17406, "itemURL":"e43a60facb7773a87839087c75814929.png"},
 
@@ -13449,6 +13461,8 @@
 {"itemId":17449, "groupId":17406, "itemURL":"e1389f12a06a9f54a2a2be0e2ea0a9fb.png"},
 {"itemId":17450, "groupId":17406, "itemURL":"dce3004d1b2bb078d435da4f521411f8.png"},
 {"itemId":17451, "groupId":17406, "itemURL":"fc3f359f5c82097f5720b03661b5b186.png"},
+
+{"itemId":17456, "groupId":17406, "itemURL":"2c279cb3ba0de5a3fdada472d183c8f7.png"},
 
 {"itemId":17458, "groupId":17406, "itemURL":"db5ef7f344f6f4611c6a9f3742a19764.png"},
 {"itemId":17459, "groupId":17406, "itemURL":"c3f7bf20f455b5e87954a3428ad878ed.png"},
@@ -17112,6 +17126,7 @@
 {"itemId":21752, "groupId":21716, "itemURL":"cd4a195bc6a8a7ac0926469ba000eb74.png"},
 {"itemId":21753, "groupId":21716, "itemURL":"bd488e7ccd4b72b4433a6020d256d69e.png"},
 
+{"itemId":21755, "groupId":21716, "itemURL":"9df9bbc3422663b447461793d787bb3d.png"},
 {"itemId":21756, "groupId":21716, "itemURL":"00cc0576a189ce5ed38371443c06f6aa.png"},
 
 {"itemId":21758, "groupId":21716, "itemURL":"fee9ee4f6e845fc099fda2df687e8756.png"},
@@ -17142,6 +17157,8 @@
 {"itemId":21787, "groupId":21773, "itemURL":"0ac1a635a3a4f2cdc61465b91391c772.png"},
 
 {"itemId":21790, "groupId":21773, "itemURL":"6f6a1a1dc719cbe98cb1a1427f2059b2.png"},
+
+{"itemId":21792, "groupId":21773, "itemURL":"791130f2787ac5af8585e2bedd78844b.png"},
 
 {"itemId":21795, "groupId":21773, "itemURL":"1e18ece0f13252532fd75af5ffae7710.png"},
 
