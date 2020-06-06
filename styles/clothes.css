@@ -303,6 +303,24 @@ canvas {
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
+#marketplace-search-title { /* NUEVO */
+    width: 500px;
+    margin: 5px;
+    padding: 11px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.marketplace-search-back { /* NUEVO */
+    font-family: Rubik;
+    font-size: 18px;
+    color: rgb(52,56,111);
+    padding: 10px;
+    /*height: 34px !important;*/
+    margin: 5px;
+    width: 480px;
+}
+
 #marketplace-search-items li{
 	width: 500px;
 	height: 75px;
