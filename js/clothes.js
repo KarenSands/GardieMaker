@@ -63,45 +63,45 @@ function selectLoad() {
 
 function searchtoSelect(code) {
 	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
-	
-	for (i = 0; i < lista.length; i++) {
-		var busca = lista[i].getAttribute("data-itemid");
 
-		if (busca == code) {
-			busca = lista[i].getAttribute("class");
-			
-			if (busca.includes("selected")) {
-				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
-				document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
-				selectedCode = "";
-				//limpiarCanvas();
+		for (i = 0; i < lista.length; i++) {
+			var busca = lista[i].getAttribute("data-itemid");
 
-			} else {
-				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item selected");
+			if (busca == code) {
+				busca = lista[i].getAttribute("class");
+				
+				if (busca.includes("selected")) {
+					lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
+					document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
+					selectedCode = "";
+					//limpiarCanvas();
 
-				if (lista[i].getAttribute("data-itemid") != "undefined") {
-					document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
-					document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "FIJAR";
-				}
+				} else {
+					lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item selected");
 
-				unset = "";
-				for (b = 0; b < customArray.length; b++) {
-					if (code == customArray[b]) {
-						document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "QUITAR";
-						unset = b;
-						break;
+					if (lista[i].getAttribute("data-itemid") != "undefined") {
+						document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
+						document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "FIJAR";
+					}
+
+					unset = "";
+					for (b = 0; b < customArray.length; b++) {
+						if (code == customArray[b]) {
+							document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "QUITAR";
+							unset = b;
+							break;
+						};
 					};
+
+					(unset === "")?cargarCanvas(i):"";
+
 				};
 
-				(unset === "")?cargarCanvas(i):"";
-
+			} else {
+				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
 			};
 
-		} else {
-			lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
 		};
-
-	};
 
 };
 
@@ -206,12 +206,21 @@ function limpiarCanvas(){
 };
 
 function selectItem(n) {
+
 	limpiarCanvas();
+	document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
 
 	var addselect = document.getElementsByClassName("marketplace-abstract marketplace-search-item")[n];
 	selectedCode = addselect.getAttribute("data-itemid");
 
-	if (submenu == true || $("#filter-codeOptions").val() == "all") {
+	/* Versión original */
+/*	if (submenu == true || $("#filter-codeOptions").val() == "all") {
+
+		searchtoSelect(selectedCode); */
+
+	/* Versión BETA */
+	if ($("#filter-codeOptions").val() != "submenu") {
+
 
 		searchtoSelect(selectedCode);
 
@@ -221,14 +230,18 @@ function selectItem(n) {
 		filterGroup = groupList.filter(function(v){return v.groupId == getGroupId[0].groupId});
 
 		if (filterGroup.length > 1) {
-			submenu = true;
+			
 			mainPage = selectedPage;
 			selectedPage = 1;
-			crearPagination();			
+			itemsxpag = 6;
+			crearPagination();
+			submenu = true;
 
-		} else {
-			submenu = false;
+
+		} else if (submenu == false) {
+			//submenu = false;
 			searchtoSelect(selectedCode);
+
 		}
 
 	}
@@ -336,7 +349,7 @@ function crearPagination() {
 
 	// Cada página tiene 7 elementos)
 	
-	if (submenu == true) {
+	if (itemsxpag == 6) {
 
 		if (filterGroup.length <= 6) {
 
@@ -371,8 +384,6 @@ function crearPagination() {
 		var padre = document.getElementById("marketplace-search-items");
 		var cont = document.getElementsByClassName("marketplace-search-item");
 		padre.insertBefore(div, cont[0]);
-
-
 
 	} else {
 
@@ -468,14 +479,17 @@ function crearPagination() {
 
 function searchBack() {
 	selectedPage = mainPage;
+	submenu = false;
+	itemsxpag = 7;
 	updateFilters();
-	limpiaElementos();
-	cargaItems(selectedPage - 1);
-	crearPagination();
-	
+//	selectItem(0);
+	searchtoSelect(0);
+//	cargaItems(selectedPage - 1);
+//	crearPagination();
+//	hacerTruncation();
+//	cargaItems(selectedPage - 1);
 
-	//selectPage(mainPageI);
-
+	selectPage(mainPageI);
 }
 	
 function limpiaElementos() {
@@ -498,7 +512,7 @@ function limpiaElementos() {
 function selectPage(n) {
 
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
-	if (submenu = false) {
+	if (submenu == false) {
 		mainPageI = n;
 	}
 	crearPagination();
@@ -582,7 +596,7 @@ function hacerTruncation() {
 
 function cargaItems(pagsel) {
 
-	(submenu == true)?(itemsxpag = 6):(itemsxpag = 7);
+	//(submenu == true)?(itemsxpag = 6):(itemsxpag = 7);
 
 	if (pagsel + 1 == paginas) {
 
@@ -632,7 +646,10 @@ function cargaItems(pagsel) {
 
 	};
 
-	searchtoSelect(selectedCode);
+	if (submenu == true || $("#filter-codeOptions").val() != "submenu") {
+		searchtoSelect(selectedCode);
+	}
+
 };
 
 function getItems() {
@@ -794,7 +811,9 @@ function getInfo() {
 
 function updateFilters() {
 	$("span").remove("#empty");
-	submenu = false;
+	if (submenu == true) {
+		searchBack();
+	}
 
 	fGrupos = $("#filter-codeOptions").val();				// item / grupo
 	fCategorias = $("#filter-bodyLocationOptions").val();	// categorias
@@ -816,7 +835,11 @@ function updateFilters() {
 			fGrupos = "all";
 		}
 
-		if (fGrupos == "first") {
+		if (fName != "" && !(isNaN(fName)) ) {
+			fGrupos = "all";	
+		}
+
+		if (fGrupos == "first" || fGrupos == "submenu") {
 
 			//filtro = groupInfo;
 
@@ -852,7 +875,7 @@ function updateFilters() {
 	} catch {
 
 		alert("Se ha producido un error, la página se actualizará");
-		location.reload();
+	//	location.reload();
 
 	};
 
@@ -954,7 +977,6 @@ function updateFilters() {
 
 				};
 			
-
 			} else {
 
 				// Reiniciar todos los filtros
@@ -1012,7 +1034,7 @@ function updateFilters() {
 		} else {
 			// Reiniciar todos los filtros
 
-			fGrupos = $("#filter-codeOptions").val("all");				// item / grupo
+//			fGrupos = $("#filter-codeOptions").val("all");				// item / grupo
 			fCategorias = $("#filter-bodyLocationOptions").val("");	// categorias
 			fEspecial = $("#filter-guardOptions").val("");			// Guardias / Premio del mes
 			fRareza = $("#filter-rarityOptions").val("");				// rareza
