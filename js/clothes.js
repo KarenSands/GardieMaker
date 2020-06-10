@@ -221,7 +221,6 @@ function selectItem(n) {
 	/* Versión BETA */
 	if ($("#filter-codeOptions").val() != "submenu") {
 
-
 		searchtoSelect(selectedCode);
 
 	} else {
@@ -235,7 +234,6 @@ function selectItem(n) {
 				selectedPage = 1;
 				itemsxpag = 6;
 				crearPagination();
-//				searchtoSelect(selectedCode);
 				submenu = true;
 
 				var div = document.createElement("div");
@@ -255,17 +253,14 @@ function selectItem(n) {
 				var cont = document.getElementsByClassName("marketplace-search-item");
 				padre.insertBefore(div, cont[0]);
 
+				$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
 
 			} else {
 				itemsxpag = 6;
 				searchtoSelect(selectedCode);
-//				crearPagination();
 			}
-			
-		
 
-		} else /*if (submenu == false)*/ {
-			//submenu = false;
+		} else {
 			searchtoSelect(selectedCode);
 
 		}
@@ -470,15 +465,9 @@ function searchBack() {
 	selectedPage = mainPage;
 	submenu = false;
 	itemsxpag = 7;
-	updateFilters();
-//	selectItem(0);
 	searchtoSelect(0);
-//	cargaItems(selectedPage - 1);
-//	crearPagination();
-//	hacerTruncation();
-//	cargaItems(selectedPage - 1);
+	updateFilters();
 
-	selectPage(mainPageI);
 }
 	
 function limpiaElementos() {
@@ -500,11 +489,19 @@ function limpiaElementos() {
 
 function selectPage(n) {
 
+	if (filterGroup.length == 1) {
+		searchtoSelect("");
+	}
+
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
 	if (submenu == false) {
 		mainPageI = n;
+		updateFilters();
+		
+	} else {
+		crearPagination();
 	}
-	crearPagination();
+	
 
 };
 
@@ -804,6 +801,8 @@ $(function() {
 
 	$("#filter-codeOptions").change(function() {
 		selectedPage = 1;
+		itemsxpag = 7;
+		submenu = false;
 		updateFilters();
 	});
 	$("#filter-bodyLocationOptions").change(function() {
@@ -833,9 +832,6 @@ $(function() {
 
 function updateFilters() {
 	$("span").remove("#empty");
-//	if (submenu == true) {
-//		searchBack();
-//	}
 
 	fGrupos = $("#filter-codeOptions").val();				// item / grupo
 	fCategorias = $("#filter-bodyLocationOptions").val();	// categorias
@@ -1107,7 +1103,7 @@ function updateFilters() {
 
 	$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
 
-	if (submenu != true) {
+	if (submenu == true) {
 		selectedPage = 1;
 	}
 	

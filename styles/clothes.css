@@ -316,10 +316,15 @@ canvas {
     font-size: 18px;
     color: rgb(52,56,111);
     padding: 10px;
-    /*height: 34px !important;*/
     margin: 5px;
     width: 480px;
+    cursor: pointer;
 }
+
+.marketplace-search-back:hover { /* NUEVO */
+    background: #b9f8fa;
+}
+
 
 #marketplace-search-items li{
 	width: 500px;
