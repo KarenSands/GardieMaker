@@ -22,6 +22,10 @@ var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNo
 var fGrupos, fCategorias, fEspecial, fRareza, fOrden, fName;
 // Variables para fijar items
 var customArray = [], selectedCode, unset, hijo;
+// Determina si el submenu está abierto o no
+var submenu = false;
+var getGroupId, mainPage, mainPageI, itemsxpag = 7;
+
 //----------------------------------------------
 
 $(document).ready(function iniciaTodo() {
@@ -59,45 +63,45 @@ function selectLoad() {
 
 function searchtoSelect(code) {
 	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
-	
-	for (i = 0; i < lista.length; i++) {
-		var busca = lista[i].getAttribute("data-itemid");
 
-		if (busca == code) {
-			busca = lista[i].getAttribute("class");
-			
-			if (busca.includes("selected")) {
-				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
-				document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
-				selectedCode = "";
-				//limpiarCanvas();
+		for (i = 0; i < lista.length; i++) {
+			var busca = lista[i].getAttribute("data-itemid");
 
-			} else {
-				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item selected");
+			if (busca == code) {
+				busca = lista[i].getAttribute("class");
+				
+				if (busca.includes("selected")) {
+					lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
+					document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
+					selectedCode = "";
+					//limpiarCanvas();
 
-				if (lista[i].getAttribute("data-itemid") != "undefined") {
-					document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
-					document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "FIJAR";
-				}
+				} else {
+					lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item selected");
 
-				unset = "";
-				for (b = 0; b < customArray.length; b++) {
-					if (code == customArray[b]) {
-						document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "QUITAR";
-						unset = b;
-						break;
+					if (lista[i].getAttribute("data-itemid") != "undefined") {
+						document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
+						document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "FIJAR";
+					}
+
+					unset = "";
+					for (b = 0; b < customArray.length; b++) {
+						if (code == customArray[b]) {
+							document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "QUITAR";
+							unset = b;
+							break;
+						};
 					};
+
+					(unset === "")?cargarCanvas(i):"";
+
 				};
 
-				(unset === "")?cargarCanvas(i):"";
-
+			} else {
+				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
 			};
 
-		} else {
-			lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
 		};
-
-	};
 
 };
 
@@ -202,14 +206,71 @@ function limpiarCanvas(){
 };
 
 function selectItem(n) {
+
 	limpiarCanvas();
+	document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
 
 	var addselect = document.getElementsByClassName("marketplace-abstract marketplace-search-item")[n];
 	selectedCode = addselect.getAttribute("data-itemid");
 
-	searchtoSelect(selectedCode);
+	/* Versión original */
+/*	if (submenu == true || $("#filter-codeOptions").val() == "all") {
+
+		searchtoSelect(selectedCode); */
+
+	/* Versión BETA */
+	if ($("#filter-codeOptions").val() != "submenu") {
+
+		searchtoSelect(selectedCode);
+
+	} else {
+
+		getGroupId = groupList.filter(function(v){return v.itemId == selectedCode});
+		filterGroup = groupList.filter(function(v){return v.groupId == getGroupId[0].groupId});
+
+		if (filterGroup.length > 1) {
+			if (submenu == false) {
+				mainPage = selectedPage;
+				selectedPage = 1;
+				itemsxpag = 6;
+				crearPagination();
+				submenu = true;
+
+				var div = document.createElement("div");
+				div.setAttribute("id","marketplace-search-title");
+				div.innerHTML = "Mostrando todas las variaciones de colores de " + getGroupId[0].groupId;
+				// Mover hacia arriba
+				var padre = document.getElementById("marketplace-search-items");
+				var cont = document.getElementsByClassName("marketplace-search-item");
+				padre.insertBefore(div, cont[0]);
+
+				var div = document.createElement ("div");
+				div.setAttribute("class","marketplace-abstract marketplace-search-back");
+				div.setAttribute("onclick","searchBack()");
+				div.innerHTML = "🡸 Regresar";
+				// Mover hacia arriba
+				var padre = document.getElementById("marketplace-search-items");
+				var cont = document.getElementsByClassName("marketplace-search-item");
+				padre.insertBefore(div, cont[0]);
+
+				$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
+
+			} else {
+				itemsxpag = 6;
+				searchtoSelect(selectedCode);
+			}
+
+		} else {
+			searchtoSelect(selectedCode);
+
+		}
+
+	}
 
 };
+
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 function doMove(place) {
 	var nodo = document.getElementById(selectedCode);
@@ -304,16 +365,22 @@ function crearPagination() {
 	$("div").remove(".page");
 	$("span").remove(".truncation");
 
+	if (itemsxpag == 7) {
+		$("div").remove("#marketplace-search-title");
+		$("div").remove(".marketplace-abstract.marketplace-search-back");
+	}
+		
 	// Cada página tiene 7 elementos)
-	if (filterGroup.length <= 7) {
+	
+	if (filterGroup.length <= itemsxpag) {
 
 		paginas = 0;
 		resto = filterGroup.length;
 
-	} else if (filterGroup.length > 7) {
+	} else if (filterGroup.length > itemsxpag) {
 
-		paginas = filterGroup.length / 7
-		resto = filterGroup.length % 7;
+		paginas = filterGroup.length / itemsxpag
+		resto = filterGroup.length % itemsxpag;
 
 		// Comprobar si hay páginas incompletas
 		if (resto != 0) {
@@ -393,23 +460,48 @@ function crearPagination() {
 		};
 	};
 };
+
+function searchBack() {
+	selectedPage = mainPage;
+	submenu = false;
+	itemsxpag = 7;
+	searchtoSelect(0);
+	updateFilters();
+
+}
 	
 function limpiaElementos() {
 	var itemsVisibles = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
 	for (i = 0; i < 7; i++) {
 		itemsVisibles[i].innerHTML = "";
 		itemsVisibles[i].removeAttribute("style");
+		//itemsVisibles[i].style.display = "none";
 
 		if (itemsVisibles[i].style.display == "none") {
 				itemsVisibles[i].removeAttribute("style");
 			};
 	};
+
+	if (itemsxpag == 6) {
+		itemsVisibles[6].style.display = "none";
+	}
 };
 
 function selectPage(n) {
 
+	if (filterGroup.length == 1) {
+		searchtoSelect("");
+	}
+
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
-	crearPagination();
+	if (submenu == false) {
+		mainPageI = n;
+		updateFilters();
+		
+	} else {
+		crearPagination();
+	}
+	
 
 };
 
@@ -490,8 +582,11 @@ function hacerTruncation() {
 
 function cargaItems(pagsel) {
 
+	//(submenu == true)?(itemsxpag = 6):(itemsxpag = 7);
+
 	if (pagsel + 1 == paginas) {
-		primerItem = pagsel * 7;
+
+		primerItem = pagsel * itemsxpag;
 		ultimoItem = filterGroup.length;
 		itemLooper = 0;
 		for (item = primerItem; item < ultimoItem; item++) {
@@ -522,8 +617,8 @@ function cargaItems(pagsel) {
 		};
 
 	} else {
-		primerItem = pagsel * 7;
-		ultimoItem = primerItem + 7;
+		primerItem = pagsel * itemsxpag;
+		ultimoItem = primerItem + itemsxpag;
 		itemLooper = 0;
 		for (item = primerItem; item < ultimoItem; item++) {
 			if (document.getElementsByClassName("marketplace-abstract marketplace-search-item")[itemLooper].style.display == "none") {
@@ -537,7 +632,10 @@ function cargaItems(pagsel) {
 
 	};
 
-	searchtoSelect(selectedCode);
+	if (submenu == true || $("#filter-codeOptions").val() != "submenu") {
+		searchtoSelect(selectedCode);
+	}
+
 };
 
 function getItems() {
@@ -697,6 +795,41 @@ function getInfo() {
 
 };
 
+
+$(function() { 
+
+
+	$("#filter-codeOptions").change(function() {
+		selectedPage = 1;
+		itemsxpag = 7;
+		submenu = false;
+		updateFilters();
+	});
+	$("#filter-bodyLocationOptions").change(function() {
+		selectedPage = 1;
+		updateFilters();
+	});
+	$("#filter-guardOptions").change(function() {
+		selectedPage = 1;
+		updateFilters();
+	});
+	$("#filter-rarityOptions").change(function() {
+		selectedPage = 1;
+		updateFilters();
+	});
+	$("#filter-orderOptions").change(function() {
+		selectedPage = 1;
+		updateFilters();
+	});
+	$("#filter-itemName").change(function() {
+		selectedPage = 1;
+		updateFilters();
+	});
+
+});
+
+
+
 function updateFilters() {
 	$("span").remove("#empty");
 
@@ -720,7 +853,11 @@ function updateFilters() {
 			fGrupos = "all";
 		}
 
-		if (fGrupos == "first") {
+		if (fName != "" && !(isNaN(fName)) ) {
+			fGrupos = "all";	
+		}
+
+		if (fGrupos == "first" || fGrupos == "submenu") {
 
 			//filtro = groupInfo;
 
@@ -858,7 +995,6 @@ function updateFilters() {
 
 				};
 			
-
 			} else {
 
 				// Reiniciar todos los filtros
@@ -916,7 +1052,7 @@ function updateFilters() {
 		} else {
 			// Reiniciar todos los filtros
 
-			fGrupos = $("#filter-codeOptions").val("all");				// item / grupo
+//			fGrupos = $("#filter-codeOptions").val("all");				// item / grupo
 			fCategorias = $("#filter-bodyLocationOptions").val("");	// categorias
 			fEspecial = $("#filter-guardOptions").val("");			// Guardias / Premio del mes
 			fRareza = $("#filter-rarityOptions").val("");				// rareza
@@ -967,7 +1103,10 @@ function updateFilters() {
 
 	$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
 
-	selectedPage = 1;
+	if (submenu == true) {
+		selectedPage = 1;
+	}
+	
 	crearPagination();
 };
 
