@@ -55,7 +55,7 @@ Steam Girl - Japan Expo
 	1597,"da5b25d8123a160d365d926b3c3bcd56.png"
 	1598,"50b5df144f5ff0ef793cf4d984b87c76.png"
 	1599,"4e15a736364e288afee99029928a8386.png"
-	1600,
+	1600,"a7a37306b1ab6e14a66f83b43f06173f.png"
 	1601,"67a41bb076a6366110cd2df9f61cccab.png"
 	1602,"c1945760d4ed3d8119f1275e8a71be60.png"
 	1603,
@@ -765,7 +765,7 @@ Night Owl
 	10941,"db82e47bede998c615bfad79810ddd0d.png"
 	10942,
 	10943,"11a059e01a9b4ad6c0e3b54bf4a48c13.png"
-	10944,
+	10944,"1aee3920961ff24aa310f28da300bbd3.png"
 	10945,"501b7fe181dfa4c96dcbffc669aac529.png"
 	10946,
 	10947,"df9cc0591d9e140087a016d71cb939b0.png"
@@ -931,7 +931,7 @@ Night Owl
 	11238,"e0247c634b491d97f7b6314f9bdc21f5.png"
 	11239,"d58db51930e8e311a54e99bcb33f92a7.png"
 	11240,"59f465974723fc71b6b034bf4ec87f77.png"
-	11241,
+	11241,"102a964d654af13fe773ebc9c0ce7af7.png"
 	11242,"12cbd45ceaad8a5ec1e0b8e6981cb050.png"
 	11243,"256d79d8aa802db082d9fcb169ab1b55.png"
 
@@ -1965,81 +1965,6 @@ Countess of Pan (x12)
 		21666,"109795fbe7b03818f8659c56d352c113.png"10
 		21667,"9c7a8cedc816b0966c46269d61b47df2.png"9
 
-Music Paper (x12)
-
-	!@21633 Tirantes Music Paper / Accesorios manos / Evento (Música 2019)
-		21633,"e2de5fc303b973ae1478c9a401646e8d.png"
-		21645,bf9d7c8c626cd9da3e67c76cb350b5ae.png
-		21646,"5d45de612833e1c6f5e7f83ef1e93a77.png"
-		21647,
-		21648,06b62d79ec5090a06173f9c147bc78e9.png
-		21649,"cb92605787395c9b91382deb929ffb48.png"
-		21650,
-		21651,
-		21652,0f04fceddd2381b5a19b305591aac0ff.png
-		21653,
-		21654,
-		21655,
-
-	!@21668 Body Music Paper / Ropa interior / Evento (Música 2019)
-		21668,"f76989ac6b273f13250c9a594be986f7.png"
-		21669,560bb1d9e7131eeb18855291fd118e7e.png
-		21670,"51df4faf26357156f785299679411253.png"
-		21671,
-		21672,"0abbdf9f30f735431ac615deac6782b0.png"
-		21673,3a39c50ed459ae4eb30c2656beda6a12.png
-		21674,
-		21675,
-		21676,34b1ec013506b11f2567e08e02fb5c1f.png
-		21677,
-		21678,
-		21679,
-
-	!@21680 Tutú Music Paper / Pantalones / Evento (Música 2019)
-		21680,"07d4383b105317801e231bcae6ff49e8.png"
-		21681,"a5f88faf06ee53a1da2d562e0eefe796.png"
-		21682,"a264a052d8fafb82d55d26a02deb111a.png"
-		21683,
-		21684,"c0a094c880b5b86c0dee352981dd67a9.png"
-		21685,"ec02044a56fb05fb358d2ba313b1f860.png"
-		21686,
-		21687,
-		21688,1ea12c7ec3eb4ce0b31e5798804db266.png
-		21689,
-		21690,"1d5c59b2a2229783ef761c42bbdf92ff.png"
-		21691,
-
-	!@21692 Cinturón asimétrico Music Paper / Cinturones / Evento (Música 2019)
-		21692,"54f3a02ef4bffe989cfd7a2fc63b6126.png"
-		21693,"1fa08cea7107520cd1131adaff86d0bd.png"
-		21694,"03378a2f387e2b95d97ebcb7233b7b9c.png"
-		21695,
-		21696,42201a0a53e8deabfe6abd6bcdc2631a.png
-		21697,dab237779ed4e95a7cc654b43e87d356.png
-		21698,
-		21699,
-		21700,dae7d25825fe84bfb9a67c979c693fb2.png
-		21701,
-		21702,
-		21703,
-
-	!@21704 Sandalias Music Paper / Zapatos / Evento (Música 2019)
-		21704,"d5488d24b2e5d274361081f7804a54ca.png"
-		21705,0e615d2d28ebb3c9e0a647eae0682fdb.png
-		21706,"d0e48223d4ee86e661b5307b6512dd3e.png"
-		21707,
-		21708,"c52199fe94675e00edd2f7b0dfa83eef.png"
-		21709,"141f6db2d16a18541ca0769144f70cb4.png"
-		21710,
-		21711,
-		21712,"fe043164a486c36a86a134d8459fc355.png"
-		21713,
-		21714,
-		21715,
-
-	!@21759 Piano aéreo / Accesorios manos / Evento (Música 2019)
-		21759,"84f3fae453d808a54041175b94786c13.png"
-
 !@21868 Ojos luminosos / Ojos / Evento (Verano 2019)
 	21868,"1bf0a098b943c2b11804ee6563e394f2.png"
 	21869,"cd9d5ec1550ddd98cdb18eb387fe3341.png"
@@ -2224,3 +2149,150 @@ Far North Sovereign (x12)
 		23205,10
 		23206,deded9d7768bd512377d3d950b7d1caf.png
 		23207,10fe5e0bb6ff2666f9175bde95c3d460.png
+
+======================================================
+Chosen One
+	24101 ?? / Cabello / Evento (Música 2020)
+		24101,
+		24102,
+		24103,
+		24104,
+		24105,
+		24106,
+		24107,
+		24108,
+		24109,
+		24110,
+		24111,
+		24112,
+		24113,
+		24114,
+		24115,
+		24116,
+		24117,
+		24118,
+		24119,
+		24120,
+		24121,
+		24122,
+		24123,
+		24124,
+		24125,
+		24126,
+		24127,
+		24128,
+		24129,"93f64ab4b5335fbaa0dc09597fe95cca.png"
+
+	24143 ?? / Sombreros / Evento (Música 2020)
+		24143,"901103402602cf69ca066616a972832b.png"
+		24144,"e716d935eb25de76608c03b1c0519f77.png"
+		24145,
+		24146,
+		24147,
+		24148,
+		24149,
+		24150,
+		24151,
+		24152,
+		24153,
+		24154,
+
+	24167 ?? / Accesorios cara / Evento (Música 2020)
+		24167,
+		24168,"f7098a54d60c30adf9151633c1907d19.png"
+		24169,
+		24170,
+		24171,
+		24172,
+		24173,
+		24174,
+		24175,
+		24176,
+		24177,
+		24178,
+
+	24179 ?? / Partes de arriba / Evento (Música 2020)
+		24179,
+		24180,
+		24181,"9752febd8ff9434e3440e316399f8a18.png"
+		24182,
+		24183,
+		24184,
+		24185,
+		24186,
+		24187,
+		24188,"1b5ae087bd2d1b9a4b1b4945ebf4efb4.png"
+		24189,
+		24190,
+
+	24191 ?? / Pantalones / Evento (Música 2020)
+		24191,
+		24192,
+		24193,"193c98049674d7a2424cf7f30ac648c7.png"
+		24194,
+		24195,
+		24196,
+		24197,
+		24198,
+		24199,
+		24200,"acd3d42198c0da7cbe1ddcd13f418fa5.png"
+		24201,
+		24202,
+
+	24203 ?? / Abrigos / Evento (Música 2020)
+		24203,
+		24204,
+		24205,
+		24206,
+		24207,
+		24208,
+		24209,
+		24210,
+		24211,"c20763426abb577f044711069f148e33.png"
+		24212,
+		24213,
+		24214,
+
+	24215 ?? / Cinturones / Evento (Música 2020)
+		24215,
+		24216,
+		24217,"4ca585451e0da3e77e012ed7c6dd043a.png"
+		24218,
+		24219,
+		24220,
+		24221,
+		24222,
+		24223,
+		24224,
+		24225,
+		24226,
+
+	24227 ?? / Accesorios manos / Evento (Música 2020)
+		24227,
+		24228,
+		24229,
+		24230,
+		24231,
+		24232,"0932c5bc99887c11f41a4446e1613322.png"
+		24233,
+		24234,
+		24235,
+		24236,
+		24237,
+		24238,
+
+	24239 ?? / Zapatos / Evento (Música 2020)
+		24239,
+		24240,
+		24241,"835a2a06d71afe860c25c8afad36f316.png"
+		24242,
+		24243,
+		24244,
+		24245,
+		24246,
+		24247,
+		24248,
+		24249,
+		24250,
+
+

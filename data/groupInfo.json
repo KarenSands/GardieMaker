@@ -1351,7 +1351,13 @@
 	{"groupId":21527, "name":"Cristal desvitalizado", "category":"Collares", "rarity":"Común", "note":"Episodio 26"},
 	{"groupId":21528, "name":"Magdalena (x)", "category":"Cabello", "rarity":"Evento", "note":"Música 2019"},
 	{"groupId":21529, "name":"Arco efímero", "category":"Accesorios manos", "rarity":"Legendario", "note":"Premio del mes"},
-	{"groupId":21716, "name":"Ewie (x)", "category":"Cabello", "rarity":"Evento", "note":"Música 2019"},
+	{"groupId":21633, "name":"Tirantes Music Paper", "category":"Accesorios manos", "rarity":"Evento", "note":"Música 2019"},
+	{"groupId":21668, "name":"Body Music Paper", "category":"Ropa interior", "rarity":"Evento", "note":"Música 2019"},
+	{"groupId":21680, "name":"Tutú Music Paper", "category":"Pantalones", "rarity":"Evento", "note":"Música 2019"},
+	{"groupId":21692, "name":"Cinturón asimétrico Music Paper", "category":"Cinturones", "rarity":"Evento", "note":"Música 2019"},
+	{"groupId":21704, "name":"Sandalias Music Paper", "category":"Zapatos", "rarity":"Evento", "note":"Música 2019"},
+	{"groupId":21716, "name":"Ewie", "category":"Cabello", "rarity":"Evento", "note":"Música 2019"},
+	{"groupId":21759, "name":"Piano aéreo", "category":"Accesorios manos", "rarity":"Evento", "note":"Música 2019"},
 	{"groupId":21769, "name":"Barco del rey pirata", "category":"Fondos", "rarity":"Evento", "note":"Verano 2019"},
 	{"groupId":21770, "name":"Profundidades feéricas", "category":"Fondos", "rarity":"Evento", "note":"Verano 2019"},
 	{"groupId":21771, "name":"Falda Cnidarya", "category":"Pantalones", "rarity":"Legendario", "note":"Premio del mes"},
@@ -1467,6 +1473,7 @@
 	{"groupId":23737, "name":"Pasador Cream of Fashion", "category":"Sombreros", "rarity":"Evento", "note":"Pascua 2020"},
 	{"groupId":23749, "name":"Batidor Cream of Fashion", "category":"Accesorios manos", "rarity":"Evento", "note":"Pascua 2020"},
 	{"groupId":23761, "name":"Pecera mágica", "category":"Accesorios manos", "rarity":"Evento", "note":"1 de Abril 2020"},
+	{"groupId":23762, "name":"Cueva esotérica", "category":"Fondos", "rarity":"Evento", "note":"Música 2020"},
 	{"groupId":23763, "name":"Boca Sweet Ogress", "category":"Bocas", "rarity":"Evento", "note":"Pascua 2020"},
 	{"groupId":23775, "name":"Bolso Sweet Ogress", "category":"Accesorios manos", "rarity":"Evento", "note":"Pascua 2020"},
 	{"groupId":23787, "name":"Top Sweet Ogress", "category":"Partes de arriba", "rarity":"Evento", "note":"Pascua 2020"},
@@ -1490,6 +1497,13 @@
 	{"groupId":24052, "name":"Casco Ending War", "category":"Sombreros", "rarity":"Común", "note":"Tienda"},
 	{"groupId":24064, "name":"Pantalón Ending War", "category":"Pantalones", "rarity":"Común", "note":"Tienda"},
 	{"groupId":24076, "name":"Guantes Ending War", "category":"Guantes", "rarity":"Común", "note":"Tienda"},
-	{"groupId":24088, "name":"Coraza Ending War", "category":"Partes de arriba", "rarity":"Común", "note":"Tienda"}
+	{"groupId":24088, "name":"Coraza Ending War", "category":"Partes de arriba", "rarity":"Común", "note":"Tienda"},
+	{"groupId":24251, "name":"Andrómeda", "category":"Cabello", "rarity":"Evento", "note":"Música 2020"},
+	{"groupId":24263, "name":"Joya Crystal Clear", "category":"Collares", "rarity":"Evento", "note":"Música 2020"},
+	{"groupId":24275, "name":"Top Crystal Clear", "category":"Partes de arriba", "rarity":"Evento", "note":"Música 2020"},
+	{"groupId":24287, "name":"Falda Crystal Clear", "category":"Pantalones", "rarity":"Evento", "note":"Música 2020"},
+	{"groupId":24311, "name":"Cinturón Crystal Clear", "category":"Ambientes", "rarity":"Evento", "note":"Música 2020"},
+	{"groupId":24323, "name":"Cetro Crystal Clear", "category":"Accesorios manos", "rarity":"Evento", "note":"Música 2020"},
+	{"groupId":24335, "name":"Maquillaje Crystal Clear", "category":"Accesorios cara", "rarity":"Evento", "note":"Música 2020"}
 
 ]
