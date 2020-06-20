@@ -233,6 +233,13 @@ function selectItem(n) {
 				mainPage = selectedPage;
 				selectedPage = 1;
 				itemsxpag = 6;
+
+				//if ($("#filter-orderOptions").val() == "newest") {
+				//	filterGroup.reverse();
+				//};
+
+				document.getElementById("filter-orderOptions").style.display = "none";
+				
 				crearPagination();
 				submenu = true;
 
@@ -466,6 +473,7 @@ function searchBack() {
 	submenu = false;
 	itemsxpag = 7;
 	searchtoSelect(0);
+	document.getElementById("filter-orderOptions").style.display = "inline-block";
 	updateFilters();
 
 }
@@ -489,9 +497,10 @@ function limpiaElementos() {
 
 function selectPage(n) {
 
-	if (filterGroup.length == 1) {
-		searchtoSelect("");
-	}
+	searchtoSelect("");
+//	if (filterGroup.length == 1) {
+//		searchtoSelect("");
+//	}
 
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
 	if (submenu == false) {
@@ -502,7 +511,6 @@ function selectPage(n) {
 		crearPagination();
 	}
 	
-
 };
 
 function hacerTruncation() {
@@ -632,9 +640,9 @@ function cargaItems(pagsel) {
 
 	};
 
-	if (submenu == true || $("#filter-codeOptions").val() != "submenu") {
-		searchtoSelect(selectedCode);
-	}
+//	if (submenu == true || $("#filter-codeOptions").val() != "submenu") {
+//		searchtoSelect(selectedCode);
+//	}
 
 };
 
@@ -803,27 +811,42 @@ $(function() {
 		selectedPage = 1;
 		itemsxpag = 7;
 		submenu = false;
+		document.getElementById("filter-orderOptions").style.display = "inline-block";
 		updateFilters();
 	});
 	$("#filter-bodyLocationOptions").change(function() {
 		selectedPage = 1;
+		itemsxpag = 7;
+		submenu = false;
+		document.getElementById("filter-orderOptions").style.display = "inline-block";
 		updateFilters();
 	});
 	$("#filter-guardOptions").change(function() {
 		selectedPage = 1;
+		itemsxpag = 7;
+		submenu = false;
+		document.getElementById("filter-orderOptions").style.display = "inline-block";
 		updateFilters();
 	});
 	$("#filter-rarityOptions").change(function() {
 		selectedPage = 1;
+		itemsxpag = 7;
+		submenu = false;
+		document.getElementById("filter-orderOptions").style.display = "inline-block";
 		updateFilters();
 	});
 	$("#filter-orderOptions").change(function() {
 		selectedPage = 1;
+		document.getElementById("filter-orderOptions").style.display = "inline-block";
 		updateFilters();
 	});
 	$("#filter-itemName").change(function() {
 		selectedPage = 1;
+		itemsxpag = 7;
+		submenu = false;
+		document.getElementById("filter-orderOptions").style.display = "inline-block";
 		updateFilters();
+
 	});
 
 });
@@ -832,6 +855,7 @@ $(function() {
 
 function updateFilters() {
 	$("span").remove("#empty");
+	searchtoSelect("");
 
 	fGrupos = $("#filter-codeOptions").val();				// item / grupo
 	fCategorias = $("#filter-bodyLocationOptions").val();	// categorias
