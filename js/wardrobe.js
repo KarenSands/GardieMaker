@@ -29,11 +29,16 @@ var getGroupId, mainPage, mainPageI, itemsxpag = 7;
 //----------------------------------------------
 
 $(document).ready(function iniciaTodo() {
-	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupInfo.json", function(dataInfo, success, xhr) {
+
+	$.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/status", function(estado, success, xhr) {
+		document.getElementsByClassName("news-latest")[0].innerHTML = estado;
+	});
+
+	$.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/groupInfo.json", function(dataInfo, success, xhr) {
 		groupInfo = JSON.parse(dataInfo);
 	});
 
-	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupList.json", function(dataList, success, xhr) {
+	$.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/groupList.json", function(dataList, success, xhr) {
 		groupList = JSON.parse(dataList);
 		updateFilters();
 		getCustom();
@@ -219,7 +224,9 @@ function selectItem(n) {
 		searchtoSelect(selectedCode); */
 
 	/* Versión BETA */
-	if ($("#filter-codeOptions").val() != "submenu") {
+
+
+	if ($("#filter-codeOptions").val() != "submenu" || filterGroup[0].itemId == Number($("#filter-itemName").val()) || $("#filter-guardOptions").val() == "Arcoíris") {
 
 		searchtoSelect(selectedCode);
 

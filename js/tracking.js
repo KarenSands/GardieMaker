@@ -3,7 +3,11 @@ const URL_FULL = "https://www.eldarya.es/assets/img/player/hair/web_portrait/";
 var trackingList, tracking = "all";;
 //================================================================
 $(document).ready(function () {
-	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/trackingList.json", function(groupList, success, xhr) {
+	$.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/status", function(estado, success, xhr) {
+		document.getElementsByClassName("news-latest")[0].innerHTML = estado;
+	});
+
+	$.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/trackingList.json", function(groupList, success, xhr) {
 		trackingList = JSON.parse(groupList);
 		checkLoad();
 	});

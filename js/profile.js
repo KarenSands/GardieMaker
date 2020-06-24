@@ -18,17 +18,20 @@ var galor;
 //================================================================
 
 $(document).ready(function iniciaTodo() {
+    $.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/status", function(estado, success, xhr) {
+        document.getElementsByClassName("news-latest")[0].innerHTML = estado;
+    });
 
-	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupInfo.json", function(dataInfo, success, xhr) {
+	$.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/groupInfo.json", function(dataInfo, success, xhr) {
 		groupInfo = JSON.parse(dataInfo);
 	});
 
-	$.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupList.json", function(dataList, success, xhr) {
+	$.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/groupList.json", function(dataList, success, xhr) {
 		groupList = JSON.parse(dataList);
 		getCustom();
 	});
 
-    $.get("https://raw.githubusercontent.com/Zunnay/EldaryaClothing/master/data/groupPet.json", function(dataPet, success, xhr) {
+    $.get("https://raw.githubusercontent.com/Zunnay/GardieMaker/master/data/groupPet.json", function(dataPet, success, xhr) {
         groupPet = JSON.parse(dataPet);
         optPet();
     });
@@ -44,7 +47,7 @@ function getCustom() {
 
         $("#footer-links").html(customArray.length + " items en uso.");
 
-        document.getElementById("backC").setAttribute("href","https://eldaryaclothing.tumblr.com/es/clothes" + window.location.search);
+        document.getElementById("backC").setAttribute("href","wardrobe" + window.location.search);
 
 		dragGardienne();
 		dragPet();
