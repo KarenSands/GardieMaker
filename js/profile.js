@@ -156,7 +156,7 @@ function cargarPortrait(n) {
 
 function cargarPet(select, check) {
 
-    var imagep = document.getElementsByTagName("img")[0];
+    var imagep = document.getElementsByTagName("img")[1];
     var imgPet;
 
     if (select == "Ninguno") {

@@ -48,11 +48,19 @@ $(document).ready(function iniciaTodo() {
 
 function getCustom() {
 	var str = window.location.search;
+
 	if (str != "") {
-		str = str.slice(3);
-		customArray = str.split("&");
-		selectLoad ();
+		if (str.includes("?s=") && (str != "?s=")) {
+
+			str = str.slice(3);
+			customArray = str.split("&");
+			selectLoad ();
+
+		} else {
+			window.location.href = "wardrobe";
+		};
 	};
+
 };
 
 function selectLoad() {
