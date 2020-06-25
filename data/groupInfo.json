@@ -1588,6 +1588,6 @@
 	{"groupId":24323, "name":"Cetro Crystal Clear", "category":"Accesorios manos", "rarity":"Evento", "note":"Música 2020"},
 	{"groupId":24335, "name":"Maquillaje Crystal Clear", "category":"Accesorios cara", "rarity":"Evento", "note":"Música 2020"},
 	{"groupId":24901, "name":"Diadema Rainbow Spirit", "category":"Sombreros", "rarity":"Evento", "note":"Pride Month 2020"},
-	{"groupId":24902, "name":"Ojos Rainbow Spirit", "category":"Ojos", "rarity":"Evento", "note":"Pride Month 2020"}
-
+	{"groupId":24902, "name":"Ojos Rainbow Spirit", "category":"Ojos", "rarity":"Evento", "note":"Pride Month 2020"},
+	{"groupId":24905, "name":"Sandalias Rainbow Spirit", "category":"Zapatos", "rarity":"Evento", "note":"Pride Month 2020"}
 ]
