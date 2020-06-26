@@ -1059,7 +1059,9 @@ function updateFilters() {
 						case "A":case "a": pri = "1 de Abril "; break;
 						case "P":case "p": pri = "Pascua "; break;
 						case "M":case "m": pri = "Música "; break;
+						case "PM":case "pm": pri = "Pride Month "; break;
 						case "V":case "v": pri = "Verano "; break;
+						case "BF":case "bf": pri = "Black Friday "; break;
 						case "H":case "h": pri = "Halloween "; break;
 						case "N":case "n": pri = "Navidad "; break;
 						default: pri = "vacio";
