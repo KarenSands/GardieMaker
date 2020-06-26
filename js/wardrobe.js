@@ -21,7 +21,7 @@ var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNo
 //Variables para filtros
 var fGrupos, fCategorias, fEspecial, fRareza, fOrden, fName;
 // Variables para fijar items
-var customArray = [], selectedCode, unset, hijo;
+var customArray = [], selectedCode, selectedGroup, unset, hijo;
 // Determina si el submenu está abierto o no
 var submenu = false;
 var getGroupId, mainPage, mainPageI, itemsxpag = 7;
@@ -54,7 +54,7 @@ function getCustom() {
 
 			str = str.slice(3);
 			customArray = str.split("&");
-			selectLoad ();
+			limpiarCanvas();
 
 		} else {
 			window.location.href = "wardrobe";
@@ -63,16 +63,16 @@ function getCustom() {
 
 };
 
-function selectLoad() {
-
-	// Carga los items de customArray en canvas
-	for (b = 0; b < customArray.length; b++) {
-		searchtoSelect(customArray[b]);
-	};
-
+function unselectAll() {
+	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item selected");
+	if (lista.length == 1) {
+		lista[0].setAttribute("class","marketplace-abstract marketplace-search-item");
+	}
+	
 	limpiarCanvas();
-};
-
+	document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
+	selectedCode = "";
+}
 
 function searchtoSelect(code) {
 	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
@@ -106,7 +106,7 @@ function searchtoSelect(code) {
 						};
 					};
 
-					(unset === "")?cargarCanvas(i):"";
+					(unset === "")?nuevoCanvas(i):"";
 
 				};
 
@@ -118,7 +118,7 @@ function searchtoSelect(code) {
 
 };
 
-function cargarCanvas(n) {
+function nuevoCanvas(n) {
 
 	var img = document.getElementsByClassName("abstract-icon")[n].getAttribute("src");
 	var newimg = img.replace("icon/", URL_FULL);
@@ -218,80 +218,6 @@ function limpiarCanvas(){
 		
 };
 
-function selectItem(n) {
-
-	limpiarCanvas();
-	document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
-
-	var addselect = document.getElementsByClassName("marketplace-abstract marketplace-search-item")[n];
-	selectedCode = addselect.getAttribute("data-itemid");
-
-	/* Versión original */
-/*	if (submenu == true || $("#filter-codeOptions").val() == "all") {
-
-		searchtoSelect(selectedCode); */
-
-	/* Versión BETA */
-
-
-	if ($("#filter-codeOptions").val() != "submenu" || filterGroup[0].itemId == Number($("#filter-itemName").val()) || $("#filter-guardOptions").val() == "Arcoíris") {
-
-		searchtoSelect(selectedCode);
-
-	} else {
-
-		getGroupId = groupList.filter(function(v){return v.itemId == selectedCode});
-		filterGroup = groupList.filter(function(v){return v.groupId == getGroupId[0].groupId});
-
-		if (filterGroup.length > 1) {
-			if (submenu == false) {
-				mainPage = selectedPage;
-				selectedPage = 1;
-				itemsxpag = 6;
-
-				//if ($("#filter-orderOptions").val() == "newest") {
-				//	filterGroup.reverse();
-				//};
-
-				document.getElementById("filter-orderOptions").style.display = "none";
-				
-				crearPagination();
-				submenu = true;
-
-				var div = document.createElement("div");
-				div.setAttribute("id","marketplace-search-title");
-				div.innerHTML = "Mostrando todas las variaciones de colores de " + getGroupId[0].groupId;
-				// Mover hacia arriba
-				var padre = document.getElementById("marketplace-search-items");
-				var cont = document.getElementsByClassName("marketplace-search-item");
-				padre.insertBefore(div, cont[0]);
-
-				var div = document.createElement ("div");
-				div.setAttribute("class","marketplace-abstract marketplace-search-back");
-				div.setAttribute("onclick","searchBack()");
-				div.innerHTML = "🡸 Regresar";
-				// Mover hacia arriba
-				var padre = document.getElementById("marketplace-search-items");
-				var cont = document.getElementsByClassName("marketplace-search-item");
-				padre.insertBefore(div, cont[0]);
-
-				$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
-
-			} else {
-				itemsxpag = 6;
-				searchtoSelect(selectedCode);
-			}
-
-		} else {
-			searchtoSelect(selectedCode);
-
-		}
-
-	}
-
-};
-
-
 /////////////////////////////////////////////////////////////////////////////////////
 
 function doMove(place) {
@@ -335,7 +261,6 @@ function doSet(code) {
 			};
 
 			history.pushState(null, "", str);
-			searchtoSelect(code);
 
 			limpiarCanvas();
 
@@ -365,11 +290,12 @@ function doSet(code) {
 		};
 		
 		history.pushState(null, "", str);
-		searchtoSelect(code);
 
 		limpiarCanvas();
 
 	};
+
+	unselectAll();
 
 };
 
@@ -605,8 +531,6 @@ function hacerTruncation() {
 
 function cargaItems(pagsel) {
 
-	//(submenu == true)?(itemsxpag = 6):(itemsxpag = 7);
-
 	if (pagsel + 1 == paginas) {
 
 		primerItem = pagsel * itemsxpag;
@@ -654,10 +578,6 @@ function cargaItems(pagsel) {
 		};
 
 	};
-
-//	if (submenu == true || $("#filter-codeOptions").val() != "submenu") {
-//		searchtoSelect(selectedCode);
-//	}
 
 };
 
@@ -821,48 +741,115 @@ function getInfo() {
 
 $(function() { 
 
+	// Filtros
+		$("#filter-codeOptions").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-bodyLocationOptions").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-guardOptions").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-rarityOptions").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-orderOptions").change(function() {
+			selectedPage = 1;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-itemName").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
 
-	$("#filter-codeOptions").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-bodyLocationOptions").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-guardOptions").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-rarityOptions").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-orderOptions").change(function() {
-		selectedPage = 1;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-itemName").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
+	// Otros
 
-	});
+		$(".marketplace-abstract.marketplace-search-item").each(function(){$(this).click(function() {
+		$("canvas").attr("#" + selectedCode)?($("canvas").remove("#" + selectedCode)):"";
+			
+		unselectAll();
+		selectedCode = $(this).attr("data-itemid");
+		selectedGroup = $(this).attr("data-groupid");
+
+		//	limpiarCanvas();
+			if ($("#filter-codeOptions").val() != "submenu" || filterGroup[0].itemId == Number($("#filter-itemName").val()) || $("#filter-guardOptions").val() == "Arcoíris") {
+
+				limpiarCanvas();
+				searchtoSelect(selectedCode);
+
+			} else {
+
+				getGroupId = groupList.filter(function(v){return v.itemId == selectedCode});
+				filterGroup = groupList.filter(function(v){return v.groupId == getGroupId[0].groupId});
+
+				if (filterGroup.length > 1) {
+					// Abre el submenu
+					if (submenu == false) {
+
+						mainPage = selectedPage;
+						selectedPage = 1;
+						itemsxpag = 6;
+
+						document.getElementById("filter-orderOptions").style.display = "none";
+						
+						crearPagination();
+						submenu = true;
+
+						var div = document.createElement("div");
+						div.setAttribute("id","marketplace-search-title");
+						div.innerHTML = "Mostrando todas las variaciones de colores de " + getGroupId[0].groupId;
+						// Mover hacia arriba
+						var padre = document.getElementById("marketplace-search-items");
+						var cont = document.getElementsByClassName("marketplace-search-item");
+						padre.insertBefore(div, cont[0]);
+
+						var div = document.createElement ("div");
+						div.setAttribute("class","marketplace-abstract marketplace-search-back");
+						div.setAttribute("onclick","searchBack()");
+						div.innerHTML = "🡸 Regresar";
+						// Mover hacia arriba
+						var padre = document.getElementById("marketplace-search-items");
+						var cont = document.getElementsByClassName("marketplace-search-item");
+						padre.insertBefore(div, cont[0]);
+
+						$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
+
+					} else {
+						itemsxpag = 6;
+						limpiarCanvas();
+						searchtoSelect(selectedCode);
+					}
+
+				} else {
+					limpiarCanvas();
+					searchtoSelect(selectedCode);
+
+				}
+
+			};
+
+	})});
 
 });
 
@@ -870,7 +857,7 @@ $(function() {
 
 function updateFilters() {
 	$("span").remove("#empty");
-	searchtoSelect("");
+	unselectAll();
 
 	fGrupos = $("#filter-codeOptions").val();				// item / grupo
 	fCategorias = $("#filter-bodyLocationOptions").val();	// categorias
@@ -927,7 +914,6 @@ function updateFilters() {
 			};
 
 		};
-
 
 	} catch {
 
@@ -1044,16 +1030,7 @@ function updateFilters() {
 				var espFilter = fName.split(":");
 
 				var pri = espFilter[0], seg = espFilter[1];
-/*
-				if (pri == "e") {
-					if ((seg).toLowerCase() == "so") {pri = "Spin-off";} 
-					else if ((seg).toLowerCase() == "ch") {pri = "Episodio";}
-				//	else if ((seg).toLowerCase() == "ex") {pri = "Exploración";}
-				//	else if ((seg).toLowerCase() == "ti") {pri = "Tienda";}
-					else {pri = "vacio"};
-				
-				} else {
-*/
+
 					switch (pri) {
 						case "SV":case "sv": pri = "San Valentín "; break;
 						case "A":case "a": pri = "1 de Abril "; break;
