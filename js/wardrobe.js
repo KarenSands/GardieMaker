@@ -21,7 +21,8 @@ var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNo
 //Variables para filtros
 var fGrupos, fCategorias, fEspecial, fRareza, fOrden, fName;
 // Variables para fijar items
-var customArray = [], selectedCode, unset, hijo;
+var customArray = [], selectedCode, selectedGroup, unset, hijo;
+var catEs, tipo, seReemplaza = [], posicionReemplazo = "none";
 // Determina si el submenu está abierto o no
 var submenu = false;
 var getGroupId, mainPage, mainPageI, itemsxpag = 7;
@@ -54,7 +55,7 @@ function getCustom() {
 
 			str = str.slice(3);
 			customArray = str.split("&");
-			selectLoad ();
+			limpiarCanvas();
 
 		} else {
 			window.location.href = "wardrobe";
@@ -63,66 +64,103 @@ function getCustom() {
 
 };
 
-function selectLoad() {
-
-	// Carga los items de customArray en canvas
-	for (b = 0; b < customArray.length; b++) {
-		searchtoSelect(customArray[b]);
-	};
-
+function unselectAll() {
+	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item selected");
+	if (lista.length == 1) {
+		lista[0].setAttribute("class","marketplace-abstract marketplace-search-item");
+	}
+	
+	posicionReemplazo = "none";
 	limpiarCanvas();
+	document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
+	selectedCode = "";
 };
-
 
 function searchtoSelect(code) {
-	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
 
-		for (i = 0; i < lista.length; i++) {
-			var busca = lista[i].getAttribute("data-itemid");
+	// Comprobar si es piel, cabello, ojos, boca, ropa interior, fondo
+	var catSelect = groupInfo.filter(function(v){return v.groupId == selectedGroup});
+	tipo = catSelect[0].category; // necesario para cargar canvas
+	var infoReem = [];
+	posicionReemplazo = "none";
 
-			if (busca == code) {
-				busca = lista[i].getAttribute("class");
-				
-				if (busca.includes("selected")) {
-					lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
-					document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
-					selectedCode = "";
-					//limpiarCanvas();
+	switch (catSelect[0].category) {
+		case "Pieles":catEs = "Pieles";break;
+		case "Cabello":catEs = "Cabello";break;
+		case "Ojos":catEs = "Ojos";break;
+		case "Boca":catEs = "Boca";break;
+		case "Fondos":catEs = "Fondos";break;
+		case "Ropa interior":catEs = "Ropa interior";break;
+		default:catEs = "none";
+	};
 
-				} else {
-					lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item selected");
-
-					if (lista[i].getAttribute("data-itemid") != "undefined") {
-						document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
-						document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "FIJAR";
-					}
-
-					unset = "";
-					for (b = 0; b < customArray.length; b++) {
-						if (code == customArray[b]) {
-							document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "QUITAR";
-							unset = b;
-							break;
-						};
+	if (catEs != "none") {
+		// Buscar si existe categorias "unicas"
+		for (c = 0; c < customArray.length; c++) {
+			seReemplaza = groupList.filter(function(v){return v.itemId == customArray[c]});
+			infoReem = groupInfo.filter(function(v){return v.groupId == seReemplaza[0].groupId});
+			if (infoReem.length > 0) {
+				if (infoReem[0].category == catEs) {
+					if (selectedCode == customArray[c]) {
+						posicionReemplazo = c;
+						// Misma prenda
+						$(".button.marketplace-itemDetail-set").text("QUITAR");
+						break;
+					} else {
+						posicionReemplazo = c;
+						// Reemplaza catEs
+						$(".button.marketplace-itemDetail-set").text("REEMPLAZAR");
+						break;
 					};
-
-					(unset === "")?cargarCanvas(i):"";
-
 				};
-
-			} else {
-				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
 			};
-
 		};
+	} else {
+		// Busca si es variocolor
+		for (c = 0; c < customArray.length; c++) {
+			seReemplaza = groupList.filter(function(v){return v.itemId == customArray[c]});
+			if (seReemplaza[0].groupId == selectedGroup) {
+				if (selectedCode == customArray[c]) {
+					posicionReemplazo = c;
+					// Misma prenda
+					$(".button.marketplace-itemDetail-set").text("QUITAR");
+					break;
+				} else {
+					posicionReemplazo = c;
+					// Cambia color
+					$(".button.marketplace-itemDetail-set").text("REEMPLAZAR");
+					break;
+				};
+			}
+		};
+	};
 
+	if (posicionReemplazo == "none") {
+		// Prenda nueva
+		$(".button.marketplace-itemDetail-set").text("FIJAR");
+		nuevoCanvas();
+	} else {
+		limpiarCanvas();
+	};
+
+	document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
 };
 
-function cargarCanvas(n) {
+function nuevoCanvas() {
 
-	var img = document.getElementsByClassName("abstract-icon")[n].getAttribute("src");
-	var newimg = img.replace("icon/", URL_FULL);
-	var tipo = document.getElementsByClassName("abstract-type")[n].innerHTML;
+	var temp = groupList.filter(function(v){return v.itemId == selectedCode});
+	var img;
+
+	switch (tipo) {
+		case "Pieles": img = URL_SRC + URL_SKIN + URL_FULL + temp[0].itemURL; break;
+		case "Bocas": img = URL_SRC + URL_MOUTH + URL_FULL + temp[0].itemURL; break;
+		case "Ojos": img = URL_SRC + URL_EYES + URL_FULL + temp[0].itemURL; break;
+		case "Cabello": img = URL_SRC + URL_HAIR + URL_FULL + temp[0].itemURL; break;
+		default: img = URL_SRC + URL_CLOTHES + URL_FULL + temp[0].itemURL;
+	};
+	
+	var newimg = img;
+	//var tipo = document.getElementsByClassName("abstract-type")[n].innerHTML;
 
 	if (tipo == "Fondos") {
 		document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + newimg + "')";
@@ -156,48 +194,53 @@ function cargarCanvas(n) {
 };
 
 function cargarArray(i) {
-		var img, img2;
+	var img, img2;
+		var buscaMain = [];
 
-			//Es necesario saber si hay un fondo 
-			var buscaMain = groupList.filter(function(v){return v.itemId == customArray[i]});
-			var filtro = groupInfo.filter(function(v){return v.groupId == buscaMain[0].groupId});
-
-			switch (filtro[0].category) {
-				case "Fondos": img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL; break;
-				case "Pieles": img = URL_SRC + URL_SKIN + URL_FULL + buscaMain[0].itemURL; break;
-				case "Bocas": img = URL_SRC + URL_MOUTH + URL_FULL + buscaMain[0].itemURL; break;
-				case "Ojos": img = URL_SRC + URL_EYES + URL_FULL + buscaMain[0].itemURL; break;
-				case "Cabello": img = URL_SRC + URL_HAIR + URL_FULL + buscaMain[0].itemURL; break;
-				default: img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL;
-			};
-
-			if (filtro[0].category == "Fondos") {
-				document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + img + "')";
-			} else {
-
-				var canvas = document.createElement("canvas");
-				canvas.setAttribute("width", "420");
-				canvas.setAttribute("height", "594");
-				document.getElementById("marketplace-avatar-preview").appendChild(canvas);
-
-				canvas = document.getElementsByTagName("canvas");
-				var ctx = canvas[i].getContext("2d");
-
-				img2 = new Image();
-				img2.onload = function() {
-					ctx.drawImage(img2, 0, 0);
-				};
-
-				img2.src = img;
-
-			};
-
-		if (i < customArray.length - 1) {
-			i++
-			cargarArray(i);
+		//Es necesario saber si hay un fondo 
+		if (i != posicionReemplazo) {
+			buscaMain = groupList.filter(function(v){return v.itemId == customArray[i]});
+		} else {
+			buscaMain = groupList.filter(function(v){return v.itemId == selectedCode});
 		};
-};
+		
+		var filtro = groupInfo.filter(function(v){return v.groupId == buscaMain[0].groupId});
 
+		switch (filtro[0].category) {
+			case "Fondos": img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL; break;
+			case "Pieles": img = URL_SRC + URL_SKIN + URL_FULL + buscaMain[0].itemURL; break;
+			case "Bocas": img = URL_SRC + URL_MOUTH + URL_FULL + buscaMain[0].itemURL; break;
+			case "Ojos": img = URL_SRC + URL_EYES + URL_FULL + buscaMain[0].itemURL; break;
+			case "Cabello": img = URL_SRC + URL_HAIR + URL_FULL + buscaMain[0].itemURL; break;
+			default: img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL;
+		};
+
+		if (filtro[0].category == "Fondos") {
+			document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + img + "')";
+		} else {
+
+			var canvas = document.createElement("canvas");
+			canvas.setAttribute("width", "420");
+			canvas.setAttribute("height", "594");
+			document.getElementById("marketplace-avatar-preview").appendChild(canvas);
+
+			canvas = document.getElementsByTagName("canvas");
+			var ctx = canvas[i].getContext("2d");
+
+			img2 = new Image();
+			img2.onload = function() {
+				ctx.drawImage(img2, 0, 0);
+			};
+
+			img2.src = img;
+
+		};
+
+	if (i < customArray.length - 1) {
+		i++
+		cargarArray(i);
+	};
+};
 
 function limpiarCanvas(){
 
@@ -207,90 +250,13 @@ function limpiarCanvas(){
 
 	for (i = child.length-1; i >= 0; i--) {
 		parent.removeChild(child[i]);
-		
 	};
 
 	// Si hay algo fijado en array, cargarlo
 	if (customArray.length != 0) {
-			cargarArray(0);
-
-	};
-		
+		cargarArray(0);
+	};		
 };
-
-function selectItem(n) {
-
-	limpiarCanvas();
-	document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
-
-	var addselect = document.getElementsByClassName("marketplace-abstract marketplace-search-item")[n];
-	selectedCode = addselect.getAttribute("data-itemid");
-
-	/* Versión original */
-/*	if (submenu == true || $("#filter-codeOptions").val() == "all") {
-
-		searchtoSelect(selectedCode); */
-
-	/* Versión BETA */
-
-
-	if ($("#filter-codeOptions").val() != "submenu" || filterGroup[0].itemId == Number($("#filter-itemName").val()) || $("#filter-guardOptions").val() == "Arcoíris") {
-
-		searchtoSelect(selectedCode);
-
-	} else {
-
-		getGroupId = groupList.filter(function(v){return v.itemId == selectedCode});
-		filterGroup = groupList.filter(function(v){return v.groupId == getGroupId[0].groupId});
-
-		if (filterGroup.length > 1) {
-			if (submenu == false) {
-				mainPage = selectedPage;
-				selectedPage = 1;
-				itemsxpag = 6;
-
-				//if ($("#filter-orderOptions").val() == "newest") {
-				//	filterGroup.reverse();
-				//};
-
-				document.getElementById("filter-orderOptions").style.display = "none";
-				
-				crearPagination();
-				submenu = true;
-
-				var div = document.createElement("div");
-				div.setAttribute("id","marketplace-search-title");
-				div.innerHTML = "Mostrando todas las variaciones de colores de " + getGroupId[0].groupId;
-				// Mover hacia arriba
-				var padre = document.getElementById("marketplace-search-items");
-				var cont = document.getElementsByClassName("marketplace-search-item");
-				padre.insertBefore(div, cont[0]);
-
-				var div = document.createElement ("div");
-				div.setAttribute("class","marketplace-abstract marketplace-search-back");
-				div.setAttribute("onclick","searchBack()");
-				div.innerHTML = "🡸 Regresar";
-				// Mover hacia arriba
-				var padre = document.getElementById("marketplace-search-items");
-				var cont = document.getElementsByClassName("marketplace-search-item");
-				padre.insertBefore(div, cont[0]);
-
-				$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
-
-			} else {
-				itemsxpag = 6;
-				searchtoSelect(selectedCode);
-			}
-
-		} else {
-			searchtoSelect(selectedCode);
-
-		}
-
-	}
-
-};
-
 
 /////////////////////////////////////////////////////////////////////////////////////
 
@@ -310,7 +276,6 @@ function doMove(place) {
 		hijo++;
 		padre.insertBefore(nodo, cont[hijo]);
 	};
-
 };
 
 function doSet(code) {
@@ -322,7 +287,6 @@ function doSet(code) {
 		if (code != "undefined") {
 
 			if (filtro[0].category != "Fondos") {
-
 				customArray.splice(hijo,0, selectedCode);
 			} else {
 				customArray.push(selectedCode);
@@ -335,7 +299,6 @@ function doSet(code) {
 			};
 
 			history.pushState(null, "", str);
-			searchtoSelect(code);
 
 			limpiarCanvas();
 
@@ -350,7 +313,7 @@ function doSet(code) {
 			if (code == customArray[i]) {b = i;break;};
 		};
 
-		var str
+		var str;
 
 		customArray.splice(b,1);
 		if (customArray.length == 0) {
@@ -358,18 +321,31 @@ function doSet(code) {
 		} else {
 			str = "?s=";
 		};
-		
 
 		for (i = 0; i < customArray.length; i++) {
 			(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
 		};
 		
 		history.pushState(null, "", str);
-		searchtoSelect(code);
 
 		limpiarCanvas();
 
+	} else if (setunset == "REEMPLAZAR") {
+		customArray.splice(posicionReemplazo,1, selectedCode);
+
+			var str = "?s=";
+
+			for (i = 0; i < customArray.length; i++) {
+				(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
+			};
+
+			history.pushState(null, "", str);
+
+			limpiarCanvas();
+
 	};
+
+	unselectAll();
 
 };
 
@@ -487,7 +463,7 @@ function searchBack() {
 	selectedPage = mainPage;
 	submenu = false;
 	itemsxpag = 7;
-	searchtoSelect(0);
+	unselectAll();
 	document.getElementById("filter-orderOptions").style.display = "inline-block";
 	updateFilters();
 
@@ -512,10 +488,7 @@ function limpiaElementos() {
 
 function selectPage(n) {
 
-	searchtoSelect("");
-//	if (filterGroup.length == 1) {
-//		searchtoSelect("");
-//	}
+	unselectAll();
 
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
 	if (submenu == false) {
@@ -605,8 +578,7 @@ function hacerTruncation() {
 
 function cargaItems(pagsel) {
 
-	//(submenu == true)?(itemsxpag = 6):(itemsxpag = 7);
-
+	unselectAll();
 	if (pagsel + 1 == paginas) {
 
 		primerItem = pagsel * itemsxpag;
@@ -654,10 +626,6 @@ function cargaItems(pagsel) {
 		};
 
 	};
-
-//	if (submenu == true || $("#filter-codeOptions").val() != "submenu") {
-//		searchtoSelect(selectedCode);
-//	}
 
 };
 
@@ -821,48 +789,123 @@ function getInfo() {
 
 $(function() { 
 
+	// Filtros
+		$("#filter-codeOptions").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-bodyLocationOptions").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-guardOptions").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-rarityOptions").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-orderOptions").change(function() {
+			selectedPage = 1;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
+		$("#filter-itemName").change(function() {
+			selectedPage = 1;
+			itemsxpag = 7;
+			submenu = false;
+			document.getElementById("filter-orderOptions").style.display = "inline-block";
+			updateFilters();
+		});
 
-	$("#filter-codeOptions").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-bodyLocationOptions").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-guardOptions").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-rarityOptions").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-orderOptions").change(function() {
-		selectedPage = 1;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
-	});
-	$("#filter-itemName").change(function() {
-		selectedPage = 1;
-		itemsxpag = 7;
-		submenu = false;
-		document.getElementById("filter-orderOptions").style.display = "inline-block";
-		updateFilters();
+	// Otros
 
-	});
+		$(".marketplace-abstract.marketplace-search-item").each(function(){$(this).click(function() {
+			$("canvas").attr("#" + selectedCode)?($("canvas").remove("#" + selectedCode)):"";
+
+			if (selectedCode != $(this).attr("data-itemid")) {
+
+				unselectAll();
+				selectedCode = $(this).attr("data-itemid");
+				selectedGroup = $(this).attr("data-groupid");
+
+				$(this).addClass("selected");
+
+				if ($("#filter-codeOptions").val() != "submenu" || filterGroup[0].itemId == Number($("#filter-itemName").val()) || $("#filter-guardOptions").val() == "Arcoíris") {
+
+					limpiarCanvas();
+					searchtoSelect(selectedCode);
+
+				} else {
+
+					getGroupId = groupList.filter(function(v){return v.itemId == selectedCode});
+					filterGroup = groupList.filter(function(v){return v.groupId == getGroupId[0].groupId});
+
+					if (filterGroup.length > 1) {
+						// Abre el submenu
+						if (submenu == false) {
+
+							mainPage = selectedPage;
+							selectedPage = 1;
+							itemsxpag = 6;
+
+							document.getElementById("filter-orderOptions").style.display = "none";
+							
+							crearPagination();
+							submenu = true;
+
+							var div = document.createElement("div");
+							div.setAttribute("id","marketplace-search-title");
+							div.innerHTML = "Mostrando todas las variaciones de colores de " + getGroupId[0].groupId;
+							// Mover hacia arriba
+							var padre = document.getElementById("marketplace-search-items");
+							var cont = document.getElementsByClassName("marketplace-search-item");
+							padre.insertBefore(div, cont[0]);
+
+							var div = document.createElement ("div");
+							div.setAttribute("class","marketplace-abstract marketplace-search-back");
+							div.setAttribute("onclick","searchBack()");
+							div.innerHTML = "🡸 Regresar";
+							// Mover hacia arriba
+							var padre = document.getElementById("marketplace-search-items");
+							var cont = document.getElementsByClassName("marketplace-search-item");
+							padre.insertBefore(div, cont[0]);
+
+							$("#footer-links").html("Mostrando " + filterGroup.length + " artículos de los " + groupList.length + " artículos disponibles.");
+
+						} else {
+							itemsxpag = 6;
+							limpiarCanvas();
+							searchtoSelect(selectedCode);
+						};
+
+					} else {
+						limpiarCanvas();
+						searchtoSelect(selectedCode);
+
+					};
+
+				};
+
+			} else {
+				unselectAll();
+				$(this).removeClass("selected");
+			};
+
+	})});
 
 });
 
@@ -870,7 +913,7 @@ $(function() {
 
 function updateFilters() {
 	$("span").remove("#empty");
-	searchtoSelect("");
+	unselectAll();
 
 	fGrupos = $("#filter-codeOptions").val();				// item / grupo
 	fCategorias = $("#filter-bodyLocationOptions").val();	// categorias
@@ -927,7 +970,6 @@ function updateFilters() {
 			};
 
 		};
-
 
 	} catch {
 
@@ -1044,16 +1086,7 @@ function updateFilters() {
 				var espFilter = fName.split(":");
 
 				var pri = espFilter[0], seg = espFilter[1];
-/*
-				if (pri == "e") {
-					if ((seg).toLowerCase() == "so") {pri = "Spin-off";} 
-					else if ((seg).toLowerCase() == "ch") {pri = "Episodio";}
-				//	else if ((seg).toLowerCase() == "ex") {pri = "Exploración";}
-				//	else if ((seg).toLowerCase() == "ti") {pri = "Tienda";}
-					else {pri = "vacio"};
-				
-				} else {
-*/
+
 					switch (pri) {
 						case "SV":case "sv": pri = "San Valentín "; break;
 						case "A":case "a": pri = "1 de Abril "; break;
@@ -1068,9 +1101,6 @@ function updateFilters() {
 					};
 
 					pri = pri + seg;
-
-//				}
-
 
 				filtro = groupInfo.filter(function(v){return v.note.includes(pri)});
 
@@ -1093,10 +1123,10 @@ function updateFilters() {
 		} else {
 			// Reiniciar todos los filtros
 
-//			fGrupos = $("#filter-codeOptions").val("all");				// item / grupo
+			//fGrupos = $("#filter-codeOptions").val("all");		// item / grupo
 			fCategorias = $("#filter-bodyLocationOptions").val("");	// categorias
 			fEspecial = $("#filter-guardOptions").val("");			// Guardias / Premio del mes
-			fRareza = $("#filter-rarityOptions").val("");				// rareza
+			fRareza = $("#filter-rarityOptions").val("");			// rareza
 
 			// Buscar por código
 
