@@ -74,14 +74,11 @@ function unselectAll() {
 	limpiarCanvas();
 	document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
 	selectedCode = "";
-}
+};
 
 function searchtoSelect(code) {
-	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
 
-	///////////////////////////////////////////////////
 	// Comprobar si es piel, cabello, ojos, boca, ropa interior, fondo
-	
 	var catSelect = groupInfo.filter(function(v){return v.groupId == selectedGroup});
 	tipo = catSelect[0].category; // necesario para cargar canvas
 	var infoReem = [];
@@ -97,111 +94,57 @@ function searchtoSelect(code) {
 		default:catEs = "none";
 	};
 
-	if (customArray.length > 0) {
-		
-		if (catEs != "none") {
-			// Buscar si existe categorias "unicas"
-			for (c = 0; c < customArray.length; c++) {
-				seReemplaza = groupList.filter(function(v){return v.itemId == customArray[c]});
-				infoReem = groupInfo.filter(function(v){return v.groupId == seReemplaza[0].groupId});
-				if (infoReem.length > 0) {
-					if (infoReem[0].category == catEs) {
-						if (selectedCode == customArray[c]) {
-							posicionReemplazo = c;
-							//alert("Misma prenda");
-							$(".button.marketplace-itemDetail-set").text("QUITAR");
-							break;
-						} else {
-							posicionReemplazo = c;
-							//alert("Reemplaza " + catEs);
-							$(".button.marketplace-itemDetail-set").text("REEMPLAZAR");
-							break;
-						};
-					};
-				};
-			};
-		} else {
-			// Busca si es variocolor
-			for (c = 0; c < customArray.length; c++) {
-				seReemplaza = groupList.filter(function(v){return v.itemId == customArray[c]});
-				if (seReemplaza[0].groupId == selectedGroup) {
+	if (catEs != "none") {
+		// Buscar si existe categorias "unicas"
+		for (c = 0; c < customArray.length; c++) {
+			seReemplaza = groupList.filter(function(v){return v.itemId == customArray[c]});
+			infoReem = groupInfo.filter(function(v){return v.groupId == seReemplaza[0].groupId});
+			if (infoReem.length > 0) {
+				if (infoReem[0].category == catEs) {
 					if (selectedCode == customArray[c]) {
 						posicionReemplazo = c;
-						//alert("Misma prenda");
+						// Misma prenda
 						$(".button.marketplace-itemDetail-set").text("QUITAR");
 						break;
 					} else {
-						//Es shiny
 						posicionReemplazo = c;
-						//alert("Cambia color");
+						// Reemplaza catEs
 						$(".button.marketplace-itemDetail-set").text("REEMPLAZAR");
 						break;
 					};
-				}
-			};
-		};
-
-		if (posicionReemplazo == "none") {
-			// Prenda nueva
-			//alert("Nueva Prenda");
-			$(".button.marketplace-itemDetail-set").text("FIJAR");
-			nuevoCanvas();
-		} else {
-			limpiarCanvas();
-		}
-
-		document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
-	};
-
-	///////////////////////////////////////////////////
-
-/*		for (i = 0; i < lista.length; i++) {
-			var busca = lista[i].getAttribute("data-itemid");
-
-			if (busca == code) {
-				busca = lista[i].getAttribute("class");
-				
-				if (busca.includes("selected")) {
-					lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
-					document.getElementById("marketplace-itemDetail").setAttribute("style","display:none");
-					selectedCode = "";
-					//limpiarCanvas();
-
-				} else {
-					lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item selected");
-
-					if (lista[i].getAttribute("data-itemid") != "undefined") {
-						document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
-						//document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "FIJAR";
-						//$(".button.marketplace-itemDetail-set").text("FIJAR");
-					}
-
-					unset = "";
-					for (b = 0; b < customArray.length; b++) {
-						if (code == customArray[b]) {
-							//document.getElementsByClassName("button marketplace-itemDetail-set")[0].innerHTML = "QUITAR";
-							unset = b;
-							break;
-						};
-					};
-
-					(unset === "")?nuevoCanvas(i):"";
-
 				};
-
-			} else {
-				lista[i].setAttribute("class", "marketplace-abstract marketplace-search-item");
 			};
-
 		};
-*/
-};
-
-function reemplazaCanvas() {
-	if (customArray.length != 0) {
-		cargarArray(0);
+	} else {
+		// Busca si es variocolor
+		for (c = 0; c < customArray.length; c++) {
+			seReemplaza = groupList.filter(function(v){return v.itemId == customArray[c]});
+			if (seReemplaza[0].groupId == selectedGroup) {
+				if (selectedCode == customArray[c]) {
+					posicionReemplazo = c;
+					// Misma prenda
+					$(".button.marketplace-itemDetail-set").text("QUITAR");
+					break;
+				} else {
+					posicionReemplazo = c;
+					// Cambia color
+					$(".button.marketplace-itemDetail-set").text("REEMPLAZAR");
+					break;
+				};
+			}
+		};
 	};
-}
+
+	if (posicionReemplazo == "none") {
+		// Prenda nueva
+		$(".button.marketplace-itemDetail-set").text("FIJAR");
+		nuevoCanvas();
+	} else {
+		limpiarCanvas();
+	};
+
+	document.getElementById("marketplace-itemDetail").setAttribute("style","dislpay:block");
+};
 
 function nuevoCanvas() {
 
@@ -251,54 +194,53 @@ function nuevoCanvas() {
 };
 
 function cargarArray(i) {
-		var img, img2;
-			var buscaMain = [];
-			//Es necesario saber si hay un fondo 
-			
-			if (i != posicionReemplazo) {
-				buscaMain = groupList.filter(function(v){return v.itemId == customArray[i]});
-			} else {
-				buscaMain = groupList.filter(function(v){return v.itemId == selectedCode});
-			}
-			
-			var filtro = groupInfo.filter(function(v){return v.groupId == buscaMain[0].groupId});
+	var img, img2;
+		var buscaMain = [];
 
-			switch (filtro[0].category) {
-				case "Fondos": img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL; break;
-				case "Pieles": img = URL_SRC + URL_SKIN + URL_FULL + buscaMain[0].itemURL; break;
-				case "Bocas": img = URL_SRC + URL_MOUTH + URL_FULL + buscaMain[0].itemURL; break;
-				case "Ojos": img = URL_SRC + URL_EYES + URL_FULL + buscaMain[0].itemURL; break;
-				case "Cabello": img = URL_SRC + URL_HAIR + URL_FULL + buscaMain[0].itemURL; break;
-				default: img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL;
-			};
-
-			if (filtro[0].category == "Fondos") {
-				document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + img + "')";
-			} else {
-
-				var canvas = document.createElement("canvas");
-				canvas.setAttribute("width", "420");
-				canvas.setAttribute("height", "594");
-				document.getElementById("marketplace-avatar-preview").appendChild(canvas);
-
-				canvas = document.getElementsByTagName("canvas");
-				var ctx = canvas[i].getContext("2d");
-
-				img2 = new Image();
-				img2.onload = function() {
-					ctx.drawImage(img2, 0, 0);
-				};
-
-				img2.src = img;
-
-			};
-
-		if (i < customArray.length - 1) {
-			i++
-			cargarArray(i);
+		//Es necesario saber si hay un fondo 
+		if (i != posicionReemplazo) {
+			buscaMain = groupList.filter(function(v){return v.itemId == customArray[i]});
+		} else {
+			buscaMain = groupList.filter(function(v){return v.itemId == selectedCode});
 		};
-};
+		
+		var filtro = groupInfo.filter(function(v){return v.groupId == buscaMain[0].groupId});
 
+		switch (filtro[0].category) {
+			case "Fondos": img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL; break;
+			case "Pieles": img = URL_SRC + URL_SKIN + URL_FULL + buscaMain[0].itemURL; break;
+			case "Bocas": img = URL_SRC + URL_MOUTH + URL_FULL + buscaMain[0].itemURL; break;
+			case "Ojos": img = URL_SRC + URL_EYES + URL_FULL + buscaMain[0].itemURL; break;
+			case "Cabello": img = URL_SRC + URL_HAIR + URL_FULL + buscaMain[0].itemURL; break;
+			default: img = URL_SRC + URL_CLOTHES + URL_FULL + buscaMain[0].itemURL;
+		};
+
+		if (filtro[0].category == "Fondos") {
+			document.getElementById("marketplace-avatar-background-preview").style.backgroundImage = "url('" + img + "')";
+		} else {
+
+			var canvas = document.createElement("canvas");
+			canvas.setAttribute("width", "420");
+			canvas.setAttribute("height", "594");
+			document.getElementById("marketplace-avatar-preview").appendChild(canvas);
+
+			canvas = document.getElementsByTagName("canvas");
+			var ctx = canvas[i].getContext("2d");
+
+			img2 = new Image();
+			img2.onload = function() {
+				ctx.drawImage(img2, 0, 0);
+			};
+
+			img2.src = img;
+
+		};
+
+	if (i < customArray.length - 1) {
+		i++
+		cargarArray(i);
+	};
+};
 
 function limpiarCanvas(){
 
@@ -308,15 +250,12 @@ function limpiarCanvas(){
 
 	for (i = child.length-1; i >= 0; i--) {
 		parent.removeChild(child[i]);
-		
 	};
 
 	// Si hay algo fijado en array, cargarlo
 	if (customArray.length != 0) {
-			cargarArray(0);
-
-	};
-		
+		cargarArray(0);
+	};		
 };
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -337,7 +276,6 @@ function doMove(place) {
 		hijo++;
 		padre.insertBefore(nodo, cont[hijo]);
 	};
-
 };
 
 function doSet(code) {
@@ -349,7 +287,6 @@ function doSet(code) {
 		if (code != "undefined") {
 
 			if (filtro[0].category != "Fondos") {
-
 				customArray.splice(hijo,0, selectedCode);
 			} else {
 				customArray.push(selectedCode);
@@ -376,7 +313,7 @@ function doSet(code) {
 			if (code == customArray[i]) {b = i;break;};
 		};
 
-		var str
+		var str;
 
 		customArray.splice(b,1);
 		if (customArray.length == 0) {
@@ -384,7 +321,6 @@ function doSet(code) {
 		} else {
 			str = "?s=";
 		};
-		
 
 		for (i = 0; i < customArray.length; i++) {
 			(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
