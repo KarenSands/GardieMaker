@@ -22,6 +22,7 @@ var primerItem, ultimoItem, itemLooper, item, filtro, getCodigo, getGrupo, getNo
 var fGrupos, fCategorias, fEspecial, fRareza, fOrden, fName;
 // Variables para fijar items
 var customArray = [], selectedCode, selectedGroup, unset, hijo;
+var seReemplaza = [], posicionReemplazo = "none";
 // Determina si el submenu está abierto o no
 var submenu = false;
 var getGroupId, mainPage, mainPageI, itemsxpag = 7;
@@ -76,6 +77,58 @@ function unselectAll() {
 
 function searchtoSelect(code) {
 	var lista = document.getElementsByClassName("marketplace-abstract marketplace-search-item");
+
+	///////////////////////////////////////////////////
+	// Comprobar si es piel, cabello, ojos, boca, ropa interior
+	
+	var catSelect = groupInfo.filter(function(v){return v.groupId == selectedGroup});
+	var catEs;
+	var infoReem = [];
+	posicionReemplazo = "none";
+
+	switch (catSelect[0].category) {
+		case "Pieles":catEs = "Pieles";break;
+		case "Cabello":catEs = "Cabello";break;
+		case "Ojos":catEs = "Ojos";break;
+		case "Boca":catEs = "Boca";break;
+		case "Ropa interior":catEs = "Ropa interior";break;
+		default:catEs = "none";
+	};
+
+	if (customArray.length > 0) {
+		if (catEs != "none") {
+			// Buscar si existe categorias "unicas"
+			for (c = 0; c < customArray.length; c++) {
+				seReemplaza = groupList.filter(function(v){return v.itemId == customArray[c]});
+				infoReem = groupInfo.filter(function(v){return v.groupId == seReemplaza[0].groupId});
+				if (infoReem.length > 0) {
+					if (infoReem[0].category == catEs) {
+						posicionReemplazo = c;
+						alert("Reemplaza " + catEs);
+						break;
+					};
+				};
+			};
+		} else {
+			// Busca si es variocolor
+			for (c = 0; c < customArray.length; c++) {
+				seReemplaza = groupList.filter(function(v){return v.itemId == customArray[c]});
+				if (seReemplaza[0].groupId == selectedGroup) {
+					//Es shiny
+					posicionReemplazo = c;
+					alert("Cambia color");
+					break;
+				};
+			};
+		};
+
+		if (posicionReemplazo == "none") {
+			// Prenda nueva
+			alert("No reemplaza");
+		};
+	};
+
+	///////////////////////////////////////////////////
 
 		for (i = 0; i < lista.length; i++) {
 			var busca = lista[i].getAttribute("data-itemid");
@@ -413,7 +466,7 @@ function searchBack() {
 	selectedPage = mainPage;
 	submenu = false;
 	itemsxpag = 7;
-	searchtoSelect(0);
+	unselectAll();
 	document.getElementById("filter-orderOptions").style.display = "inline-block";
 	updateFilters();
 
@@ -438,10 +491,7 @@ function limpiaElementos() {
 
 function selectPage(n) {
 
-	searchtoSelect("");
-//	if (filterGroup.length == 1) {
-//		searchtoSelect("");
-//	}
+	unselectAll();
 
 	selectedPage = document.getElementsByClassName("page")[n].innerHTML;
 	if (submenu == false) {
@@ -1046,9 +1096,6 @@ function updateFilters() {
 
 					pri = pri + seg;
 
-//				}
-
-
 				filtro = groupInfo.filter(function(v){return v.note.includes(pri)});
 
 				for (i = 0; i < filterB.length; i++) {
@@ -1070,10 +1117,10 @@ function updateFilters() {
 		} else {
 			// Reiniciar todos los filtros
 
-//			fGrupos = $("#filter-codeOptions").val("all");				// item / grupo
+			//fGrupos = $("#filter-codeOptions").val("all");		// item / grupo
 			fCategorias = $("#filter-bodyLocationOptions").val("");	// categorias
 			fEspecial = $("#filter-guardOptions").val("");			// Guardias / Premio del mes
-			fRareza = $("#filter-rarityOptions").val("");				// rareza
+			fRareza = $("#filter-rarityOptions").val("");			// rareza
 
 			// Buscar por código
 
