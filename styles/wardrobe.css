@@ -629,7 +629,3 @@ li.marketplace-search-item, li.marketplace-sales-item, li.marketplace-auctions-i
 	position: absolute;
 	right: 0;
 }
-
-#filter-itemName {
-	width: 160px;
-}

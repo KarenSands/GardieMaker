@@ -88,7 +88,7 @@ function searchtoSelect(code) {
 		case "Pieles":catEs = "Pieles";break;
 		case "Cabello":catEs = "Cabello";break;
 		case "Ojos":catEs = "Ojos";break;
-		case "Boca":catEs = "Boca";break;
+		case "Bocas":catEs = "Bocas";break;
 		case "Fondos":catEs = "Fondos";break;
 		case "Ropa interior":catEs = "Ropa interior";break;
 		default:catEs = "none";
@@ -103,11 +103,13 @@ function searchtoSelect(code) {
 				if (infoReem[0].category == catEs) {
 					if (selectedCode == customArray[c]) {
 						posicionReemplazo = c;
+						hijo = posicionReemplazo;
 						// Misma prenda
 						$(".button.marketplace-itemDetail-set").text("QUITAR");
 						break;
 					} else {
 						posicionReemplazo = c;
+						hijo = posicionReemplazo;
 						// Reemplaza catEs
 						$(".button.marketplace-itemDetail-set").text("REEMPLAZAR");
 						break;
@@ -122,11 +124,13 @@ function searchtoSelect(code) {
 			if (seReemplaza[0].groupId == selectedGroup) {
 				if (selectedCode == customArray[c]) {
 					posicionReemplazo = c;
+					hijo = posicionReemplazo;
 					// Misma prenda
 					$(".button.marketplace-itemDetail-set").text("QUITAR");
 					break;
 				} else {
 					posicionReemplazo = c;
+					hijo = posicionReemplazo;
 					// Cambia color
 					$(".button.marketplace-itemDetail-set").text("REEMPLAZAR");
 					break;
@@ -222,6 +226,9 @@ function cargarArray(i) {
 			var canvas = document.createElement("canvas");
 			canvas.setAttribute("width", "420");
 			canvas.setAttribute("height", "594");
+			if (i == posicionReemplazo) {
+				canvas.setAttribute("id",selectedCode);
+			} 
 			document.getElementById("marketplace-avatar-preview").appendChild(canvas);
 
 			canvas = document.getElementsByTagName("canvas");
@@ -258,7 +265,7 @@ function limpiarCanvas(){
 	};		
 };
 
-/////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 function doMove(place) {
 	var nodo = document.getElementById(selectedCode);
@@ -331,17 +338,17 @@ function doSet(code) {
 		limpiarCanvas();
 
 	} else if (setunset == "REEMPLAZAR") {
-		customArray.splice(posicionReemplazo,1, selectedCode);
+		
+		customArray.splice(posicionReemplazo,1);
 
-			var str = "?s=";
+		var srt = window.location.search;
+		if (srt.includes == "&" + selectedCode) {
+			customArray.splice(hijo,0, "&" + selectedCode); //Nueva ubicación
+		} else {
+			customArray.splice(hijo,0, selectedCode); //Nueva ubicación
+		};
 
-			for (i = 0; i < customArray.length; i++) {
-				(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
-			};
-
-			history.pushState(null, "", str);
-
-			limpiarCanvas();
+		limpiarCanvas();
 
 	};
 
@@ -355,7 +362,7 @@ function genPerfil() {
 	window.location.href = "./profile" + str;
 }
 
-/////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 
 function crearPagination() {
 
@@ -752,7 +759,7 @@ function getInfo() {
 
 	getGrupo = filterGroup[item].groupId;
 	
-	if (groupInfo != undefined) {
+	try {
 		filtro = groupInfo.filter(function(v){return v.groupId == getGrupo});
 
 		(filterGroup[item].name == undefined)?(getNombre = filtro[0].name):(getNombre = filterGroup[item].name);
@@ -780,12 +787,14 @@ function getInfo() {
 		
 		};
 
-	} else {
-		iniciaTodo();
-	}
+	} catch {
+
+		alert("Se ha producido un error, la página se actualizará.");
+		location.reload();
+
+	};
 
 };
-
 
 $(function() { 
 
@@ -930,18 +939,17 @@ function updateFilters() {
 
 	// Grupo --------------------------------------------
 
-	try {
-		if (fEspecial == "Arcoíris") {
-			fGrupos = "all";
-		}
+	if (fEspecial == "Arcoíris") {
+		fGrupos = "all";
+	}
 
-		if (fName != "" && !(isNaN(fName)) ) {
-			fGrupos = "all";	
-		}
+	if (fName != "" && !(isNaN(fName)) ) {
+		fGrupos = "all";	
+	}
+
+	try {
 
 		if (fGrupos == "first" || fGrupos == "submenu") {
-
-			//filtro = groupInfo;
 
 			for (i = 0; i < groupInfo.length; i++) {
 				for (b = 0; b < groupList.length; b++) {
@@ -973,12 +981,10 @@ function updateFilters() {
 
 	} catch {
 
-		alert("Se ha producido un error, la página se actualizará");
+		alert("Se ha producido un error, la página se actualizará.");
 		location.reload();
 
 	};
-
-	
 
 	// Categorías ---------------------------------------
 	
@@ -1180,7 +1186,6 @@ function updateFilters() {
 	
 	crearPagination();
 };
-
 
 // Normalize ----------------------------------------------
 
