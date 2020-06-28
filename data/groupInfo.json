@@ -1591,5 +1591,6 @@
 	{"groupId":24902, "name":"Ojos Rainbow Spirit", "category":"Ojos", "rarity":"Evento", "note":"Pride Month 2020"},
 	{"groupId":24903, "name":"Ropa interior Rainbow Spirit", "category":"Ropa interior", "rarity":"Evento", "note":"Pride Month 2020"},
 	{"groupId":24904, "name":"Vestido Rainbow Spirit", "category":"Vestidos", "rarity":"Evento", "note":"Pride Month 2020"},
-	{"groupId":24905, "name":"Sandalias Rainbow Spirit", "category":"Zapatos", "rarity":"Evento", "note":"Pride Month 2020"}
+	{"groupId":24905, "name":"Sandalias Rainbow Spirit", "category":"Zapatos", "rarity":"Evento", "note":"Pride Month 2020"},
+	{"groupId":24906, "name":"Nubes Rainbow Spirit", "category":"Ambientes", "rarity":"Evento", "note":"Pride Month 2020"}
 ]
