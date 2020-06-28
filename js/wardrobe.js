@@ -342,12 +342,18 @@ function doSet(code) {
 		customArray.splice(posicionReemplazo,1);
 
 		var srt = window.location.search;
-		if (srt.includes == "&" + selectedCode) {
+		if (srt.includes("&" + selectedCode)) {
 			customArray.splice(hijo,0, "&" + selectedCode); //Nueva ubicación
 		} else {
 			customArray.splice(hijo,0, selectedCode); //Nueva ubicación
 		};
 
+		str = "?s=";
+		for (i = 0; i < customArray.length; i++) {
+			(i == 0)? (str = str + customArray[i]):(str = str + "&" + customArray[i]);
+		};
+		
+		history.pushState(null, "", str);
 		limpiarCanvas();
 
 	};
