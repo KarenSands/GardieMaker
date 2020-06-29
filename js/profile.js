@@ -64,7 +64,7 @@ function cargarCanvas(n) {
     	var getInfo = groupInfo.filter(function(v){return v.groupId == getLista[0].groupId});
     	
     } catch {
-        alert("Se ha producido un error, la página se actualizará");
+        alert("Se ha producido un error, la página se actualizará.");
         location.reload();
     };
 
@@ -154,6 +154,55 @@ function cargarPortrait(n) {
     };
 };
 
+function cargarPopUp() {
+    document.getElementById("player-display-draggable").style.display = "none";
+    document.getElementById("player-display-pet").style.display = "none";
+
+    var div = document.createElement("div");
+    div.setAttribute("id","portraitbg");
+    document.getElementsByTagName("body")[0].appendChild(div);
+
+    div = document.createElement("div");
+    div.setAttribute("id","portraitcontainer");
+    document.getElementById("content").appendChild(div);
+
+    // botón cierra portrait
+    div = document.createElement("div");
+    div.setAttribute("id", "buttonClose");
+    div.setAttribute("onclick", "cierraPopUp()");
+    document.getElementById("portraitcontainer").appendChild(div);
+
+    // boron recargar
+    div = document.createElement("div");
+    div.setAttribute("class", "button");
+    div.setAttribute("style", "display: block;position: absolute;z-index: 3;top: 17px;margin-left: 355px");
+    div.setAttribute("onclick", "reLoadPortrait()");
+    div.innerHTML = "Volver a cargar";
+    document.getElementById("portraitcontainer").appendChild(div);
+
+}
+
+function cierraPopUp() {
+    $("div").remove("#portraitcontainer");
+    $("div").remove("#portraitbg");
+    document.getElementById("player-display-draggable").style.display = "block";
+    document.getElementById("player-display-pet").style.display = "block";
+}
+
+function reLoadPortrait() {
+    $("canvas").remove("#portrait");
+
+    var portrait = document.createElement("canvas");
+    portrait.setAttribute("id","portrait");
+    portrait.setAttribute("width", "800");
+    portrait.setAttribute("height", "1132");
+    document.getElementById("portraitcontainer").appendChild(portrait);
+
+    i = 0;
+    cargarPortrait(customArray[i]);
+}
+
+
 function cargarPet(select, check) {
 
     var imagep = document.getElementsByTagName("img")[1];
@@ -189,14 +238,9 @@ function cargarPet(select, check) {
                 var asda = document.getElementById("player-display-pet");
                 asda.setAttribute("style","position: absolute; inset: 100px auto auto 100px; width: auto; height: auto");
                 galor = false;
-            };
-            
-            
-        }
-        
+            };   
+        }  
     };
-
-
 };
 
 // ------------------------------------
@@ -337,11 +381,12 @@ $(function() {
     });
 
     $("#getPortrait").click(function() {
+        cargarPopUp();
         var portrait = document.createElement("canvas");
         portrait.setAttribute("id","portrait");
         portrait.setAttribute("width", "800");
         portrait.setAttribute("height", "1132");
-        document.getElementById("content").appendChild(portrait);
+        document.getElementById("portraitcontainer").appendChild(portrait);
         i = 0;
         cargarPortrait(customArray[i]);
     });
@@ -355,12 +400,6 @@ $(function() {
         document.body.removeChild(aux);
 
         alert("Se ha copiado el código.");
-    });
-
-    $("h1").click(function() {
-        var child = document.getElementById("portrait");
-        var parent = document.getElementById("content");
-        parent.removeChild(child);
     });
 
     $("#selectPet").change(function() {
@@ -380,8 +419,8 @@ $(function() {
         
     });
 
-
 });
+
 
 // ------------------------------------------------------
 
