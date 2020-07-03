@@ -1,0 +1,51 @@
+body {
+	background: #34386f url("https://www.eldarya.es/assets/img/item/player/web_full/db28c830f7176d59b26856ba831ec0fb.jpg") fixed top center;	
+	background-size: cover;
+	transition: background-image 4s linear;
+    /*-------------------*/
+    font-family: "trebuchet ms", arial, serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #000;
+    min-height: 100%;
+}
+
+#header {
+	position: relative;
+	z-index: 5;
+	background: white;
+	padding: 0 57px;
+}
+
+iframe {
+	position: relative;
+	top: -150px;
+}
+
+#container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: inherit;
+	background: rgba(0, 0, 0, 0.8);
+	overflow: auto;
+	text-align: center;
+
+}
+
+#popup {
+	position: relative;
+	top: 80px;
+	width: 500px;
+	margin: auto;
+	padding: 25px;
+	background: #fff;
+	border-radius: 10px;
+	height: 780px;
+}
+
+form {
+	position: relative;
+}
