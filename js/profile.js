@@ -164,7 +164,7 @@ function cargarPopUp() {
 
     div = document.createElement("div");
     div.setAttribute("id","portraitcontainer");
-    document.getElementById("content").appendChild(div);
+    document.getElementById("portraitbg").appendChild(div);
 
     // botón cierra portrait
     div = document.createElement("div");
@@ -172,13 +172,15 @@ function cargarPopUp() {
     div.setAttribute("onclick", "cierraPopUp()");
     document.getElementById("portraitcontainer").appendChild(div);
 
-    // boron recargar
+    // boton recargar
     div = document.createElement("div");
     div.setAttribute("class", "button");
     div.setAttribute("style", "display: block;position: absolute;z-index: 3;top: 17px;margin-left: 355px");
     div.setAttribute("onclick", "reLoadPortrait()");
     div.innerHTML = "Volver a cargar";
     document.getElementById("portraitcontainer").appendChild(div);
+
+    document.getElementsByTagName("body")[0].setAttribute("style", "overflow:hidden");
 
 }
 
@@ -187,6 +189,7 @@ function cierraPopUp() {
     $("div").remove("#portraitbg");
     document.getElementById("player-display-draggable").style.display = "block";
     document.getElementById("player-display-pet").style.display = "block";
+    document.getElementsByTagName("body")[0].removeAttribute("style");
 }
 
 function reLoadPortrait() {

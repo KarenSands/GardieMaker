@@ -368,23 +368,24 @@ body a{
 	right: 0;	
 	z-index: 2;
 	visibility: inherit;
+	text-align: center;
 	overflow: auto;
 }
 
 #portraitcontainer {
 	padding: 30px;
 	background-color: white;
-	border-radius: 5px;
+	border-radius: 10px;
 	z-index: 3;
-	position: absolute;
+	position: relative;
 	top: 42px;
-	margin: auto 75px;
+	margin: auto;
+	margin-bottom: 80px;
+	display: inline-block;
 }
 
 #portrait {
 	position: relative;
-	/*top: 42px;*/
-	/*margin: auto 105px;*/
 	background: #000;
 	z-index: 2;
 }
