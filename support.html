@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 	<head>
 		<meta charset="utf-8">
 		<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
 		<link href="https://fonts.googleapis.com/css?family=Rubik:400&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet"> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/tracking.js"></script>
+		<script type="text/javascript" src="js/support.js"></script>
 
-		<title>Registro - Gardie Maker</title>
-		<link rel="stylesheet" type="text/css" href="styles/tracking.css">
+		<title>Ayuda - Gardie Maker</title>
+		<link rel="stylesheet" type="text/css" href="styles/support.css">
 	</head>
-	<body>
+	<body class="">
+	<!-- header -->
 		<div id="header">
 			<div id="header-in">
 				<a id="logo" title="Gardie Maker" href="/"><img src="assets/img/logo.png"></a>
@@ -45,36 +46,45 @@
 						<li>
 							<a href="wardrobe">VESTIDOR</a>
 						</li>
+
 					</ul>
 				</div>
 			</div>
 		</div>
-		<!--content-->
+		<!-- content -->
 		<div id="content">
 			<div id="container">
-				<div class="page-main-container">
-					<h1>
-						Registro
-						<span class="title-end"></span>
-						<!--falta CSS -->
-					</h1>
-					
-					<ul class="menu-tracking">
-						<li class="tracking current"><div id="tracking-all">Todos</div></li>
-						<li class="tracking"><div id="tracking-true">Disponibles</div></li>
-						<li class="tracking"><div id="tracking-false">Faltantes</div></li>
-					</ul>
-					<!-- inicia lista -->
 
+				<div class="support-main-container page-main-container">
+					<h1>Ayuda<span class="title-end"></span></h1>
+					<ul id="support-menu">
+						<div id="menu-general">
+							<li>General</li>
+						</div>
+						<div id="menu-wardrobe">
+							<li>Vestidor</li>
+						</div>
+						<div id="menu-profile">
+							<li>Perfil</li>
+						</div>
+						<div id="menu-contests">
+							<li>Concursos y sorteos</li>
+						</div>
+					</ul>
+
+					<div id="support-category-content">
+					</div>
+
+					<div class="clearer"></div>
 
 				</div>
+
 			</div>
 		</div>
-	
 		<!--footer-->
 		<div id="footer" itemscope="" itemtype="https://schema.org/WPFooter">
 			<div id="footer-in">© 2020 | Gardie Maker
-				<span id="footer-links"></span>
+				<span id="footer-links">.</span>
 			</div>
 		</div>
 
