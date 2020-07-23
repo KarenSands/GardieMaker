@@ -5713,7 +5713,7 @@
 	{"itemId":6978, "groupId":6778, "itemURL":"4e008c31a39e28a6370031a2654e10a3.png"},
 	{"itemId":6979, "groupId":6778, "itemURL":"0e60a0a3cb29ac10f9c588ad283904ee.png"},
 	{"itemId":6980, "groupId":6778, "itemURL":"15a80533bd823b70c07a9edbb5bca335.png"},
-	{"itemId":6981, "groupId":9778, "itemURL":"6cf6b3e79c11c0262594c725e58dd30c.png", "color":"shiny"},
+	{"itemId":6981, "groupId":6778, "itemURL":"6cf6b3e79c11c0262594c725e58dd30c.png", "color":"shiny"},
 	{"itemId":6982, "groupId":6982, "itemURL":"2eb5e9a20ee71914092d47b08d5feccf.jpg"},
 
 	{"itemId":6984, "groupId":6984, "itemURL":"4f5a90efc73b771255b7939aebf0eaff.jpg"},
