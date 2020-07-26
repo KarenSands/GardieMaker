@@ -10,13 +10,13 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/profile.js"></script>
 
-		<title>Perfil - Gardie Maker</title>
+		<title>Perfil - GardieMaker</title>
 		<link rel="stylesheet" type="text/css" href="styles/profile.css">
 	</head>
 	<body>
 		<div id="header">
 			<div id="header-in">
-				<a id="logo" title="Gardie Maker" href="/"><img src="assets/img/logo.png"></a>
+				<a id="logo" title="GardieMaker" href="/"><img src="assets/img/logo.png"></a>
 				<!-- NOVEDADES -->
 				<div id="header-news">
 					<div id="news-infos">
@@ -31,20 +31,19 @@
 				<div id="header-top-in">
 					<ul id="header-menu">
 						<li>
-							<a href="https://gardiemaker.tumblr.com">BLOG</a>
+							<a href="https://gardiemaker.blogspot.com">BLOG</a>
 						</li>
 						<li>
-							<a href="https://gardiemaker.tumblr.com/submit">APORTES</a>
+							<a id="backC" href="wardrobe">EDITAR</a>
 						</li>
 						<li>
-							<a href="https://gardiemaker.tumblr.com/ask">REPORTAR</a>
+							<a href="profile">LIMPIAR</a>
 						</li>
+
 						<li>
 							<a href="support?profile">AYUDA</a>
 						</li>
-						<li>
-							<a id="backC" href="wardrobe">VOLVER AL VESTIDOR</a>
-						</li>
+						
 					</ul>
 				</div>
 			</div>
@@ -99,8 +98,10 @@
 
 							<div style="margin: 3px 8px; text-align: center;">CARGAR GUARDIANA</div><br>
 							<div style="margin: 3px 8px; float:left;">Código:</div>
-							<input id="inputCode" value="" onkeypress="key()" style="width: 220px">
-							<input id="loadCode" type="button" value="Generar">
+							<form onsubmit="return false;">
+								<input id="inputCode" value="" style="width: 220px">
+								<input id="loadCode" type="submit" value="Generar">
+							</form>
 							<div class="clearer"></div><br>
 
 						</div>
@@ -126,7 +127,7 @@
 	
 		<!--footer-->
 		<div id="footer" itemscope="" itemtype="https://schema.org/WPFooter">
-			<div id="footer-in">© 2020 | Gardie Maker
+			<div id="footer-in">© 2020 | GardieMaker
 				<span id="footer-links">Se ha producido un error.</span>
 			</div>
 		</div>
